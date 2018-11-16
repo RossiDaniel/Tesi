@@ -1,0 +1,31 @@
+%!TEX root = ../dissertation.tex
+\begin{savequote}[75mm]
+Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin molestie tortor eu velit. Aliquam erat volutpat. Nullam ultrices, diam tempus vulputate egestas, eros pede varius leo.
+\qauthor{Quoteauthor Lastname}
+\end{savequote}
+\hypertarget{(chap:processi_metodologie)}{}
+\chapter{Processi e metodologie}
+In questo capitolo verranno riportati in modo approfondito lo scopo e gli obiettivi dello stage, riportando lo scadenziario delle attività e contestualizzandole alla relatà dell'azienda.
+
+\section{Contesto}
+Il progetto generale nasce dalla visione di Filippo Sottovia, titolare dell'azienda, di realizzare un software decisionale di supporto che permettesse di sopperire a molteplici obiettivi quali:
+\begin{itemize}
+    \item agevolazione degli operatori nello svolgimento delle loro mansioni;
+    \item facilitazione del processo decisionale richiedendo così un lavoratore meno esperto;
+    \item nuove attività frutto del tempo risparmiato grazie all'aumento della produttività;
+    \item condivisione in tempo reale delle informazioni sullo stato dei trasporti;
+    \item stima di costi e profitti disponibile in ogni momento.
+\end{itemize}
+\noindent Il software, fornisce un'interfaccia grafica web intuitiva che fa dell'usabilità la propria punta di diamante, essa infatti persegue l'idea di rendere il più semplice possibile operare sul sistema senza però peccare di professionalità, il sistema inoltre è equipaggiato con algoritmi che permettono di ottimizzare gli ordini organizzando al meglio le merci da trasportare ripartendole ai camion della flotta, tenendo conto degli orari di carico e scarico delle sedi dei clienti/fornitori, delle condizioni di traffico sulle strade, delle pause dovute per legge agli autisti e della particolarità delle merci.
+
+\section{Introduzione al progetto}
+L'azienda per permettere di stimare lo spazio occupato dalle merci ha sviluppato un'euristica, questa riceve in input le merci da trasportare divise nei diversi ordini, le approssima a parallelepipedi e le dispone al meglio sul pianale del camion, sovrapponendole dove possibile, con l'obiettivo di ridurre al minimo lo spazio lineare occupato dalle stesse, così facendo si risparmia spazio per eventuali altre merci da caricare qualora arrivassero nuovi ordini.
+A rendere ancora più complicato il lavoro dell'euristica riportiamo tre principali problemi da tenere in considerazione:
+\begin{itemize}
+    \item Stabilità degli oggetti: la faccia inferiore di ciascun oggetto deve poggiare per intero sulle facce superiori di altri oggetti sotto di sè o sul pianale del camion;
+    \item Sequenza di scarico: ogni oggetto deve poter essere scaricato lateralemente o frontalmente, questo implica che non può avere in torno a sè merci che ne blocchino lo scarico, in quanto appartenenti ad ordini maggiori;
+    \item Baricentro degli oggetti: peso delle merci deve essere equamente distribuito sul pianale del camion.
+\end{itemize}
+
+\section{Vincoli temporali, tecnologici e metodologici}
+Nel periodo di stage svolto presso l'azienda mi è stato chiesto di tenere un \textit{diario} condiviso attraverso dropbox
