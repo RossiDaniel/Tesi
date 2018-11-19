@@ -33,4 +33,48 @@ Un'altra cosa importante è stata la presentazione di metà stage, alla quale ha
 Prima di iniziare lo stage è stato concordato con l'azienda un piano di lavoro su un totale di 320 ore, lavorando 5 giorni a settimana, 8 ore per ciascun giorno. 
 
 \section{Requisiti e obiettivi}
-Nella tabella riportata di seguito vengono riportati gli obiettivi dello stage, a corredo degli stessi vi sarà un identificativo del livello di interesse del loro raggiungimento e una breve descrizione.
+Nella tabella riportata di seguito vengono riportati gli obiettivi dello stage, a corredo degli stessi vi sarà un codice univoco ed una breve descrizione. Ogni obiettivo è provvisto di un codice che lo identifica formato da una delle seguenti stringhe \textbf{ob},de,op] rappresentante il livello di importanza e da un numero incrementale positivo, che rispetta la seguente nomenclatura: [importanza][identificativo].\\ 
+Il livello di importanza di ciascun obiettivo può essere uno tra i seguenti:
+\begin{itemize}
+    \item Obbligatorio: individuato dalla stringa \textit{ob}, sono obiettivi fondamentali per la riuscita del progetto, il loro soddisfacimento dovrà verificarsi assolutamente entro la fine dello stage, pena il fallimento dello stesso;
+    \item Desiderabile: individuato dalla stringa \textit{de}, sono obiettivi secondari su cui però si nutre dell'interesse, il loro soddisfacimento è auspicabile entro la fine dello stage;
+    \item Opzionale: individuato dalla stringa \textit{op}, sono obiettivi di contorno su cui si nutre poco interesse, la loro realizzazione si verificherà nel momento in cui si dovesse soddisfare tutti gli obiettivi obbligatori e desiderabili prima della fine dello stage.
+\end{itemize}
+
+Si prevede lo svolgimento dei seguenti obiettivi:
+\begin{itemize}
+	\item Obbligatori
+	\begin{itemize}
+		\item \underline{\textit{ob01}}: individuazione e analisi \textit{constraints} modello 2D;
+		\item \underline{\textit{ob02}}: modello matematico 2D con \textit{framework} di modellazione algebrica;
+		\item \underline{\textit{ob03}}: traduzione modello in Python con l'ausilio di Google OR-Tools;
+		\item \underline{\textit{ob04}}: test sul modello 2D e confronto con l'euristica;
+		\item \underline{\textit{ob05}}: individuazione e analisi \textit{constraints} modello 2DR; 
+		\item \underline{\textit{ob06}}: modello matematico 2DR con \textit{framework} di modellazione algebrica;
+		\item \underline{\textit{ob07}}: traduzione modello in Python con l'ausilio di Google OR-Tools;
+		\item \underline{\textit{ob08}}: test sul modello 2DR e confronto con l'euristica;
+    \end{itemize}
+	\item Desiderabili
+	\begin{itemize}
+		\item \underline{\textit{de01}}: individuazione e analisi \textit{constraints} modello 3D;
+		\item \underline{\textit{de02}}: modello matematico 3D con \textit{framework} di modellazione algebrica;
+		\item \underline{\textit{de03}}: traduzione modello in Python con l'ausilio di Google OR-Tools;
+		\item \underline{\textit{de04}}: test sul modello 3D e confronto con l'euristica;
+	\end{itemize}
+	\item Opzionali
+	\begin{itemize}
+		\item \underline{\textit{op01}}: evoluzione euristica, fornita dall'azienda, con nuove funzionalità;
+	\end{itemize} 
+\end{itemize}
+
+\section{Pianificazione}
+Con le ore a disposizione per questo stage si è proceduto a organizzare come segue le attività:
+\begin{itemize}
+    \item Formazione: si è resa necessaria una formazione che spaziasse dalla programmazione lineare intera, al linguaggio Python, al framework Or-Tools e al solver CBC;
+    \item Preparazione ambiente: periodo in cui ho realizzato dei piccoli modelli di esempio con cui impratichirmi il tutto interfacciandomi con Python;
+    \item Realizzazione modelli: durante questo periodo si è provveduto a analizzare, realizzare e testare i modelli richiesti;
+    \item Verifica: si è provveduto a verificare che le soluzione fornite dal modello fossero corrette;
+    \item Testing: si è provveduto a utilizzare i modelli confrontandoli con l'euristica fornita dall'azienda;
+    \item Documentazione risultati: si è provveduto a documentare  
+\end{itemize}
+Viste le ore a disposizione dello stage gli obiettivi sono stati ripartiti in tre principali macroperiodi, uno per modello, a loro volta divisi nei seguenti periodi.
