@@ -1,8 +1,4 @@
 %!TEX root = ../dissertation.tex
-\begin{savequote}[75mm]
-Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin molestie tortor eu velit. Aliquam erat volutpat. Nullam ultrices, diam tempus vulputate egestas, eros pede varius leo.
-\qauthor{Quoteauthor Lastname}
-\end{savequote}
 \hypertarget{(chap:processi_metodologie)}{}
 \chapter{Processi e metodologie}
 In questo capitolo verranno riportati in modo approfondito lo scopo e gli obiettivi dello stage, riportando lo scadenziario delle attività e contestualizzandole alla relatà dell'azienda.
@@ -40,7 +36,6 @@ Il livello di importanza di ciascun obiettivo può essere uno tra i seguenti:
     \item Desiderabile: individuato dalla stringa \textit{de}, sono obiettivi secondari su cui però si nutre dell'interesse, il loro soddisfacimento è auspicabile entro la fine dello stage;
     \item Opzionale: individuato dalla stringa \textit{op}, sono obiettivi di contorno su cui si nutre poco interesse, la loro realizzazione si verificherà nel momento in cui si dovesse soddisfare tutti gli obiettivi obbligatori e desiderabili prima della fine dello stage.
 \end{itemize}
-
 Si prevede lo svolgimento dei seguenti obiettivi:
 \begin{itemize}
 	\item Obbligatori
@@ -69,12 +64,98 @@ Si prevede lo svolgimento dei seguenti obiettivi:
 
 \section{Pianificazione}
 Con le ore a disposizione per questo stage si è proceduto a organizzare come segue le attività:
+\begin{enumerate}
+	\item \textbf{Formazione}\\
+	Si è visto necessario approfondire la programmazione lineare e la letteratura correlata al problema del bin packing, imparare il linguaggio di programmazione Python e l'ambiente fornito dallo strumento \textit{Jupyter}.
+	\item \textbf{Preparazione ambiente}\\ 
+	La preparazione dell'ambiente di lavoro ha richiesto l'installazione di numerose librerie e framework sia pubblici che aziendali per riuscire a integrare i modelli con le librerie aziendali.
+	\item \textbf{Scelta framework}\\
+	La scelta finale del framework di modellazione algebrica è ricaduta sullo stesso Or-Tools in quanto forniva una interfaccia Python ed era quello che forniva una documentazione migliore oltre che una community di sviluppatori molto attiva.
+	\item \textbf{Realizzazione modelli}\\
+	Periodo di maggior peso rispetto ad altri, esso ha portato allo sviluppo dei modelli e delle loro varianti, includendo in sè varie attività.
+	\item \textbf{Validazione}\\
+	Periodo di validazione delle soluzioni fornite dai diversi modelli confrontandole con quelle fornite dall'euristica aziendale.
+	\item \textbf{Testing}\\
+	Periodo in cui sono stati eseguiti test massivi sia dei modelli che dell'euristica con cui successivamente estrapolare informazioni utili al confronto.
+	\item \textbf{Documentazione dei risultati}\\
+	Analisi dei risultati ottenuti e conseguente documentazione al fine di capire dove e come si potesse migliorare l'euristica.
+\end{enumerate}
+La pianificazione, in termini di quantità di ore di lavoro, sarà così distribuita:
+\begin{center}
+	\begin{tabular}{|l|l|c l|}
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Durata in ore}}		&	\multicolumn{2}{l|}{\textbf{Descrizione dell'attività}}\\
+		\hline
+		\multicolumn{2}{|l|}{56}	&	\multicolumn{2}{l|}{\textbf{A}: Formazione}\\
+		\hline
+		\multirow{5}{1cm}{ }    &            8            &            \hspace{5mm}•\hspace{2mm}            &       Ricerca \textit{framework} di modellazione algebrica indoneo\\
+		\multirow{5}{1cm}{ }    &            24            &            \hspace{5mm}•\hspace{2mm}            &       Studio di tale \textit{framework}\\
+		\multirow{5}{1cm}{ }    &            24            &            \hspace{5mm}•\hspace{2mm}            &       Studio Google OR-Tools\\
+		\hline
+
+		\multicolumn{2}{|l|}{104}	&	\multicolumn{2}{l|}{\textbf{B}: Versione algoritmo 2D}\\
+		\hline
+		\multirow{5}{1cm}{ }    &            8            &            \hspace{5mm}•\hspace{2mm}             &      Individuazione ed analisi \textit{constraints} \\
+		\multirow{3}{1cm}{ }    &            48            &            \hspace{5mm}•\hspace{2mm}            &      Prototipazione modello\\
+		\multirow{5}{1cm}{ }    &            24            &            \hspace{5mm}•\hspace{2mm}            &      Traduzione in linguaggio Python-Google OR-Tools\\
+		\multirow{5}{1cm}{ }    &            24            &            \hspace{5mm}•\hspace{2mm}            &      Test e confronto con euristica\\	
+		\hline
+
+		\multicolumn{2}{|l|}{72}	&	\multicolumn{2}{l|}{\textbf{C}: Versione algoritmo 2D con rotazione}\\
+		\hline
+		\multirow{5}{1cm}{ }    &            8            &            \hspace{5mm}•\hspace{2mm}             &      Individuazione ed analisi \textit{constraints} \\
+		\multirow{3}{1cm}{ }    &            24            &            \hspace{5mm}•\hspace{2mm}            &      Prototipazione modello\\
+		\multirow{5}{1cm}{ }    &            16            &            \hspace{5mm}•\hspace{2mm}            &      Traduzione in linguaggio Python-Google OR-Tools\\
+		\multirow{5}{1cm}{ }    &            16            &            \hspace{5mm}•\hspace{2mm}            &      Test e confronto con euristica\\	
+		\hline
+
+		\multicolumn{2}{|l|}{72}	&	\multicolumn{2}{l|}{\textbf{D}: Versione algoritmo 3D con sovrapposizione}\\
+		\hline
+		\multirow{5}{1cm}{ }    &            8            &            \hspace{5mm}•\hspace{2mm}             &      Individuazione ed analisi \textit{constraints} \\
+		\multirow{3}{1cm}{ }    &            32            &            \hspace{5mm}•\hspace{2mm}            &      Prototipazione modello\\
+		\multirow{5}{1cm}{ }    &            16            &            \hspace{5mm}•\hspace{2mm}            &      Traduzione in linguaggio Python-Google OR-Tools\\
+		\multirow{5}{1cm}{ }    &            24            &            \hspace{5mm}•\hspace{2mm}            &      Test e confronto con euristica\\
+		\hline
+		
+		\multicolumn{2}{|l|}{16}	&	\multicolumn{2}{l|}{\textbf{E}: Lavoro sviluppo euristica}\\
+		\hline
+		\multirow{5}{1cm}{ }    &            16            &            \hspace{5mm}•\hspace{2mm}             &      Realizzazione nuove funzioni euristica \\
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Totale: 320}}		&	\multicolumn{2}{l|}{}\\
+		\hline
+
+	\end{tabular}	
+\end{center}
+
+\section{Ambiente di lavoro}
+\subsection{Metodi di sviluppo}
+Il ciclo di vita di un prodotto in Trans-Cel segue il metodo incrementale, in particolare il tutto inizia da una fase di concezione dell'idea, analisi della stessa, progettazione ed infine partendo dagli obiettivi più importanti si realizza il prodotto rilasciando periodicamente una versione dello stesso che mostri il procedere dei lavori e delle nuove funzionalità inserite. In quest'ottica lo sviluppo di un modello può essere associato ad un incremento, la cui \textit{milestone} è la ricezione dei risultati, a sua volta lo sviluppo di ciasun modello segue il metodo incrementale, lo sviluppo di un modello può essere visto come l'insieme di tre principali attività:
 \begin{itemize}
-    \item Formazione: si è resa necessaria una formazione che spaziasse dalla programmazione lineare intera, al linguaggio Python, al framework Or-Tools e al solver CBC;
-    \item Preparazione ambiente: periodo in cui ho realizzato dei piccoli modelli di esempio con cui impratichirmi il tutto interfacciandomi con Python;
-    \item Realizzazione modelli: durante questo periodo si è provveduto a analizzare, realizzare e testare i modelli richiesti;
-    \item Verifica: si è provveduto a verificare che le soluzione fornite dal modello fossero corrette;
-    \item Testing: si è provveduto a utilizzare i modelli confrontandoli con l'euristica fornita dall'azienda;
-    \item Documentazione risultati: si è provveduto a documentare  
+	\item Analisi letteratura: lettura articoli accademici riportanti moodelli simili o idee per lo sviluppo degli stessi.
+	\item Scrittura: scrittura del modello e integrazione con il sistema grazie al framework Or-Tools.
+	\item Verifica: testing massimo e verifica delle soluzioni fornite.
 \end{itemize}
-Viste le ore a disposizione dello stage gli obiettivi sono stati ripartiti in tre principali macroperiodi, uno per modello, a loro volta divisi nei seguenti periodi.
+Inoltre è possibile cogliere analogie con il metodo \glo{agile} se si pensa ai brainstorming, momenti importanti in quanto ci si confronta in modo critico e si fa il punto della situazione oltre che esporre le problematicità che si stanno incontrando.
+
+\subsection{Gestione di progetto}
+Per quanto riguarda la gestione di progetto sono stati utilizzati alcuni strumenti descritti con maggiore dettaglio nel capitolo, in generale per la gestione dei task da eseguire si è fatto uso di \glo{Taiga}, uno strumento di gestione delle task molto simile per funzionamento a \glo{Trello}, per la gestione della comunicazione e condivisione informazioni si è fatto uso dell'applicazione \glo{Telegram}, per la condivisione di documentazione e articoli si è fatto uso del servizio Dropbox, per il versionamento si è fatto uso del servizio \glo{GitHub} per la familiarità dello strumento, per quanto riguarda l'interfaccia con cui versionare ho utilizzato \glo{git} da terminale.
+
+\subsection{Linguaggio di programmazione e ambiente di sviluppo}
+Per la totalità dello stage si è lavorato utilizzando Jupyter Notebook, con questo strumento è stato possibile scrivere programmi in linguaggio Python in modo molto agevole. Questo linguaggio di programmazione è orientato agli oggetti ed interpretato dinamicamente al momento dell’esecuzione da un interprete. Python risulta veramente versatile in quanto fornisce incredibili funzionalità utilizzabili in modo semplice e intuitivo, dispone di moltissimi moduli che permettono di fare le più svariate cose, il linguaggio inoltre permette di esporre costrutti \glo{C++} in Python permettendo di utilizzarli nei propri programmi, questo permette di mantenere efficienza e modularità. L'unico punto a suo sfavore è la non possibilità di realizzare programmi \glo{multithreading} se non utilizzando il modulo \glo{multiprocessing} che comporta però dei compromessi.
+
+\section{Analisi dei rischi}
+In questa sezione vengono riportati i principali rischi che si prefiggevano iniziando lo stage, ciascuno di essi oltre ad avere una breve descrizione riportano un livello di rischio e come si possa fare per evitarli:
+\begin{itemize}
+	\item \textbf{Difficoltà nelle tecnologie adottate}\\
+	Fin da quando si è concordato lo stage si era capito che Python avrebbe avuto un ruolo dominante ma la mole di librerie e etensioni rendeva il linguaggio troppo vasto da poter approfondire nella sua interezza, ed oltre a questo vi era il modulo Or-Tools e \glo{Pandas} da approfondire e utilizzare.
+	\begin{itemize}
+		\item \textbf{Livello di rischio}: Basso;
+		\item \textbf{Contromisure}: Studiare in modo il più possibile approfondito Python e i moduli sopra citati.
+	\end{itemize}
+	\item \textbf{Difficoltà di integrazione nel team}\\
+	Di fondamentale importanza per la riuscita di un progetto è la cooperazione con i colleghi e la creazione di un ambiente di lavoro sano e che stimoli la creatività, essendo un nuovo arrivato inserito in un ambiente a forte stress per le stringenti scadenze vi era la possibilità di entrare in conflitto con taluni colleghi.
+	\begin{itemize}
+		\item \textbf{Livello di rischio}: Basso;
+		\item \textbf{Contromisure}: Perseguire un atteggiamento positivo, critico e oggettivo.
+	\end{itemize}
+\end{itemize}

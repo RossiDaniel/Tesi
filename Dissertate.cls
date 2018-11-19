@@ -396,4 +396,6 @@
     \include{endmatter/colophon}
 }
 
-
+%glossario command
+\newcommand{\glo}[1]{\hyperlink{(#1)}{\textit{#1$^{[g]}$}}}
+\newcommand{\gloTarget}[1]{\hypertarget{(#1)}{\textbf{#1}}}
