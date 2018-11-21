@@ -1,29 +1,174 @@
 %!TEX root = ../dissertation.tex
-\begin{savequote}[75mm]
-This is some random quote to start off the chapter.
-\qauthor{Firstname lastname}
-\end{savequote}
+\hypertarget{(chap:processi_metodologie)}{}
+\chapter{Processi e metodologie}
+In questo capitolo verranno riportati in modo approfondito lo scopo e gli obiettivi dello stage, riportando lo scadenziario delle attività e contestualizzandole alla relatà dell'azienda.
 
-\hypertarget{(chap:inquadramento)}{}
-\chapter{Inquadramento delle attività di stage}
+\section{Contesto}
+Il progetto generale nasce dalla visione di Filippo Sottovia, titolare dell'azienda, di realizzare un software decisionale di supporto che permettesse di sopperire a molteplici obiettivi quali:
+\begin{itemize}
+    \item agevolazione degli operatori nello svolgimento delle loro mansioni;
+    \item facilitazione del processo decisionale richiedendo così un lavoratore meno esperto;
+    \item nuove attività frutto del tempo risparmiato grazie all'aumento della produttività;
+    \item condivisione in tempo reale delle informazioni sullo stato dei trasporti;
+    \item stima di costi e profitti disponibile in ogni momento.
+\end{itemize}
+\noindent Il software, fornisce un'interfaccia grafica web intuitiva che fa dell'usabilità la propria punta di diamante, essa infatti persegue l'idea di rendere il più semplice possibile operare sul sistema senza però peccare di professionalità, il sistema inoltre è equipaggiato con algoritmi che permettono di ottimizzare gli ordini organizzando al meglio le merci da trasportare ripartendole ai camion della flotta, tenendo conto degli orari di carico e scarico delle sedi dei clienti/fornitori, delle condizioni di traffico sulle strade, delle pause dovute per legge agli autisti e della particolarità delle merci.
 
-\section{Il progetto aziendale}
-Per riuscire ad inquadrare al meglio lo scopo del progetto di stage è importante capire a fondo il progetto generale che l'azienda porta avanti da ormai alcuni anni, poiché essi sono tra loro intrinsecamente legati. Il progetto generale mira a fornire un prodotto che possa far progredire il mercato del trasporto attraverso la digitalizzazione dello stesso, questo attraverso il superamento dei vecchi gestionali, utilizzati concretamente solo per la fatturazione, e l'introduzione di una piattaforma web attraverso cui gestire ogni passaggio nel rapporto cliente-operatore.
-Il software permette di gestire la flotta di mezzi e organizzare gli ordini di carico e scarico commissionati dai clienti, questa organizzazione può essere fatta manualmente da un operatore esperto oppure affidandosi ad algoritmi che organizzino gli ordini utilizzando i camion disponibili nel miglior modo possibile. Il sistema dispone di un algortimo per il \glo{vehicle routing}, su cui si può dire faccia capo l'intero progetto, questo si occupa di ottimizzare i viaggi dei camionisti tenendo conto di un numero incredibile di variabili, questo algoritmo ha subito diverse upgrade in un'ottica di miglioramento continuo, per renderlo più efficiente, più versatile e più preciso.
-In questo contesto l'euristica che fornisce la valutazione approssimativa dello spazio occupato da un certo numero di merci è molto importante, questo perché è necessario sapere quanti mezzi siano necessari per trasportare le merci richieste e quanto spazio sia ancora disponibile per ordini futuri.
+\section{Introduzione al progetto}
+L'azienda per permettere di stimare lo spazio occupato dalle merci ha sviluppato un'euristica, questa riceve in input le merci da trasportare divise nei diversi ordini, le approssima a parallelepipedi e le dispone al meglio sul pianale del camion, sovrapponendole dove possibile, con l'obiettivo di ridurre al minimo lo spazio lineare occupato dalle stesse, così facendo si risparmia spazio per eventuali altre merci da caricare qualora arrivassero nuovi ordini.
+A rendere ancora più complicato il lavoro dell'euristica riportiamo tre principali problemi da tenere in considerazione:
+\begin{itemize}
+    \item Stabilità degli oggetti: la faccia inferiore di ciascun oggetto deve poggiare per intero sulle facce superiori di altri oggetti sotto di sè o sul pianale del camion;
+    \item Sequenza di scarico: ogni oggetto deve poter essere scaricato lateralemente o frontalmente, questo implica che non può avere in torno a sè merci che ne blocchino lo scarico, in quanto appartenenti ad ordini maggiori;
+    \item Baricentro degli oggetti: peso delle merci deve essere equamente distribuito sul pianale del camion.
+\end{itemize}
 
-\section{Il progetto di stage}
-Il progetto di stage dopo l'evento \glo{StageIt} ed alcune riunione presso l'azienda è stato studiato dettagliatamente e riportato nel documento piano di lavoro, nello stesso sono riportati gli obiettivi e la pianificazione delle attività.
-L'importanza di ottenere una valutazione reale dello spazio occupato da un certo numero di oggetti è fondamentale, per fare ciò lo stage prevede la realizzazione di diversi modelli, lo sviluppo di tali modelli sarà incrementale in quanto ciascun modello eredita quanto sviluppato nel precedente. Ogni modello per definizione permetterà di individuare la disposizione ottima dell'\glo{istanza} corrente, questa potrà poi essere confrontata con quella fornita dall'euristica, da questo confronto potremo individuare informazioni utili che permettano di valutare oggettivamente la bontà delle soluzioni fornite dall'euristica, questo permette di capire se con il passare delle versioni rilasciate l'euristica sta migliorando e di quanto rispetto al passato.
+\section{Vincoli temporali, tecnologici e metodologici}
+Nel periodo di stage svolto presso l'azienda mi è stato chiesto di tenere un \textit{diario} condiviso utilizzando \textit{dropbox}, nel suddetto diario mi si richiedeva di annotare giornalieramente l'avanzare del lavoro riportando l'avanzamento dei lavori, idee, osservazione riguardanti criticità rilevate e positività riscontrate negli strumenti utilizzati, nella cartella condivisa mi è stato chiesto di includere anche gli articoli accademici letti e le presentazioni fatte in azienda man mano che si proseguiva con lo stage. L'ambiente di lavoro si è dimostrato molto stimolante ed è stato molto utile confrontarsi con i colleghi per ricevere opinioni e consigli su come indirizzare il lavoro. Ogni mattina prima di iniziare a lavorare facevamo un rapido \textit{brainstorming} individuando gli obiettivi della giornata e per fare il punto.
+Un'altra cosa importante è stata la presentazione di metà stage, alla quale ha presenziato tutto il team di sviluppo, parte del personale d'amministrazione e il Professor De Giovanni che mi ha fornito preziosi consigli su come orientare gli sforzi al meglio per la seconda metà dello stage.
+Prima di iniziare lo stage è stato concordato con l'azienda un piano di lavoro su un totale di 320 ore, lavorando 5 giorni a settimana, 8 ore per ciascun giorno. 
 
-\section{Problema del bin packing}
-Il problema sopra riportato può essere approssimato considerando il container del camion e merc
-Il problema del Bin Packing è uno dei problemi più studiati nell'ambito della ricerca operativa, dato un insieme I = \{1,...,n\} di parallelepipedi aventi dimensioni $w_{i}$, $d_{i}$ e $h_{i}$ con i $\in$ I, ciascuno di questi  l'obiettivo è quello di utilizzare il minor numero di contenitori di uguali dimensioni W e D che riescano a contenere tutti gli oggetti dell'insieme I.\\
-\begin{figure}[!h]
-    \begin{center} \includegraphics[scale=1]{figures/bin_packing}
-        \caption[ciucia]{Ciclo di vita documentazione}
-        \label{fig:myInlineFigure}
-    \end{center}
-\end{figure}
-\newline
-In realtà siamo interessati ad una variante del sopra citato problema, quella dello Strip Packing, dove la lunghezza del contenitore è infinita e si deve disporre l'insieme N di oggetti nel modo migliore affinché si minimizzi la lunghezza lineare occupata dagli oggetti.
+\section{Requisiti e obiettivi}
+Nella tabella riportata di seguito vengono riportati gli obiettivi dello stage, a corredo degli stessi vi sarà un codice univoco ed una breve descrizione. Ogni obiettivo è provvisto di un codice che lo identifica formato da una delle seguenti stringhe \textbf{ob},de,op] rappresentante il livello di importanza e da un numero incrementale positivo, che rispetta la seguente nomenclatura: [importanza][identificativo].\\ 
+Il livello di importanza di ciascun obiettivo può essere uno tra i seguenti:
+\begin{itemize}
+    \item Obbligatorio: individuato dalla stringa \textit{ob}, sono obiettivi fondamentali per la riuscita del progetto, il loro soddisfacimento dovrà verificarsi assolutamente entro la fine dello stage, pena il fallimento dello stesso;
+    \item Desiderabile: individuato dalla stringa \textit{de}, sono obiettivi secondari su cui però si nutre dell'interesse, il loro soddisfacimento è auspicabile entro la fine dello stage;
+    \item Opzionale: individuato dalla stringa \textit{op}, sono obiettivi di contorno su cui si nutre poco interesse, la loro realizzazione si verificherà nel momento in cui si dovesse soddisfare tutti gli obiettivi obbligatori e desiderabili prima della fine dello stage.
+\end{itemize}
+Si prevede lo svolgimento dei seguenti obiettivi:
+\begin{itemize}
+	\item Obbligatori
+	\begin{itemize}
+		\item \underline{\textit{ob01}}: individuazione e analisi \textit{constraints} modello 2D;
+		\item \underline{\textit{ob02}}: modello matematico 2D con \textit{framework} di modellazione algebrica;
+		\item \underline{\textit{ob03}}: traduzione modello in Python con l'ausilio di Google OR-Tools;
+		\item \underline{\textit{ob04}}: test sul modello 2D e confronto con l'euristica;
+		\item \underline{\textit{ob05}}: individuazione e analisi \textit{constraints} modello 2DR; 
+		\item \underline{\textit{ob06}}: modello matematico 2DR con \textit{framework} di modellazione algebrica;
+		\item \underline{\textit{ob07}}: traduzione modello in Python con l'ausilio di Google OR-Tools;
+		\item \underline{\textit{ob08}}: test sul modello 2DR e confronto con l'euristica;
+    \end{itemize}
+	\item Desiderabili
+	\begin{itemize}
+		\item \underline{\textit{de01}}: individuazione e analisi \textit{constraints} modello 3D;
+		\item \underline{\textit{de02}}: modello matematico 3D con \textit{framework} di modellazione algebrica;
+		\item \underline{\textit{de03}}: traduzione modello in Python con l'ausilio di Google OR-Tools;
+		\item \underline{\textit{de04}}: test sul modello 3D e confronto con l'euristica;
+	\end{itemize}
+	\item Opzionali
+	\begin{itemize}
+		\item \underline{\textit{op01}}: evoluzione euristica, fornita dall'azienda, con nuove funzionalità;
+	\end{itemize} 
+\end{itemize}
+
+\section{Pianificazione}
+Con le ore a disposizione per questo stage si è proceduto a organizzare come segue le attività:
+\begin{enumerate}
+	\item \textbf{Formazione}\\
+	Si è visto necessario approfondire la programmazione lineare e la letteratura correlata al problema del bin packing, imparare il linguaggio di programmazione Python e l'ambiente fornito dallo strumento \textit{Jupyter}.
+	\item \textbf{Preparazione ambiente}\\ 
+	La preparazione dell'ambiente di lavoro ha richiesto l'installazione di numerose librerie e framework sia pubblici che aziendali per riuscire a integrare i modelli con le librerie aziendali.
+	\item \textbf{Scelta framework}\\
+	La scelta finale del framework di modellazione algebrica è ricaduta sullo stesso Or-Tools in quanto forniva una interfaccia Python ed era quello che forniva una documentazione migliore oltre che una community di sviluppatori molto attiva.
+	\item \textbf{Realizzazione modelli}\\
+	Periodo di maggior peso rispetto ad altri, esso ha portato allo sviluppo dei modelli e delle loro varianti, includendo in sè varie attività.
+	\item \textbf{Validazione}\\
+	Periodo di validazione delle soluzioni fornite dai diversi modelli confrontandole con quelle fornite dall'euristica aziendale.
+	\item \textbf{Testing}\\
+	Periodo in cui sono stati eseguiti test massivi sia dei modelli che dell'euristica con cui successivamente estrapolare informazioni utili al confronto.
+	\item \textbf{Documentazione dei risultati}\\
+	Analisi dei risultati ottenuti e conseguente documentazione al fine di capire dove e come si potesse migliorare l'euristica.
+\end{enumerate}
+La pianificazione, in termini di quantità di ore di lavoro, sarà così distribuita:
+\begin{center}
+	\begin{tabular}{|l|l|c l|}
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Durata in ore}}		&	\multicolumn{2}{l|}{\textbf{Descrizione dell'attività}}\\
+		\hline
+		\multicolumn{2}{|l|}{56}	&	\multicolumn{2}{l|}{\textbf{A}: Formazione}\\
+		\hline
+		\multirow{5}{1cm}{ }    &            8            &            \hspace{5mm}•\hspace{2mm}            &       Ricerca \textit{framework} di modellazione algebrica indoneo\\
+		\multirow{5}{1cm}{ }    &            24            &            \hspace{5mm}•\hspace{2mm}            &       Studio di tale \textit{framework}\\
+		\multirow{5}{1cm}{ }    &            24            &            \hspace{5mm}•\hspace{2mm}            &       Studio Google OR-Tools\\
+		\hline
+
+		\multicolumn{2}{|l|}{104}	&	\multicolumn{2}{l|}{\textbf{B}: Versione algoritmo 2D}\\
+		\hline
+		\multirow{5}{1cm}{ }    &            8            &            \hspace{5mm}•\hspace{2mm}             &      Individuazione ed analisi \textit{constraints} \\
+		\multirow{3}{1cm}{ }    &            48            &            \hspace{5mm}•\hspace{2mm}            &      Prototipazione modello\\
+		\multirow{5}{1cm}{ }    &            24            &            \hspace{5mm}•\hspace{2mm}            &      Traduzione in linguaggio Python-Google OR-Tools\\
+		\multirow{5}{1cm}{ }    &            24            &            \hspace{5mm}•\hspace{2mm}            &      Test e confronto con euristica\\	
+		\hline
+
+		\multicolumn{2}{|l|}{72}	&	\multicolumn{2}{l|}{\textbf{C}: Versione algoritmo 2D con rotazione}\\
+		\hline
+		\multirow{5}{1cm}{ }    &            8            &            \hspace{5mm}•\hspace{2mm}             &      Individuazione ed analisi \textit{constraints} \\
+		\multirow{3}{1cm}{ }    &            24            &            \hspace{5mm}•\hspace{2mm}            &      Prototipazione modello\\
+		\multirow{5}{1cm}{ }    &            16            &            \hspace{5mm}•\hspace{2mm}            &      Traduzione in linguaggio Python-Google OR-Tools\\
+		\multirow{5}{1cm}{ }    &            16            &            \hspace{5mm}•\hspace{2mm}            &      Test e confronto con euristica\\	
+		\hline
+
+		\multicolumn{2}{|l|}{72}	&	\multicolumn{2}{l|}{\textbf{D}: Versione algoritmo 3D con sovrapposizione}\\
+		\hline
+		\multirow{5}{1cm}{ }    &            8            &            \hspace{5mm}•\hspace{2mm}             &      Individuazione ed analisi \textit{constraints} \\
+		\multirow{3}{1cm}{ }    &            32            &            \hspace{5mm}•\hspace{2mm}            &      Prototipazione modello\\
+		\multirow{5}{1cm}{ }    &            16            &            \hspace{5mm}•\hspace{2mm}            &      Traduzione in linguaggio Python-Google OR-Tools\\
+		\multirow{5}{1cm}{ }    &            24            &            \hspace{5mm}•\hspace{2mm}            &      Test e confronto con euristica\\
+		\hline
+		
+		\multicolumn{2}{|l|}{16}	&	\multicolumn{2}{l|}{\textbf{E}: Lavoro sviluppo euristica}\\
+		\hline
+		\multirow{5}{1cm}{ }    &            16            &            \hspace{5mm}•\hspace{2mm}             &      Realizzazione nuove funzioni euristica \\
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Totale: 320}}		&	\multicolumn{2}{l|}{}\\
+		\hline
+	
+	\end{tabular}
+	\captionof{table}{A nice table}
+\end{center}
+
+\section{Ambiente di lavoro}
+\subsection{Metodi di sviluppo}
+Il ciclo di vita di un prodotto in Trans-Cel segue il metodo incrementale, in particolare il tutto inizia da una fase di concezione dell'idea, analisi della stessa, progettazione ed infine partendo dagli obiettivi più importanti si realizza il prodotto rilasciando periodicamente una versione dello stesso che mostri il procedere dei lavori e delle nuove funzionalità inserite. In quest'ottica lo sviluppo di un modello può essere associato ad un incremento, la cui \textit{milestone} è la ricezione dei risultati, a sua volta lo sviluppo di ciasun modello segue il metodo incrementale, lo sviluppo di un modello può essere visto come l'insieme di tre principali attività:
+\begin{itemize}
+	\item Analisi letteratura: lettura articoli accademici riportanti moodelli simili o idee per lo sviluppo degli stessi.
+	\item Scrittura: scrittura del modello e integrazione con il sistema grazie al framework Or-Tools.
+	\item Verifica: testing massimo e verifica delle soluzioni fornite.
+\end{itemize}
+Inoltre è possibile cogliere analogie con il metodo \glo{agile} se si pensa ai brainstorming, momenti importanti in quanto ci si confronta in modo critico e si fa il punto della situazione oltre che esporre le problematicità che si stanno incontrando.
+
+\subsection{Gestione di progetto}
+Per quanto riguarda la gestione di progetto sono stati utilizzati alcuni strumenti descritti con maggiore dettaglio nel capitolo, in generale per la gestione dei task da eseguire si è fatto uso di \glo{Taiga}, uno strumento di gestione delle task molto simile per funzionamento a \glo{Trello}, per la gestione della comunicazione e condivisione informazioni si è fatto uso dell'applicazione \glo{Telegram}, per la condivisione di documentazione e articoli si è fatto uso del servizio Dropbox, per il versionamento si è fatto uso del servizio \glo{GitHub} per la familiarità dello strumento, per quanto riguarda l'interfaccia con cui versionare ho utilizzato \glo{git} da terminale.
+
+\subsection{Linguaggio di programmazione e ambiente di sviluppo}
+Per la totalità dello stage si è lavorato utilizzando Jupyter Notebook, con questo strumento è stato possibile scrivere programmi in linguaggio Python in modo molto agevole. Questo linguaggio di programmazione è orientato agli oggetti ed interpretato dinamicamente al momento dell’esecuzione da un interprete. Python risulta veramente versatile in quanto fornisce incredibili funzionalità utilizzabili in modo semplice e intuitivo, dispone di moltissimi moduli che permettono di fare le più svariate cose, il linguaggio inoltre permette di esporre costrutti \glo{C++} in Python permettendo di utilizzarli nei propri programmi, questo permette di mantenere efficienza e modularità. L'unico punto a suo sfavore è la non possibilità di realizzare programmi \glo{multithreading} se non utilizzando il modulo \glo{multiprocessing} che comporta però dei compromessi.
+
+\section{Analisi dei rischi}
+In questa sezione vengono riportati i principali rischi che si prefiggevano iniziando lo stage, ciascuno di essi oltre ad avere una breve descrizione riportano un livello di rischio e come si possa fare per evitarli:
+\begin{itemize}
+	\item \textbf{Difficoltà nelle tecnologie adottate}\\
+	Fin da quando si è concordato lo stage si era capito che Python avrebbe avuto un ruolo dominante ma la mole di librerie e etensioni rendeva il linguaggio troppo vasto da poter approfondire nella sua interezza, ed oltre a questo vi era il modulo Or-Tools e \glo{Pandas} da approfondire e utilizzare.
+	\begin{itemize}
+		\item \textbf{Livello di rischio}: Basso;
+		\item \textbf{Contromisure}: Studiare in modo il più possibile approfondito Python e i moduli sopra citati.
+	\end{itemize}
+	\item \textbf{Difficoltà di integrazione nel team}\\
+	Di fondamentale importanza per la riuscita di un progetto è la cooperazione con i colleghi e la creazione di un ambiente di lavoro sano e che stimoli la creatività, essendo un nuovo arrivato inserito in un ambiente a forte stress per le stringenti scadenze vi era la possibilità di entrare in conflitto con taluni colleghi.
+	\begin{itemize}
+		\item \textbf{Livello di rischio}: Basso;
+		\item \textbf{Contromisure}: Perseguire un atteggiamento positivo, critico e oggettivo.
+	\end{itemize}
+	\item \textbf{Contrattempi dovuti a malattie e impegni}\\
+	Un rischio da tenere in considerazione è quello dovuto a impegni o malattie che precludano la possibilità di recarsi nel luogo di lavoro, data la durata dello stage è sicuramente possibile possa verificarsi.
+	\begin{itemize}
+		\item \textbf{Livello di rischio}: Basso;
+		\item \textbf{Contromisure}: Organizzare precedentemente ogni impegno non lavorativo e tempo di \glo{slack} per evitare contrattempi.
+	\end{itemize}
+	\item \textbf{Difficoltà di stima dei tempi previsti}\\
+	Con un progetto di così lunga durata e l'inesperienza che ci portiamo appresso è possibile che vengano fatti degli errori di valutazione in termini di tempistiche per lo svolgimento delle diverse attività pianificate.
+	\begin{itemize}
+		\item \textbf{Livello di rischio}: Medio;
+		\item \textbf{Contromisure}: Rendere partecipi nella definizione della pianificazione anche persone competenti come il tutor aziendale.
+	\end{itemize}
+\end{itemize}
