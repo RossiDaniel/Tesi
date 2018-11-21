@@ -16,8 +16,14 @@ In questo contesto l'euristica che fornisce la valutazione approssimativa dello 
 Il progetto di stage dopo l'evento \glo{StageIt} ed alcune riunione presso l'azienda è stato studiato dettagliatamente e riportato nel documento piano di lavoro, nello stesso sono riportati gli obiettivi e la pianificazione delle attività.
 L'importanza di ottenere una valutazione reale dello spazio occupato da un certo numero di oggetti è fondamentale, per fare ciò lo stage prevede la realizzazione di diversi modelli, lo sviluppo di tali modelli sarà incrementale in quanto ciascun modello eredita quanto sviluppato nel precedente. Ogni modello per definizione permetterà di individuare la disposizione ottima dell'\glo{istanza} corrente, questa potrà poi essere confrontata con quella fornita dall'euristica, da questo confronto potremo individuare informazioni utili che permettano di valutare oggettivamente la bontà delle soluzioni fornite dall'euristica, questo permette di capire se con il passare delle versioni rilasciate l'euristica sta migliorando e di quanto rispetto al passato.
 
-\section{Bin packing problem}
-Il problema del Bin Packing è uno dei problemi più studiati nell'ambito della ricerca operativa, dato un insieme I = \{1,...,n\} di oggetti con dimensioni $w_{i}$ e $d_{i}$ con i $\in$ I.
-L'obiettivo è quello di utilizzare il minor numero di contenitori di uguali dimensioni W e D che riescano a contenere tutti gli oggetti dell'insieme I.
+\section{Problema del bin packing}
+Il problema sopra riportato può essere approssimato considerando il container del camion e merc
+Il problema del Bin Packing è uno dei problemi più studiati nell'ambito della ricerca operativa, dato un insieme I = \{1,...,n\} di parallelepipedi aventi dimensioni $w_{i}$, $d_{i}$ e $h_{i}$ con i $\in$ I, ciascuno di questi  l'obiettivo è quello di utilizzare il minor numero di contenitori di uguali dimensioni W e D che riescano a contenere tutti gli oggetti dell'insieme I.\\
+\begin{figure}[!h]
+    \begin{center} \includegraphics[scale=1]{figures/bin_packing}
+        \caption[ciucia]{Ciclo di vita documentazione}
+        \label{fig:myInlineFigure}
+    \end{center}
+\end{figure}
 \newline
 In realtà siamo interessati ad una variante del sopra citato problema, quella dello Strip Packing, dove la lunghezza del contenitore è infinita e si deve disporre l'insieme N di oggetti nel modo migliore affinché si minimizzi la lunghezza lineare occupata dagli oggetti.
