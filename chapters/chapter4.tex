@@ -1,9 +1,17 @@
 %!TEX root = ../dissertation.tex
 
-\chapter{Modelli di programmazione lineare}
-\label{chap:four}
-
+\chapter{Modelli di programmazione lineare}\label{chap:four}
+La programmazione lineare intera mira a real
+\newpage
 \section{Modello 2D}
+Il modello considera solo la larghezza e la lunghezza e non permette la rotazione degli oggetti, l'idea di base è quella di considerare solo la \textit{visione aerea} del contenitore che viene così approssimata ad un rettangolo, questo rettangolo ha larghezza prefissita e lunghezza infinita, le due dimensioni posso essere considerate come assi di un piano cartesiano aventi origine nel punto di intersezione tra i due assi.
+\begin{figure}[!h]
+    \begin{center} \includegraphics[scale=0.6]{figures/cartesian_wd}
+        \caption[Veduta area - piano cartesiano]{Veduta area del container, piano cartesiano con origine nel punto verde.}  
+        \label{fig:myInlineFigure}
+    \end{center}
+\end{figure}
+
 Il modello consiste delle seguenti variabili intere:
 \begin{itemize}
     \item la variabile intera $x_{i}$ individua la coordinata sull'asse x dell'angolo in basso a sinistra dell'oggetto i;
