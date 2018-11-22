@@ -25,7 +25,7 @@ Nonostante i modelli non lineari siano a volte molto più compatti ed intuivi da
 Ogni variabile può avere un dominio differente, continua ($x_j \in \mathbb{R}$), intera positiva ($x_j \in \mathbb{Z}^+$) o binaria ($x_j \in \{0,1\}$) a seconda dell'utilizzo che si deve farne.
 
 \section{Modello 2D}
-Il modello considera solo la larghezza e la lunghezza e non permette la rotazione degli oggetti, l'idea di base è quella di considerare solo la \textit{visione aerea} del contenitore che viene così approssimata ad un rettangolo, questo rettangolo ha larghezza prefissita e lunghezza infinita, le due dimensioni posso essere considerate come assi di un piano cartesiano aventi origine nel punto di intersezione tra i due assi.
+Il modello 2D considera solo larghezza e profondità degli oggetti e non ne permette la rotazione, l'idea di base è quella di considerare solo la \textit{visione aerea} del contenitore che viene così approssimata ad un rettangolo, questo rettangolo ha larghezza (width) prefissita e profondità (depth) infinita, le due dimensioni posso essere considerate come assi di un piano cartesiano aventi origine nel punto di intersezione tra i due assi.\\
 \begin{figure}[!h]
     \begin{center} \includegraphics[scale=0.6]{figures/cartesian_wd}
         \caption[Veduta area - piano cartesiano]{Veduta area del container, piano cartesiano con origine nel punto verde.}  
@@ -33,15 +33,17 @@ Il modello considera solo la larghezza e la lunghezza e non permette la rotazion
     \end{center}
 \end{figure}
 
-Il modello consiste delle seguenti variabili intere:
+\noindent Per comodità visiva però da ora in poi i grafici verranno mostrati con gli assi rotati permettendo così una migliore comprensione.
+
+\noindent Il modello consiste delle seguenti variabili continue positive:
 \begin{itemize}
-    \item la variabile intera $x_{i}$ individua la coordinata sull'asse x dell'angolo in basso a sinistra dell'oggetto i;
-    \item la variabile intera $y_{i}$ individua la coordinata sull'asse y dell'angolo in basso a sinistra dell'oggetto i;
+    \item la variabile intera $x_{i}$ con $i \in I$ individua la coordinata sull'asse x dell'angolo in basso a sinistra dell'oggetto i;
+    \item la variabile intera $y_{i}$ con $i \in I$ individua la coordinata sull'asse y dell'angolo in basso a sinistra dell'oggetto i;
 \end{itemize}
 Il modello consiste delle seguenti variabili binarie:
 \begin{itemize}
-    \item la variabile binaria $l_{ij}$ assume il valore 1 se l'oggetto i è situato alla sinistra dell'oggetto j, altrimenti è 0;
-    \item la variabile binaria $b_{ij}$ assume il valore 1 se l'oggetto i è situato al di sotto dell'oggetto j, altrimenti è 0.
+    \item la variabile binaria $l_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato alla sinistra dell'oggetto j, altrimenti è 0;
+    \item la variabile binaria $b_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato al di sotto dell'oggetto j, altrimenti è 0.
 \end{itemize}
 
 \begin{equation*}
@@ -54,7 +56,7 @@ Il modello consiste delle seguenti variabili binarie:
     & & & x_i + w_i \leq W & & & i \in I \\
     & & & y_i + d_i \leq D & & & i \in I \\
     & & & b_{ij}, l_{ij} \in \{0,1\} & i \neq j & & i,j \in I \\
-    & & & x_{i}, y_{i} \in Z^{+} & & & i \in I \\
+    & & & x_{i}, y_{i} \in \mathbb{R}^{+} & & & i \in I \\
     \end{aligned}
 \end{equation*}
 
@@ -175,5 +177,5 @@ Le Big M, dato che hanno dimostrato di essere un elemento di forte influenza ris
 \begin{itemize}
     \item M: dato gli n oggetti, M è la somma della massima dimensione tra $w_i$ e $d_i$ dell'oggetto i-esimo;
     \item $M_w$: viene definito come la larghezza del camion W sommato ad M;
-    \item $M_d$: viene definito come la lunghezza del camion D sommato ad M.
+    \item $M_d$: viene definito come la profondità del camion D sommato ad M.
 \end{itemize}
