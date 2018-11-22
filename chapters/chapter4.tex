@@ -1,23 +1,29 @@
 %!TEX root = ../dissertation.tex
 
 \chapter{Modelli per il Bin Packing}\label{chap:four}
+In questo capitolo presenteremo prima una rapida introduzione ai modelli matematici per poi analizzare nel dettaglio ciascun modello utilizzato spiegando vincolo per vincolo il loro funzionamento.
+
 \section{Modelli di programmazione matematica}
 Quando si parla di problemi di ottimizzazione spesso si fa riferimento alla ricerca operativa e ai modelli matematici, questi modelli producono una soluzione che  massimizza o minimizza una funzione obiettivo su un certo dominio, questa funzione può rappresentare un aspetto di costo o guadagno,  inoltre la soluzione restituita la proprietà di restituire una soluzione ottima. La funzione obiettivo solitamente viene rappresentata come segue:
 $$ max\; z = f ( x )\;\; (oppure\; min\; z = f ( x ))$$
-\begin{align*}        
-    \begin{aligned}
-    f ( x ) 
-    \end{aligned}
-    &\left\{
-    \begin{aligned}
-    \leq b_i\\
-    = b_i\\
-    \geq b_i
-    \end{aligned}
-    \right.
-\end{align*}
+s.t.
+$$g_i (x) = \begin{cases} \leq b_i \\ = b_i, & i = 1,\dots,m \\ \geq b_i \end{cases}$$
+$$x = (x_1,\dots,x_n) \in X \subseteq \mathbb{R}^n$$
+In un modello sono presenti:
+\begin{itemize}
+    \item \textbf{Variabili decisionali}: sono variabili con un dominio prefissat, vengono utilizzate per formulare tutti gli altri elementi del modello, agendo sui valori assunti dalle stesse si troverà la soluzione ottima;
+    \item \textbf{Funzione obiettivo}: funzione che deve essere massimizzata o minimizzata in base agli altri elementi su un dominio dato;
+    \item \textbf{Vincoli}: serie di vincoli che correlano tra loro le variabili decisionali e permettono di descrivere condizioni fisiche o requisiti particolari richiesti dalla soluzione.
+\end{itemize}
+\section{Modelli di programmazione lineari}
+Particolari tipi di problemi di programmazione matematica sono quelli in cui la funzione obiettivo $f(x)$ e i vincoli $g_i(x)$ sono funzioni lineari, in tal caso si può parlare di modello di \textit{programmazione lineare}, espresso nel seguente modo:
+$$ max\; z = \sum_{j=1}^n c_j x_j $$
+s.t.
+$$\sum_{j=1}^n a_{ij} x_j = \begin{cases} \leq b_i \\ = b_i, & i = 1,\dots,m \\ \geq b_i \end{cases}$$
+$$x = (x_1,\dots,x_n) \in X \subseteq \mathbb{R}^n$$
+Nonostante i modelli non lineari siano a volte molto più compatti ed intuivi da capire, i modelli lineari mantengono comunque semplicità e sono facilmente risolvibili, sono molti i solver \glo{commerciali} e \glo{open source} disponibili per la loro risoluzione, quello utilizzato durante lo stage è il solver open source di programmazione lineare intera CBC scritto in C++ con interfacciato con Python grazie a Or-Tools. La creazione di un modello lineare parte dall'osservazione di un problema reale, fissando un obiettivo e creando vincoli che descrivano i requisiti estratti dal problema reale astraendo il tutto ad un insieme di vincoli lineari.
+Ogni variabile può avere un dominio differente, continua ($x_j \in \mathbb{R}$), intera positiva ($x_j \in \mathbb{Z}^+$) o binaria ($x_j \in \{0,1\}$) a seconda dell'utilizzo che si deve farne.
 
-\newpage
 \section{Modello 2D}
 Il modello considera solo la larghezza e la lunghezza e non permette la rotazione degli oggetti, l'idea di base è quella di considerare solo la \textit{visione aerea} del contenitore che viene così approssimata ad un rettangolo, questo rettangolo ha larghezza prefissita e lunghezza infinita, le due dimensioni posso essere considerate come assi di un piano cartesiano aventi origine nel punto di intersezione tra i due assi.
 \begin{figure}[!h]
