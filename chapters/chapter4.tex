@@ -1,7 +1,22 @@
 %!TEX root = ../dissertation.tex
 
-\chapter{Modelli di programmazione lineare}\label{chap:four}
-La programmazione lineare intera mira a real
+\chapter{Modelli per il Bin Packing}\label{chap:four}
+\section{Modelli di programmazione matematica}
+Quando si parla di problemi di ottimizzazione spesso si fa riferimento alla ricerca operativa e ai modelli matematici, questi modelli producono una soluzione che  massimizza o minimizza una funzione obiettivo su un certo dominio, questa funzione può rappresentare un aspetto di costo o guadagno,  inoltre la soluzione restituita la proprietà di restituire una soluzione ottima. La funzione obiettivo solitamente viene rappresentata come segue:
+$$ max\; z = f ( x )\;\; (oppure\; min\; z = f ( x ))$$
+\begin{align*}        
+    \begin{aligned}
+    f ( x ) 
+    \end{aligned}
+    &\left\{
+    \begin{aligned}
+    \leq b_i\\
+    = b_i\\
+    \geq b_i
+    \end{aligned}
+    \right.
+\end{align*}
+
 \newpage
 \section{Modello 2D}
 Il modello considera solo la larghezza e la lunghezza e non permette la rotazione degli oggetti, l'idea di base è quella di considerare solo la \textit{visione aerea} del contenitore che viene così approssimata ad un rettangolo, questo rettangolo ha larghezza prefissita e lunghezza infinita, le due dimensioni posso essere considerate come assi di un piano cartesiano aventi origine nel punto di intersezione tra i due assi.
