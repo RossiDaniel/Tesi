@@ -78,6 +78,7 @@
 \usepackage{hyperref}
 \RequirePackage{url}
 \RequirePackage{amssymb}
+\usepackage[short]{optidef}
 \usepackage{amsmath}
 \RequirePackage{mathspec}
 \setmathsfont(Digits,Latin,Greek)[Numbers={Proportional}]{EB Garamond}
