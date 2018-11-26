@@ -223,7 +223,7 @@
     linkcolor=black,
     urlcolor=SchoolColor,
 }
-
+\renewcommand{\contentsname}{Indice}
 
 \renewcommand{\frontmatter}{
 	\pagenumbering{roman}
