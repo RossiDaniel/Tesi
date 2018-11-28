@@ -1,7 +1,7 @@
 %!TEX root = ../dissertation.tex
 
 \hypertarget{(chap:inquadramento)}{}
-\chapter{Test}
+\chapter{Test e validazione}
 Una attività di fondamentale importanza è stata quella di testare i modelli e archiviare i dati.
 \section{Istanze}
 Una \glo{istanza} è un insieme formato dai pacchi da disporre nel contenitore e il contenitore stesso.\\
@@ -43,3 +43,18 @@ Fin dal modello 2D abbiamo capito che il numero di pacchi per ogni istanza sareb
 \end{figure}
 
 Nel grafico sopra riportato~\eqref{fig:times} viene riportato come ordinata il numero di oggetti e sull'ascissa il tempo espresso in secondi, come si può vedere man mano che gli oggetti aumentano il tempo aumenta notevolmente passando da pochi secondi a minuti, risultano molto interessanti quelle istanze che nonostante abbiano molti oggetti richiedano meno tempo per essere eseguiti, forse questo dovuto alle particolari dimensioni degli oggetti.
+
+\section{Validazione soluzioni fornite}
+Di fondamentale importanza per il confronto è stato che le soluzioni fornite dal modello fossero corrette, questo ha richiesto lo sviluppo di alcune funzione che controllassero la validità delle stesse. Per fare questo sono state realizzate le seguenti funzioni:
+\begin{itemize}
+	\item \textbf{CheckFeasible}: utilizzata per controllare che non vi fossero pacchi che si intersecassero con altri;
+	\item \textbf{ChackSequence}: realizzata in due versioni:
+	\begin{itemize}
+		\item \textbf{2D}: considerando che tutti gli oggetti fossero alla stessa altezza controllava che ciascun pacco avesse almeno una via attraverso cui essere scaricato.
+		\item \textbf{3D}: considerava anche la sovrapposizione tra pacchi e oltre a controllare di avere almeno una delle tre direzioni libere rispetto l'altezza a cui si trovava controllava anche se sopra ciascun pacco al momento dello scarico non vi fossero altri pacchi.
+	\end{itemize}
+	\item \textbf{CheckStable}: utilizzata per controllare la stabilità degli oggetti, questo verificava che l'area di base inferiore poggiasse completamente sulle basi superiori degli oggetti sottostanti;
+	\item \textbf{ProjectionCommonArea}: utilizzata per verificare se due parallelepidedi avessero intersezioni tra le loro proiezioni rispetto a 2 assi.
+\end{itemize}
+
+Inoltre per natura stessa dei modelli essi restituiscono la soluzione ottima, quindi possiamo dire che se le soluzioni riportate vengono individuate entro il tempo limite e vengono verificate dalle funzioni precedentemente riportate allora queste possono dirsi effettivamente ottime e reali, perfette candidate per un confronto con la soluzione corrispondente fornita dal modello.
