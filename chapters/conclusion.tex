@@ -1,3 +1,76 @@
 %!TEX root = ../dissertation.tex
 \chapter{Conclusion}
 \label{conclusion}
+Nel seguente capitolo verranno riportate le conclusione che si è potuto trarre alla fine di questo stage.
+\section{Consuntivo finale}
+Prima di iniziare lo stage era stato concordato insieme con l'azienda la pianificazione dello stage stesso, definendo obiettivi da raggiungere e calendarizzandoli sulle 320 ore disponibili al fine di poterli soddisfare appieno. La pianificazione iniziale è stata rispettata nella sua visione generale andando a modificarne invece le scadenze orarie, la formazione è stata più breve del previsto visto che la scelta del software di modellazione algebrica è ricaduto sullo stesso Or-Tools, per la realizzazione dei modelli in generale la prototipazione e la scrittura del modello in Or-Tools è risultata meno dispensiosa del previsto, questo ha permesso di realizzare un modello non preventivato su consiglio dell'azienda e del tutor esterno.
+Si è deciso di eseguire i test di confronto con l'euristica nella parte finale dello stage invece che durante la loro realizzazione, questo perché l'intero sistema usato per testare i modelli fosse unificato, concentrandosi di più nell'esecuzione di test di validazione che permettessero di verificare le soluzioni fornite dai modelli.
+
+\begin{center}
+	\begin{tabular}{|l|l|c l|}
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Durata in ore}}		&	\multicolumn{2}{l|}{\textbf{Descrizione dell'attività}}\\
+		\hline
+		\multicolumn{2}{|l|}{32}	&	\multicolumn{2}{l|}{\textbf{A}: Formazione}  \\
+		\hline
+		\multirow{5}{1cm}{ } & 8  & \hspace{5mm}•\hspace{2mm} & Ricerca \textit{framework} di modellazione algebrica \\
+		\multirow{5}{1cm}{ } & 24 & \hspace{5mm}•\hspace{2mm} & Studio Google OR - Tools                             \\
+		\hline
+																																					
+		\multicolumn{2}{|l|}{64}	&	\multicolumn{2}{l|}{\textbf{B}: Versione algoritmo 2D}   \\
+		\hline
+		\multirow{5}{1cm}{ } & 8  & \hspace{5mm}•\hspace{2mm} & Individuazione ed analisi \textit{constraints}       \\
+		\multirow{3}{1cm}{ } & 8  & \hspace{5mm}•\hspace{2mm} & Prototipazione modello                               \\
+		\multirow{5}{1cm}{ } & 24 & \hspace{5mm}•\hspace{2mm} & Traduzione in Python - Google OR - Tools             \\
+		\multirow{5}{1cm}{ } & 24 & \hspace{5mm}•\hspace{2mm} & Test validazione                                     \\	
+		\hline
+																																					
+		\multicolumn{2}{|l|}{64}	&	\multicolumn{2}{l|}{\textbf{C}: Versione algoritmo 2DR}  \\
+		\hline
+		\multirow{5}{1cm}{ } & 8  & \hspace{5mm}•\hspace{2mm} & Individuazione ed analisi \textit{constraints}       \\
+		\multirow{3}{1cm}{ } & 8  & \hspace{5mm}•\hspace{2mm} & Prototipazione modello                               \\
+		\multirow{5}{1cm}{ } & 24 & \hspace{5mm}•\hspace{2mm} & Traduzione in Python - Google OR - Tools             \\
+		\multirow{5}{1cm}{ } & 24 & \hspace{5mm}•\hspace{2mm} & Test validazione                                     \\	
+		\hline
+																		
+		\multicolumn{2}{|l|}{72}	&	\multicolumn{2}{l|}{\textbf{C}: Versione algoritmo 2DRS}  \\
+		\hline
+		\multirow{5}{1cm}{ } & 8  & \hspace{5mm}•\hspace{2mm} & Individuazione ed analisi \textit{constraints}       \\
+		\multirow{3}{1cm}{ } & 16 & \hspace{5mm}•\hspace{2mm} & Prototipazione modello                               \\
+		\multirow{5}{1cm}{ } & 16 & \hspace{5mm}•\hspace{2mm} & Traduzione in Python - Google OR - Tools             \\
+		\multirow{5}{1cm}{ } & 32 & \hspace{5mm}•\hspace{2mm} & Test validazione                                     \\	
+		\hline
+																																					
+		\multicolumn{2}{|l|}{72}	&	\multicolumn{2}{l|}{\textbf{D}: Versione algoritmo 3D}   \\
+		\hline
+		\multirow{5}{1cm}{ } & 8  & \hspace{5mm}•\hspace{2mm} & Individuazione ed analisi \textit{constraints}       \\
+		\multirow{3}{1cm}{ } & 16 & \hspace{5mm}•\hspace{2mm} & Prototipazione modello                               \\
+		\multirow{5}{1cm}{ } & 16 & \hspace{5mm}•\hspace{2mm} & Traduzione in Python - Google OR - Tools             \\
+		\multirow{5}{1cm}{ } & 32 & \hspace{5mm}•\hspace{2mm} & Test validazione                                     \\
+		\hline
+																																							
+		\multicolumn{2}{|l|}{16}	&	\multicolumn{2}{l|}{\textbf{E}: Test confronto modello ed euristica}  \\
+		\hline
+		\multirow{5}{1cm}{ } & 4  & \hspace{5mm}•\hspace{2mm} & Confronto modello 2D-euristica                       \\
+		\multirow{5}{1cm}{ } & 4  & \hspace{5mm}•\hspace{2mm} & Confronto modello 2DR-euristica                      \\
+		\multirow{5}{1cm}{ } & 4  & \hspace{5mm}•\hspace{2mm} & Confronto modello 2DRS-euristica                     \\
+		\multirow{5}{1cm}{ } & 4  & \hspace{5mm}•\hspace{2mm} & Confronto modello 3D-euristica                       \\
+				
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Totale: 320}}		&	\multicolumn{2}{l|}{}\\
+		\hline
+																																						
+	\end{tabular}
+	\captionof{table}{A nice table}
+\end{center}
+
+\section{Raggiungimento degli obiettivi}
+Gli obiettivi decisi prima dell'inizio dello stage e riportati nel capitolo 2, questi prevedevano il soddisfacimento di 8 obiettivi obbligatori, 4 obiettivi desiderabili e 1 opzionale, sono stati tutti soddisfatti appieno e anzi è stato realizzato un modello non preventivato.\\
+L'obiettivo opzionale qui di seguito:
+\begin{center}
+	\textit{op01}: evoluzione euristica, fornita dall'azienda, con nuove funzionalità
+\end{center}
+Non è stato inserito nella pianificazione in quanto si è svolto nel mentre che si realizzavano i modelli, le funzionalità sono le funzioni di verifica con cui validare le soluzioni riportate nel capitolo 5.
+
+\section{Conoscenze acquisite}
+Le conoscenze acquiste spon
