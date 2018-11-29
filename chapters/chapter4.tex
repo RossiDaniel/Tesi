@@ -1,17 +1,18 @@
 %!TEX root = ../dissertation.tex
 
-\chapter{Modelli per il Bin Packing}\label{chap:four}
-In questo capitolo presenteremo prima una rapida introduzione ai modelli matematici per poi analizzare nel dettaglio ciascun modello utilizzato spiegando vincolo per vincolo il loro funzionamento.
-
+\hypertarget{(chap:capitolo4)}{}
+\chapter{Modelli per il Bin Packing}
+In questo capitolo presenteremo prima una rapida introduzione ai modelli matematici per poi analizzare nel dettaglio ciascun modello utilizzato spiegando ciascun vincolo e delineandone quindi l'idea di base.
 \section{Modelli di programmazione matematica}
-Quando si parla di problemi di ottimizzazione spesso si fa riferimento alla ricerca operativa e ai modelli matematici, questi modelli producono una soluzione che  massimizza o minimizza una funzione obiettivo su un certo dominio, questa funzione può rappresentare un aspetto di costo o guadagno,  inoltre la soluzione restituita la proprietà di restituire una soluzione ottima. La funzione obiettivo solitamente viene rappresentata come segue:
+Quando si parla di problemi di ottimizzazione spesso si fa riferimento alla ricerca operativa e ai modelli matematici, questi modelli producono una soluzione che massimizza o minimizza una funzione obiettivo su un certo dominio, questa funzione può rappresentare un aspetto di costo o guadagno. 
+La soluzione restituita ha la proprietà di essere una soluzione ottima. La funzione obiettivo solitamente viene rappresentata come segue:
 $$ max\; z = f ( x )\;\; (oppure\; min\; z = f ( x ))$$
 s.t.
 $$g_i (x) = \begin{cases} \leq b_i \\ = b_i, & i = 1,\dots,m \\ \geq b_i \end{cases}$$
 $$x = (x_1,\dots,x_n) \in X \subseteq \mathbb{R}^n$$
 In un modello sono presenti:
 \begin{itemize}
-	\item \textbf{Variabili decisionali}: sono variabili con un dominio prefissat, vengono utilizzate per formulare tutti gli altri elementi del modello, agendo sui valori assunti dalle stesse si troverà la soluzione ottima;
+	\item \textbf{Variabili decisionali}: sono variabili con un dominio prefissato, che vengono utilizzate per formulare tutti gli altri elementi del modello, agendo sui valori assunti dalle stesse si troverà la soluzione ottima;
 	\item \textbf{Funzione obiettivo}: funzione che deve essere massimizzata o minimizzata in base agli altri elementi su un dominio dato;
 	\item \textbf{Vincoli}: serie di vincoli che correlano tra loro le variabili decisionali e permettono di descrivere condizioni fisiche o requisiti particolari richiesti dalla soluzione.
 \end{itemize}
@@ -21,22 +22,22 @@ $$ max\; z = \sum_{j=1}^n c_j x_j $$
 s.t.
 $$\sum_{j=1}^n a_{ij} x_j = \begin{cases} \leq b_i \\ = b_i, & i = 1,\dots,m \\ \geq b_i \end{cases}$$
 $$x = (x_1,\dots,x_n) \in X \subseteq \mathbb{R}^n$$
-Nonostante i modelli non lineari siano a volte molto più compatti ed intuivi da capire, i modelli lineari mantengono comunque semplicità e sono facilmente risolvibili, sono molti i solver \glo{commerciali} e \glo{open source} disponibili per la loro risoluzione, quello utilizzato durante lo stage è il solver open source di programmazione lineare intera CBC scritto in C++ con interfacciato con Python grazie a Or-Tools. La creazione di un modello lineare parte dall'osservazione di un problema reale, fissando un obiettivo e creando vincoli che descrivano i requisiti estratti dal problema reale astraendo il tutto ad un insieme di vincoli lineari.
-Ogni variabile può avere un dominio differente, continua ($x_j \in \mathbb{R}$), intera positiva ($x_j \in \mathbb{Z}^+$) o binaria ($x_j \in \{0,1\}$) a seconda dell'utilizzo che si deve farne.
+Nonostante i modelli non lineari siano a volte molto più compatti ed intuivi da capire, i modelli lineari mantengono comunque semplicità e sono facilmente risolvibili, sono molti i solver \glo{commerciali} e \glo{open source} disponibili per la loro risoluzione, quello utilizzato durante lo stage è il solver open source di programmazione lineare intera CBC scritto in C++ interfacciato con Python grazie a Or-Tools. La creazione di un modello lineare parte dall'osservazione di un problema reale, fissando un obiettivo e creando vincoli che descrivano i requisiti estratti dal problema astraendo il tutto ad un insieme di vincoli lineari.
+Ogni variabile può avere un dominio differente, continua ($x_j \in \mathbb{R}$), intera positiva ($x_j \in \mathbb{Z}^+$) o binaria ($x_j \in \{0,1\}$) a seconda dell'utilizzo che se ne deve fare.
 
 \section{Modello 2D}
-Il modello 2D considera solo larghezza e profondità degli oggetti e non ne permette la rotazione, l'idea di base è quella di considerare solo la \textit{visione aerea} del contenitore che viene così approssimata ad un rettangolo, questo rettangolo ha larghezza (x) prefissita e profondità (y) infinita, le due dimensioni posso essere considerate come assi di un piano cartesiano aventi origine nel punto di intersezione tra i due assi, per convenzione diciamo che l'asse x sarà quello della larghezza e l'asse y quello della profondità.\\
-\begin{figure}[!ht]
+Il modello 2D considera solo larghezza e profondità degli oggetti e non ne permette la rotazione, l'idea di base è quella di considerare solo la \textit{visione aerea} del contenitore che viene così approssimata ad un rettangolo, questo rettangolo ha larghezza prefissita e profondità infinita, le due dimensioni posso essere considerate come assi di un piano cartesiano aventi origine nel punto di intersezione tra i due assi, individuato nella figura \eqref{fig:veduta_aerea} dal pallino verde, per convenzione diciamo che l'asse x sarà quello della larghezza e l'asse y quello della profondità.
+\begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.6]{figures/cartesian_wd}
-		\caption[Veduta area - piano cartesiano]{Veduta area del container, piano cartesiano con origine nel punto verde.}  
-		\label{fig:myInlineFigure}
+		\caption[Veduta area - piano cartesiano]{Veduta area del container}  
+		\label{fig:veduta_aerea}
 	\end{center}
 \end{figure}
 
 \noindent Il modello consiste delle seguenti variabili continue positive:
 \begin{itemize}
-	\item la variabile intera $x_{i}$ con $i \in I$ individua la coordinata sull'asse x dell'angolo in basso a sinistra dell'oggetto i;
-	\item la variabile intera $y_{i}$ con $i \in I$ individua la coordinata sull'asse y dell'angolo in basso a sinistra dell'oggetto i;
+	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
+	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
 \end{itemize}
 Il modello consiste delle seguenti variabili binarie:
 \begin{itemize}
@@ -46,38 +47,38 @@ Il modello consiste delle seguenti variabili binarie:
 
 \begin{align}
 	& \underset{}{\text{min D}}\\
-	  & \text{s.t.} &   & l_{ij} + l_{ji} + b_{ij} + b_{ji} \geq 1 & i < j    &   & i,j \in I \label{equa11} \\
-	  &             &   & y_i - y_j + M_d b_{ij} \leq M_d - d_i    &          &   & i,j \in I \label{equa12} \\
-	  &             &   & x_i - x_j + M_w l_{ij} \leq M_w - w_i    &          &   & i,j \in I \label{equa13} \\
-	  &             &   & x_i + w_i \leq W                         &          &   & i \in I   \label{equa14} \\
-	  &             &   & y_i + d_i \leq D                         &          &   & i \in I   \label{equa15} \\
-	  &             &   & b_{ij}, l_{ij} \in \{0,1\}               & i \neq j &   & i,j \in I \label{equa16} \\
-	  &             &   & x_{i}, y_{i} \in \mathbb{R}^{+}          &          &   & i \in I  \label{equa17}  
+	  & \text{s.t.} &   & l_{ij} + l_{ji} + b_{ij} + b_{ji} \geq 1      & i < j    &   & i,j \in I \label{equa11} \\
+	  &             &   & y_i - y_j + M_d b_{ij} \leq M_d - d_i         &          &   & i,j \in I \label{equa12} \\
+	  &             &   & x_i - x_j + M_w l_{ij} \leq M_w - w_i         &          &   & i,j \in I \label{equa13} \\
+	  &             &   & x_i + w_i \leq W                              &          &   & i \in I   \label{equa14} \\
+	  &             &   & y_i + d_i \leq D                              &          &   & i \in I   \label{equa15} \\
+	  &             &   & b_{ij}, l_{ij} \in \{0,1\}                    & i \neq j &   & i,j \in I \label{equa16} \\
+	  &             &   & x_{i}, y_{i}, w_{i}, d_{i} \in \mathbb{R}^{+} &          &   & i \in I  \label{equa17}  
 \end{align}
 
 Spiegiamo ora il significato di ciascun vincolo:
 \begin{itemize}
-	\item il vincolo~\eqref{equa11} impone che presi due oggetti almeno uno dei due si trovi o a sinistra o a destra dell'altro;
-	\item il vincolo~\eqref{equa12} dice che se $b_{ij} = 1$ allora impone che l'oggetto i si trovi dietro l'oggetto j, altrimenti il vincolo viene disattivato. 
-	\item il vincolo~\eqref{equa13} dice che se $l_{ij} = 1$ allora impone che l'oggetto i si trovi alla sinistra l'oggetto j, altrimenti il vincolo viene disattivato. 
-	\item il vincolo~\eqref{equa14} impone che dato il valore $x_i$, corrispondente alla coordinata x dell'angolo sinistro più arretrato dell'oggetto, sommandoci la larghezza $w_i$ dell'oggetto e ottenendo quindi la coordinata x dell'angolo destro più arretrato, questa sia contenuta nell'intervallo [0,W];
-	\item il vincolo~\eqref{equa15} impone che dato il valore $y_i$, corrispondente alla coordinata y dell'angolo sinistro più arretrato dell'oggetto, sommandoci la profondità $d_i$ dell'oggetto e ottenendo quindi la coordinata y dell'angolo sinistro più avanzato, questa sia contenuta nell'intervallo [0,D];
+	\item il vincolo~\eqref{equa11} impone che presi due oggetti almeno uno dei due oggetti si trovi alla sinistra o dietro all'altro;
+	\item il vincolo~\eqref{equa12} dice che se $b_{ij} = 1$ allora si impone che l'oggetto i si trovi dietro l'oggetto j, altrimenti il vincolo viene disattivato. 
+	\item il vincolo~\eqref{equa13} dice che se $l_{ij} = 1$ allora si impone che l'oggetto i si trovi alla sinistra l'oggetto j, altrimenti il vincolo viene disattivato. 
+	\item il vincolo~\eqref{equa14} impone che dato il valore $x_i$, corrispondente alla coordinata x dell'angolo sinistro più arretrato dell'oggetto, sommandoci la larghezza $w_i$ dell'oggetto e ottenuta quindi la coordinata x dell'angolo destro più arretrato, questa sia contenuta nell'intervallo [0,W];
+	\item il vincolo~\eqref{equa15} impone che dato il valore $y_i$, corrispondente alla coordinata y dell'angolo sinistro più arretrato dell'oggetto, sommandoci la profondità $d_i$ dell'oggetto e ottenuta quindi la coordinata y dell'angolo sinistro più avanzato, questa sia contenuta nell'intervallo [0,D];
 \end{itemize}
 
 \section{Modello 2D con rotazione}
-\begin{figure}[!ht]
+\begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.6]{figures/2dr}
-		\caption[pacchi ruotati]{Veduta aerea di 9 pacchi, alcuni ruotati.}
-		\label{fig:2dr}
+		\caption[Pacchi ruotati]{Veduta aerea di 9 pacchi, alcuni ruotati.}
+		\label{fig:pacchi_ruotati}
 	\end{center}
 \end{figure}
 
 \noindent Il modello consiste delle seguenti variabili continue positive:
 \begin{itemize}
-	\item la variabile intera $x_{i}$ con $i \in I$ individua la coordinata sull'asse x dell'angolo in basso a sinistra dell'oggetto i;
-	\item la variabile intera $y_{i}$ con $i \in I$ individua la coordinata sull'asse y dell'angolo in basso a sinistra dell'oggetto i;
-	\item la variabile intera $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
-	\item la variabile intera $\Delta_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
+	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
+	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
+	\item la variabile continua $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
+	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
 \end{itemize}
 Il modello consiste delle seguenti variabili binarie:
 \begin{itemize}
@@ -88,15 +89,15 @@ Il modello consiste delle seguenti variabili binarie:
 
 \begin{align}
 	& \underset{}{\text{min D}}\\
-	  & \text{s.t.} &   & l_{ij} + l_{ji} + b_{ij} + b_{ji} \geq 1   & i < j    &   & i,j \in I \label{equa21} \\
-	  &             &   & \Delta_i = d_i (1 - r_i) - w_i r_i         &          &   & i,j \in I \label{equa22} \\
-	  &             &   & \Omega_i = w_i (1 - r_i) - d_i r_i         &          &   & i,j \in I \label{equa23} \\
-	  &             &   & y_i - y_j + M_d b_{ij} \leq M_d - \Delta_i &          &   & i,j \in I \label{equa24} \\
-	  &             &   & x_i - x_j + M_w l_{ij} \leq M_w - \Omega_i &          &   & i,j \in I \label{equa25} \\
-	  &             &   & x_i + \Omega_i \leq W                      &          &   & i \in I   \label{equa26} \\
-	  &             &   & y_i + \Delta_i \leq D                      &          &   & i \in I   \label{equa27} \\
-	  &             &   & b_{ij}, l_{ij} \in \{0,1\}                 & i \neq j &   & i,j \in I \label{equa28} \\
-	  &             &   & x_{i}, y_{i} \in \mathbb{R}^{+}            &          &   & i \in I  \label{equa29}  
+	  & \text{s.t.} &   & l_{ij} + l_{ji} + b_{ij} + b_{ji} \geq 1                              & i < j    &   & i,j \in I \label{equa21} \\
+	  &             &   & \Delta_i = d_i (1 - r_i) - w_i r_i                                    &          &   & i,j \in I \label{equa22} \\
+	  &             &   & \Omega_i = w_i (1 - r_i) - d_i r_i                                    &          &   & i,j \in I \label{equa23} \\
+	  &             &   & y_i - y_j + M_d b_{ij} \leq M_d - \Delta_i                            &          &   & i,j \in I \label{equa24} \\
+	  &             &   & x_i - x_j + M_w l_{ij} \leq M_w - \Omega_i                            &          &   & i,j \in I \label{equa25} \\
+	  &             &   & x_i + \Omega_i \leq W                                                 &          &   & i \in I   \label{equa26} \\
+	  &             &   & y_i + \Delta_i \leq D                                                 &          &   & i \in I   \label{equa27} \\
+	  &             &   & b_{ij}, l_{ij}, r_i \in \{0,1\}                                       & i \neq j &   & i,j \in I \label{equa28} \\
+	  &             &   & x_{i}, y_{i}, w_{i}, d_{i}, \Delta_{i}, \Omega_{i} \in \mathbb{R}^{+} &          &   & i \in I  \label{equa29}  
 \end{align}
 
 Spiegiamo ora il significato di ciascun vincolo:
@@ -129,11 +130,10 @@ Come si può notare nella figura \ref{fig:abg_2drs}, le vie attraverso cui può 
 
 Il modello introduce le seguenti variabili continue positive:
 \begin{itemize}
-	\item la variabile intera $x_{i}$ con $i \in I$ individua la coordinata sull'asse x dell'angolo in basso a sinistra dell'oggetto i;
-	\item la variabile intera $y_{i}$ con $i \in I$ individua la coordinata sull'asse y dell'angolo in basso a sinistra dell'oggetto i;
-	\item la variabile intera $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
-	\item la variabile intera $\Delta_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
-	\item la parametro binario $o_{ij}$ assume il valore 1 se l'oggetto i appartiene ad un ordine che deve essere scaricato prima dell'ordine a cui appartiene l'oggetto j, altrimenti è 0;
+	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
+	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
+	\item la variabile continua $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
+	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
 \end{itemize}
 
 Il modello introduce le seguenti variabili binarie:
@@ -145,6 +145,7 @@ Il modello introduce le seguenti variabili binarie:
 	\item la variabile binaria $\beta_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i ha alla sua destra l'oggetto j e questo gli impedisca di essere sfilato da destra, altrimenti è 0;
 	\item la variabile binaria $\gamma_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i ha davanti a se l'oggetto j e questo gli impedisca di essere sfilato centralmente, altrimenti è 0;
 	\item la variabile binaria $s_{vi}$ con $i \in I$ e $v \in \theta$ assume il valore 1 se l'oggetto i ha nella direzione v almeno un oggetto che gli impedisca di essere sfilato nella rispettiva direzione, altrimenti è 0;
+	\item 	\item la parametro binario $o_{ij}$ assume il valore 1 se l'oggetto i appartiene ad un ordine che deve essere scaricato prima dell'ordine a cui appartiene l'oggetto j, altrimenti è 0;
 \end{itemize}
 
 \begin{align}
@@ -168,13 +169,13 @@ Il modello introduce le seguenti variabili binarie:
 	& & & \alpha_{ij}o_{ij} \leq s_{\alpha i}  & & & i,j \in I \label{equa46}\\
 	& & & \beta_{ij}o_{ij} \leq s_{\beta i}  & & & i,j \in I \label{equa47}\\
 	& & & \gamma_{ij}o_{ij} \leq s_{\gamma i}  & & & i,j \in I \label{equa48}\\
-	&   &   & \sum_{v \in \theta} s_{vi} \leq 2 &   &   & i \in I &   & \label{equa49}\\
-	& & & b_{ij}, l_{ij}, r_i \in \{0,1\} & i \neq j & & i,j \in I & & \label{equa50}\\
-	& & & x_{i}, y_{i} \in \mathbb{Z}^{+} & & & i \in I  & & \label{equa51}\\
-	  &   &   & s_{vi} \in \{0,1\} &   &   & i \in I &   & v\in \theta &   & \label{equa52} \\
+	  &   &   & \sum_{v \in \theta} s_{vi} \leq 2                                     &          &   & i \in I   &   & \label{equa49} \\
+	  &   &   & b_{ij}, l_{ij}, \alpha_{ij}, \beta_{ij}, \gamma_{ij}, r_i \in \{0,1\} & i \neq j &   & i,j \in I &   & \label{equa50} \\
+	&             &   & x_{i}, y_{i}, w_{i}, d_{i}, \Delta_{i}, \Omega_{i} \in \mathbb{R}^{+} &          &   & i \in I  \label{equa51}\\
+	&   &   & s_{vi} \in \{0,1\} &   &   & i \in I \land v\in \theta \label{equa52} 
 \end{align}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.4]{figures/2d3d}
 		\caption[corretta sequenza di scarico]{9 pacchi con corretta sequenza di scarico.}  
 		\label{fig:2drs_abg}
@@ -204,11 +205,11 @@ Con questo modello, evoluzione del modello 2D con rotazione, ci si propone di in
 
 Il modello 3D con rotazione e sovrapposizione introduce in più rispetto al precedente le seguenti variabili continue positive:
 \begin{itemize}
-	\item la variabile intera $x_{i}$ con $i \in I$ individua la coordinata sull'asse x dell'angolo in basso a sinistra dell'oggetto i;
-	\item la variabile intera $y_{i}$ con $i \in I$ individua la coordinata sull'asse y dell'angolo in basso a sinistra dell'oggetto i;
-	\item la variabile intera $z_{i}$ con $i \in I$ individua la coordinata sull'asse z dell'angolo in basso a sinistra dell'oggetto i;
-	\item la variabile intera $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
-	\item la variabile intera $\Delta_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$; 
+	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
+	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
+	\item la variabile continua $z_{i}$ con $i \in I$ individua la coordinata sull'asse z del vertice in basso a sinistra dell'oggetto i;
+	\item la variabile continua $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
+	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$; 
 \end{itemize}
 
 Introduce in più rispetto al precedente anche le seguenti variabili binarie:
@@ -226,26 +227,26 @@ Inoltre la variabile binaria $k_{ij}$ viene utilizzata per imporre che un oggett
 \begin{align}
 	& \underset{}{\text{min}}
 	& & D \\
-	  & \text{s.t.} &   & k_{ij} \leq l_{ij} + l_{ji} + b_{ij} + b_{ji}         & i < j    &   & i,j \in I \label{equa53} \\
-	  &             &   & 2 k_{ij} \geq l_{ij} + l_{ji} + b_{ij} + b_{ji}       & i < j    &   & i,j \in I \label{equa54} \\
-	  &             &   & 1 - k_{ij} = t_{ij} + t_{ji}                          & i < j    &   & i,j \in I \label{equa55} \\
-	  &             &   & x_i + \Omega_i \leq W                                 &          &   & i,j \in I \label{equa56} \\
-	  &             &   & y_i + \Delta_i \leq D                                 &          &   & i,j \in I \label{equa57} \\
-	  &             &   & z_i + h_i \leq H                                      &          &   & i \in I \label{equa58}   \\	
-	  &             &   & y_i - y_j + M_d b_{ij} \leq M_d - \Delta_i            &          &   & i,j \in I \label{equa59} \\
-	  &             &   & x_i - x_j + M_w l_{ij} \leq M_w - \Omega_i            &          &   & i,j \in I \label{equa60} \\
-	  &             &   & z_i - z_j + M_h t_{ij} \leq M_h - h_i                 &          &   & i,j \in I \label{equa61} \\
-	  &             &   & z_i - z_j + M_h f_{ij} \geq - M_h - h_i               &          &   & i,j \in I \label{equa62} \\
-	  &             &   & x_i - x_j \leq M_w (1-f_{ij})                         &          &   & i,j \in I \label{equa63} \\
-	  &             &   & y_i - y_j \leq M_d (1-f_{ij})                         &          &   & i,j \in I \label{equa64} \\
-	  &             &   & x_i - x_j + \Omega_i - \Omega_j \geq - Mw(1 - f_{ij}) &          &   & i,j \in I\label{equa65}  \\
-	  &             &   & y_i - y_j + \Delta_i - \Delta_j \geq - Md(1 - f_{ij}) &          &   & i,j \in I\label{equa66}  \\
-	  &             &   & f_{ij} \leq t_{ij}                                    &          &   & i \in I \label{equa67}   \\
-	  &             &   & M_h \sum_{i \in I} f_{ij} \geq z_j                    &          &   & i \in I \label{equa68}   \\
-	  &             &   & \Delta_i = d_i (1 - r_i) - w_i r_i                    &          &   & i,j \in I \label{equa69} \\
-	  &             &   & \Omega_i = w_i (1 - r_i) - d_i r_i                    &          &   & i,j \in I \label{equa70} \\  
-	  &             &   & b_{ij}, l_{ij}, t_{ij}, f_{ij}, k_{ij} \in \{0,1\}    & i \neq j &   & i,j \in I \label{equa71} \\
-	  &             &   & x_{i}, y_{i}, z_{i}, r_{i} \in \mathbb{Z}^{+}         &          &   & i \in I \label{equa72}   \\
+	  & \text{s.t.} &   & k_{ij} \leq l_{ij} + l_{ji} + b_{ij} + b_{ji}                                & i < j    &   & i,j \in I \label{equa53} \\
+	  &             &   & 2 k_{ij} \geq l_{ij} + l_{ji} + b_{ij} + b_{ji}                              & i < j    &   & i,j \in I \label{equa54} \\
+	  &             &   & 1 - k_{ij} = t_{ij} + t_{ji}                                                 & i < j    &   & i,j \in I \label{equa55} \\
+	  &             &   & x_i + \Omega_i \leq W                                                        &          &   & i,j \in I \label{equa56} \\
+	  &             &   & y_i + \Delta_i \leq D                                                        &          &   & i,j \in I \label{equa57} \\
+	  &             &   & z_i + h_i \leq H                                                             &          &   & i \in I \label{equa58}   \\	
+	  &             &   & y_i - y_j + M_d b_{ij} \leq M_d - \Delta_i                                   &          &   & i,j \in I \label{equa59} \\
+	  &             &   & x_i - x_j + M_w l_{ij} \leq M_w - \Omega_i                                   &          &   & i,j \in I \label{equa60} \\
+	  &             &   & z_i - z_j + M_h t_{ij} \leq M_h - h_i                                        &          &   & i,j \in I \label{equa61} \\
+	  &             &   & z_i - z_j + M_h f_{ij} \geq - M_h - h_i                                      &          &   & i,j \in I \label{equa62} \\
+	  &             &   & x_i - x_j \leq M_w (1-f_{ij})                                                &          &   & i,j \in I \label{equa63} \\
+	  &             &   & y_i - y_j \leq M_d (1-f_{ij})                                                &          &   & i,j \in I \label{equa64} \\
+	  &             &   & x_i - x_j + \Omega_i - \Omega_j \geq - Mw(1 - f_{ij})                        &          &   & i,j \in I\label{equa65}  \\
+	  &             &   & y_i - y_j + \Delta_i - \Delta_j \geq - Md(1 - f_{ij})                        &          &   & i,j \in I\label{equa66}  \\
+	  &             &   & f_{ij} \leq t_{ij}                                                           &          &   & i \in I \label{equa67}   \\
+	  &             &   & M_h \sum_{i \in I} f_{ij} \geq z_j                                           &          &   & i \in I \label{equa68}   \\
+	  &             &   & \Delta_i = d_i (1 - r_i) - w_i r_i                                           &          &   & i,j \in I \label{equa69} \\
+	  &             &   & \Omega_i = w_i (1 - r_i) - d_i r_i                                           &          &   & i,j \in I \label{equa70} \\  
+	  &             &   & b_{ij}, l_{ij}, t_{ij}, f_{ij}, k_{ij}, r_i \in \{0,1\}                      & i \neq j &   & i,j \in I \label{equa71} \\
+	  &             &   & x_{i}, y_{i}, z_{i}, w_{i}, d_{i}, \Delta_{i}, \Omega_{i} \in \mathbb{R}^{+} &          &   & i \in I  \label{equa72}  
 \end{align}
 \newpage
 Spiegiamo ora il significato di ciascun vincolo:

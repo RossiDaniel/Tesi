@@ -276,10 +276,10 @@
 
 	\scshape{\Large{\bfseries{Università degli Studi di Padova}}} \\
 	\line(1, 0){400} \\
-	\scshape{\large{Department of Something}} \\
+	\scshape{\large{Dipartimento di Matematica "Tullio Levi Civita"}} \\
 
 	\vspace{5pt}
-	\small{\textit{Master Thesis in}}
+	\small{\textit{Corso di laurea in}}
 	\@mastername
 
 	\setstretch{2.5}
@@ -294,15 +294,11 @@
 	\vfill
 	\begin{normalsize}
 	\begin{flushleft}
-	  \textit{Supervisor} \hfill \textit{Master Candidate}\\
+	  \textit{Relatore} \hfill \textit{Laureando}\\
 	  \vspace{1pt}
 	  \@advisor \hfill \@author\\
 	  Università di Padova \\
 	  \vspace{6pt}
-	  \textit{Co-supervisor} \\
-	  \@coadvisorOne \\
-	  \@coadvisorOneUniversity
-	  \vspace{10pt}
 	\end{flushleft}
 	\end{normalsize}
 	
@@ -388,3 +384,5 @@
 %glossario
 \newcommand{\glo}[1]{\hyperlink{(#1)}{\textit{#1$^{[g]}$}}}
 \newcommand{\gloTarget}[1]{\hypertarget{(#1)}{\textbf{#1}}}
+
+%\usepackage[parfill]{parskip}
