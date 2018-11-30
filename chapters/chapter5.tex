@@ -2,12 +2,21 @@
 
 \hypertarget{(chap:capitolo5)}{}
 \chapter{Test e validazione}
-Una attività di fondamentale importanza è stata quella di testing i modelli.
+Una attività di fondamentale importanza è stata quella di testing dei modelli.
 \section{Istanze}
-Una \textbf{istanza} è un insieme formato dai pacchi da disporre nel contenitore e il contenitore stesso.\\
-Un gruppo di istanze è un insieme di istanze diverse tra loro accomunite tra loro dalle dimensioni simili o dal numero di oggetti.\\
-Inizialmente ogni qual volta testavamo un modello dopo aver apportato una modifica, eseguivamo un centinaio di test con un gruppo di istanze completamente randomico, l'obiettivo in questo caso era quello di individuare imperfezioni o testare la tenuta dei vincoli.
-Successivamente si passava all'esecuzione di 100 test per ciascuna delle istanze riportate di seguito.
+Diamo prima una definizione di istanza:
+\begin{center}
+	Una \textbf{istanza} è un insieme formato dai pacchi da disporre nel contenitore.
+\end{center}
+Mentre invece la definizione di gruppo di istanze:
+\begin{center}
+	Un \textbf{gruppo di istanze} è un insieme di istanze accomunate tra loro dalle simili dimensioni o dal numero di oggetti.
+
+\end{center}
+La prassi generale nell'eseguire il testing dei modelli è stata quella di creare un centinaio di istanze randomicamente, eseguire il modello sulle istanze generate e verificare la correttezza delle soluzioni fornite, con l'obiettivo di individuare imperfezioni o testare la tenuta dei vincoli, la verifica della correttezza delle soluzioni veniva fatto attraverso funzioni realizzate appositamente che verranno illustrate nelle sezioni successive.
+Questa procedura richiedeva circa una ventina di minuti di esecuzione ed è stata utilizzata solo dopo modifiche importanti che da un punto di vista teorico erano corrette, inoltre venivano eseguite su istanze con pochi oggetti per risparmiare tempo e indivuare subito eventuali errori.
+
+Dopo la realizzazione di tutti i modelli, sicuri delle soluzioni fornite dal modello in seno alla validazione effettuata si passava all'esecuzione di 100 test per ciascuna delle istanze riportate di seguito per ottenere maggiori informazioni in merito, il tutto eseguito per ciascun modello.
 \begin{center}
 	\begin{tabular}{lrrrr}
 		\toprule
@@ -27,11 +36,13 @@ Successivamente si passava all'esecuzione di 100 test per ciascuna delle istanze
 	\end{tabular}
 	\captionof{table}{Le dimensioni dei gruppi di istanze eseguite}
 \end{center}
+
 La tabella riporta gli intervalli entro cui si è deciso randomicamente le dimensioni dei pacchi, ogni gruppo di istanze aveva dimensioni particolari entro cui dovevano trovarsi i pacchi:
 \begin{itemize}
 	\item \textbf{Larghezza}: [width\_a, width\_b]
 	\item \textbf{Profondità}: [depth\_a, depth\_b]
 \end{itemize}
+
 \section{Numero di oggetti}
 Fin dal modello 2D abbiamo capito che il numero di pacchi per ogni istanza sarebbe stato in numero limitato in quanto dopo 7 pacchi i tempi di esecuzione esplodevano, abbiamo quindi deciso di scegliere in modo randomico in un intervallo [3,10] il numero di pacchi da assegnare a ciascuna istanza, imponendo un \glo{time limit} di 300 secondi, questo portava ad ottenere soluzioni ottime e soluzioni \glo{best bound}, l'analisi dei risultati sarà divisa in queste due categorie infatti.
 
@@ -49,10 +60,10 @@ Di fondamentale importanza per il confronto è stato che le soluzioni fornite da
 \begin{itemize}
 	\item \textbf{CheckFeasible}: utilizzata per controllare che non vi fossero pacchi che si intersecassero con altri;
 	\item \textbf{ChackSequence}: realizzata in due versioni:
-	\begin{itemize}
-		\item \textbf{2D}: considerando che tutti gli oggetti fossero alla stessa altezza controllava che ciascun pacco avesse almeno una via attraverso cui essere scaricato.
-		\item \textbf{3D}: considerava anche la sovrapposizione tra pacchi e oltre a controllare di avere almeno una delle tre direzioni libere rispetto l'altezza a cui si trovava controllava anche se sopra ciascun pacco al momento dello scarico non vi fossero altri pacchi.
-	\end{itemize}
+	      \begin{itemize}
+	      	\item \textbf{2D}: considerando che tutti gli oggetti fossero alla stessa altezza controllava che ciascun pacco avesse almeno una via attraverso cui essere scaricato.
+	      	\item \textbf{3D}: considerava anche la sovrapposizione tra pacchi e oltre a controllare di avere almeno una delle tre direzioni libere rispetto l'altezza a cui si trovava controllava anche se sopra ciascun pacco al momento dello scarico non vi fossero altri pacchi.
+	      \end{itemize}
 	\item \textbf{CheckStable}: utilizzata per controllare la stabilità degli oggetti, questo verificava che l'area di base inferiore poggiasse completamente sulle basi superiori degli oggetti sottostanti;
 	\item \textbf{ProjectionCommonArea}: utilizzata per verificare se due parallelepidedi avessero intersezioni tra le loro proiezioni rispetto a 2 assi.
 \end{itemize}

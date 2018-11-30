@@ -58,7 +58,7 @@ Il modello consiste delle seguenti variabili binarie:
 
 Spiegiamo ora il significato di ciascun vincolo:
 \begin{itemize}
-	\item il vincolo~\eqref{equa11} impone che presi due oggetti almeno uno dei due oggetti si trovi alla sinistra o dietro all'altro;
+	\item il vincolo~\eqref{equa11} impone che presi due oggetti almeno uno dei due si trovi dietro o alla sinistra dell'altro;
 	\item il vincolo~\eqref{equa12} dice che se $b_{ij} = 1$ allora si impone che l'oggetto i si trovi dietro l'oggetto j, altrimenti il vincolo viene disattivato. 
 	\item il vincolo~\eqref{equa13} dice che se $l_{ij} = 1$ allora si impone che l'oggetto i si trovi alla sinistra l'oggetto j, altrimenti il vincolo viene disattivato. 
 	\item il vincolo~\eqref{equa14} impone che dato il valore $x_i$, corrispondente alla coordinata x dell'angolo sinistro più arretrato dell'oggetto, sommandoci la larghezza $w_i$ dell'oggetto e ottenuta quindi la coordinata x dell'angolo destro più arretrato, questa sia contenuta nell'intervallo [0,W];
@@ -78,13 +78,13 @@ Spiegiamo ora il significato di ciascun vincolo:
 	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
-	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
+	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $w_i$ se l'oggetto è stato ruotato altrimenti $d_i$;
 \end{itemize}
 Il modello consiste delle seguenti variabili binarie:
 \begin{itemize}
 	\item la variabile binaria $l_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato alla sinistra dell'oggetto j, altrimenti è 0;
 	\item la variabile binaria $b_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato al di sotto dell'oggetto j, altrimenti è 0.
-	\item la variabile binaria $r_{i}$ con $i \in I$ assume il valore 1 se l'oggetto i è rutotato su se stesso di $90^{\circ}$, ne risulta che $w_{i}$ e $d_{i}$ sono invertiti, altrimenti è 0;
+	\item la variabile binaria $r_{i}$ con $i \in I$ assume il valore 1 se l'oggetto i è rutotato rispetto la propria base di 90°, ne risulta che $w_{i}$ e $d_{i}$ sono invertiti, altrimenti 0;
 \end{itemize}
 
 \begin{align}
@@ -102,7 +102,7 @@ Il modello consiste delle seguenti variabili binarie:
 
 Spiegiamo ora il significato di ciascun vincolo:
 \begin{itemize}
-	\item il vincolo~\eqref{equa21} impone che presi due oggetti almeno uno dei due si trovi o a sinistra o a destra dell'altro;
+	\item il vincolo~\eqref{equa21} impone che presi due oggetti almeno uno dei due si trovi dietro o alla sinistra dell'altro;
 	\item il vincolo~\eqref{equa22} impone che $\Delta_i$ corrisponda alla profondità corretta considerando la rotazione;
 	\item il vincolo~\eqref{equa23} impone che $\Omega_i$ corrisponda alla larghezza corretta considerando la rotazione;
 	\item il vincolo~\eqref{equa24} dice che se $b_{ij} = 1$ allora impone che l'oggetto i si trovi dietro l'oggetto j, altrimenti il vincolo viene disattivato.
@@ -112,15 +112,25 @@ Spiegiamo ora il significato di ciascun vincolo:
 \end{itemize}
 
 \section{Modello 2D con rotazione e sequenza scarico}
-Con questo modello ci proponiamo di disporre nel miglior modo possibile gli oggetti sul pianale del camion tenendo conto anche della sequenza di scarico, un oggetto può essere scaricato lateralmente da destra o da sinistra, oppure dal fondo del camion. \\
-\begin{figure}[!ht]
-	\begin{center} \includegraphics[scale=0.3]{figures/abg_2drs}
-		\caption[Vie scaricamento pacco]{Vie con cui scaricare un pacco.}  
+Con questo modello ci proponiamo di disporre nel miglior modo possibile gli oggetti sul pianale del camion tenendo conto della sequenza di scarico, un oggetto può essere scaricato lateralmente alla sua destra/sinistra oppure dal fondo del camion.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width=1.\linewidth]{figures/abg_2drs}
+		\caption[Vie scaricamento pacco]{Vie di scarico pacco}  
 		\label{fig:abg_2drs}
-	\end{center}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width=1.\linewidth]{figures/2d3d}
+		\caption[corretta sequenza di scarico]{Sequenza corretta}  
+		\label{fig:2drs_abg}
+	\end{minipage}
 \end{figure}
 
-Nel momento in cui l'oggetto verrà scaricato questo dovrà avere almeno una di queste vie libere affinché possa essere scaricato. \\
+Nel momento in cui l'oggetto verrà scaricato questo dovrà avere almeno una di queste vie libere affinché possa essere scaricato.
 Come si può notare nella figura \ref{fig:abg_2drs}, le vie attraverso cui può essere effettuato uno scarico vengono deciso attraverso l'indice $v \in \theta = \{\alpha,\beta,\gamma\}$ che individua rispettivamente:
 \begin{itemize}
 	\item $v = \alpha$: via alla sinistra del pacco da cui può essere sfilato; 
@@ -128,12 +138,13 @@ Come si può notare nella figura \ref{fig:abg_2drs}, le vie attraverso cui può 
 	\item $v = \gamma$: via di fronte al pacco da cui può essere sfilato; 
 \end{itemize}
 
+\newpage
 Il modello introduce le seguenti variabili continue positive:
 \begin{itemize}
 	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
-	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
+	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $w_i$ se l'oggetto è stato ruotato altrimenti $d_i$;
 \end{itemize}
 
 Il modello introduce le seguenti variabili binarie:
@@ -145,7 +156,7 @@ Il modello introduce le seguenti variabili binarie:
 	\item la variabile binaria $\beta_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i ha alla sua destra l'oggetto j e questo gli impedisca di essere sfilato da destra, altrimenti è 0;
 	\item la variabile binaria $\gamma_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i ha davanti a se l'oggetto j e questo gli impedisca di essere sfilato centralmente, altrimenti è 0;
 	\item la variabile binaria $s_{vi}$ con $i \in I$ e $v \in \theta$ assume il valore 1 se l'oggetto i ha nella direzione v almeno un oggetto che gli impedisca di essere sfilato nella rispettiva direzione, altrimenti è 0;
-	\item 	\item la parametro binario $o_{ij}$ assume il valore 1 se l'oggetto i appartiene ad un ordine che deve essere scaricato prima dell'ordine a cui appartiene l'oggetto j, altrimenti è 0;
+	\item la parametro binario $o_{ij}$ assume il valore 1 se l'oggetto i appartiene ad un ordine che deve essere scaricato prima dell'ordine a cui appartiene l'oggetto j, altrimenti è 0;
 \end{itemize}
 
 \begin{align}
@@ -175,16 +186,10 @@ Il modello introduce le seguenti variabili binarie:
 	&   &   & s_{vi} \in \{0,1\} &   &   & i \in I \land v\in \theta \label{equa52} 
 \end{align}
 
-\begin{figure}[H]
-	\begin{center} \includegraphics[scale=0.4]{figures/2d3d}
-		\caption[corretta sequenza di scarico]{9 pacchi con corretta sequenza di scarico.}  
-		\label{fig:2drs_abg}
-	\end{center}
-\end{figure}
-
+\newpage
 Spiegiamo ora il significato di ciascun vincolo:
 \begin{itemize}
-	\item il vincolo~\eqref{equa30} impone che presi due oggetti almeno uno dei due si trovi o a sinistra o a destra dell'altro;
+	\item il vincolo~\eqref{equa30} impone che presi due oggetti almeno uno dei due si trovi dietro o alla sinistra dell'altro;
 	\item il vincolo~\eqref{equa31} dice che se $b_{ij} = 1$ allora impone che l'oggetto i si trovi dietro l'oggetto j, altrimenti il vincolo viene disattivato;
 	\item il vincolo~\eqref{equa32} dice che se $l_{ij} = 1$ allora impone che l'oggetto i si trovi alla sinistra l'oggetto j, altrimenti il vincolo viene disattivato;
 	\item il vincolo~\eqref{equa33} impone che dato il valore $x_i$, corrispondente alla coordinata x dell'angolo sinistro più arretrato dell'oggetto, sommandoci la larghezza $w_i$ dell'oggetto e ottenendo quindi la coordinata x dell'angolo destro più arretrato, questa sia contenuta nell'intervallo [0,W];
@@ -200,18 +205,27 @@ Spiegiamo ora il significato di ciascun vincolo:
 	\item il vincolo~\eqref{equa49} impone che $\sum_{v \in \theta} s_{vi} \leq 2$ ossia che possano essere occupate al massimo 2 vie di scarico lasciandone libera almeno 1.
 \end{itemize}
 
+\newpage
 \section{Modello 3D con rotazione e sovrapposizione}
-Con questo modello, evoluzione del modello 2D con rotazione, ci si propone di introdurre la sovrapposizione degli oggetti, considerando però che alcuni oggetti potranno avere come condizione quella di non poter avere altri oggetti sopra di sè. Un problema non indifferente inerente questo modello viene individuato nella stabilità degli oggetti, soluzioni che riportino oggetti sopraelevati, le cui aree di base non poggino completamente sugli oggetti sottostanti sono da ritenersi non valide. Per risolvere questo problema si è deciso di optare per una semplificazione, se un oggetto i si trova sopra ad un oggetto j, allora l'area di base dell'oggetto i dovrà essere interamente appoggiata alla faccia superiore dell'oggetto j.
+Con questo modello, evoluzione del modello 2D con rotazione, ci si propone di introdurre la sovrapposizione degli oggetti, considerando però che alcuni oggetti potranno avere come condizione quella di non poter avere altri oggetti al di sopra.
 
+\begin{figure}[H]
+	\begin{center} \includegraphics[scale=0.7]{figures/3d}
+		\caption[ciucia]{Veduta 3d di alcuni pacchi.}
+		\label{fig:3d_grafics}
+	\end{center}
+\end{figure}
+
+Un problema non indifferente inerente questo modello viene individuato nella stabilità degli oggetti, soluzioni che riportino oggetti sopraelevati, le cui aree di base non poggino completamente sugli oggetti sottostanti sono da ritenersi non valide. Per risolvere questo problema si è deciso di optare per una semplificazione, se un oggetto i si trova sopra ad un oggetto j, allora l'area di base dell'oggetto i dovrà essere interamente appoggiata alla faccia superiore dell'oggetto j.
+\newpage
 Il modello 3D con rotazione e sovrapposizione introduce in più rispetto al precedente le seguenti variabili continue positive:
 \begin{itemize}
 	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $z_{i}$ con $i \in I$ individua la coordinata sull'asse z del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
-	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$; 
+	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $w_i$ se l'oggetto è stato ruotato altrimenti $d_i$;
 \end{itemize}
-
 Introduce in più rispetto al precedente anche le seguenti variabili binarie:
 \begin{itemize}
 	\item la variabile binaria $l_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato alla sinistra dell'oggetto j, altrimenti è 0;
@@ -221,7 +235,7 @@ Introduce in più rispetto al precedente anche le seguenti variabili binarie:
 	\item la variabile binaria $f_{ij}$ assume il valore 1 se l'oggetto i ha sopra di sè l'oggetto j e la faccia superiore dell'oggetto i è a contatto con la faccia inferiore dell'oggetto j, altrimenti è 0;
 	\item la variabile binaria $k_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i si trova alla sinistra o/e dietro un oggetto j oppure al di sotto di esso. 
 \end{itemize}
-
+\newpage
 Inoltre la variabile binaria $k_{ij}$ viene utilizzata per imporre che un oggetto possa trovarsi alla sinistra o dietro ad un altro oggetto ma non al di sotto di un altro e viceversa, imponendo ciò che segue:
 
 \begin{align}
@@ -267,9 +281,3 @@ Spiegiamo ora il significato di ciascun vincolo:
 	\item il vincolo~\eqref{equa70} imopne che $\Omega_i$ corrisponda alla larghezza corretta considerando la rotazione;
 \end{itemize}
 
-\begin{figure}[!ht]
-	\begin{center} \includegraphics[scale=0.7]{figures/3d}
-		\caption[ciucia]{Veduta 3d di alcuni pacchi.}
-		\label{fig:3d_grafics}
-	\end{center}
-\end{figure}

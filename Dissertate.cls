@@ -67,7 +67,7 @@
 %\RaggedRight
 \RequirePackage{graphicx}
 \usepackage{fixltx2e}
-\parindent 12pt
+%\parindent 12pt
 \RequirePackage{lettrine}
 \RequirePackage{setspace}
 \RequirePackage{verbatim}
@@ -386,3 +386,4 @@
 \newcommand{\gloTarget}[1]{\hypertarget{(#1)}{\textbf{#1}}}
 
 %\usepackage[parfill]{parskip}
+\setlength{\parindent}{0pt}
