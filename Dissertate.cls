@@ -377,8 +377,7 @@
 }
 
 %glossario
-\newcommand{\glo}[1]{\hyperref[#1]{\textit{#1$^{[g]}$}}
-}
+\newcommand{\glo}[1]{\hyperref[#1]{\textit{#1$^{[g]}$}}}
 \newcommand{\gloTarget}[1]{\label{#1}\textbf{\capitalisewords{#1}}: }
 
 %\usepackage[parfill]{parskip}
@@ -402,3 +401,4 @@
       \item[\theLabel] \theDesc }%
   \end{description}%
 }
+\newcommand{\bit}[1]{(#1) \cite{(#1)}}
