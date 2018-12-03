@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  20 NOV 2018 10:41
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  3 DEC 2018 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -687,189 +687,79 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 . fontspec info: "defining-font"
 . 
 . Font family 'EBGaramond(0)' created for font 'EB Garamond' with options
-. [Ligatures=TeX,Numbers=OldStyle,Ligatures={Common, TeX},Scale=1.0].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping=te
-x-text;"
-. - 'small caps'  (m/sc) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping=te
-x-text;+smcp;"-
-. 'bold' (bx/n) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/B/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping=
-tex-text;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/B/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping=
-tex-text;+smcp;"-
-. 'italic' (m/it) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/I/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping=
-tex-text;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/I/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping=
-tex-text;+smcp;"-
-. 'bold italic' (bx/it) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/BI/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping
-=tex-text;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/BI/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping
-=tex-text;+smcp;"
-.................................................
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 88.
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'EBGaramond(1)' created for font 'EB Garamond' with options
-. [RawFeature={+c2sc,+scmp}].
+. [Numbers={Proportional}].
 . 
 . This font family consists of the following NFSS series/shapes:
 . - 'normal' (m/n) with NFSS spec.: <->"EB
-. Garamond/OT:script=latn;language=DFLT;+c2sc,+scmp;"
+. Garamond/OT:script=latn;language=DFLT;+pnum;"
 . - 'small caps'  (m/sc) with NFSS spec.: <->"EB
-. Garamond/OT:script=latn;language=DFLT;+c2sc,+scmp;+smcp;"- 'bold' (bx/n)
-. with NFSS spec.: <->"EB
-. Garamond/B/OT:script=latn;language=DFLT;+c2sc,+scmp;"
+. Garamond/OT:script=latn;language=DFLT;+pnum;+smcp;"- 'bold' (bx/n) with NFSS
+. spec.: <->"EB Garamond/B/OT:script=latn;language=DFLT;+pnum;"
 . - 'bold small caps'  (bx/sc) with NFSS spec.: <->"EB
-. Garamond/B/OT:script=latn;language=DFLT;+c2sc,+scmp;+smcp;"- 'italic' (m/it)
-. with NFSS spec.: <->"EB
-. Garamond/I/OT:script=latn;language=DFLT;+c2sc,+scmp;"
+. Garamond/B/OT:script=latn;language=DFLT;+pnum;+smcp;"- 'italic' (m/it) with
+. NFSS spec.: <->"EB Garamond/I/OT:script=latn;language=DFLT;+pnum;"
 . - 'italic small caps'  (m/itsc) with NFSS spec.: <->"EB
-. Garamond/I/OT:script=latn;language=DFLT;+c2sc,+scmp;+smcp;"- 'bold italic'
-. (bx/it) with NFSS spec.: <->"EB
-. Garamond/BI/OT:script=latn;language=DFLT;+c2sc,+scmp;"
+. Garamond/I/OT:script=latn;language=DFLT;+pnum;+smcp;"- 'bold italic' (bx/it)
+. with NFSS spec.: <->"EB Garamond/BI/OT:script=latn;language=DFLT;+pnum;"
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"EB
-. Garamond/BI/OT:script=latn;language=DFLT;+c2sc,+scmp;+smcp;"
+. Garamond/BI/OT:script=latn;language=DFLT;+pnum;+smcp;"
 .................................................
-.................................................
-. fontspec info: "set-scale"
-. 
-. Lato Regular scale = 0.7897335863911148.
-.................................................
-\g__fontspec_family_LatoRegular_int=\count159
-.................................................
-. fontspec info: "set-scale"
-. 
-. Lato Regular scale = 0.7897335863911148.
-.................................................
-.................................................
-. fontspec info: "set-scale"
-. 
-. Lato Bold scale = 0.7797268490977592.
-.................................................
-.................................................
-. fontspec info: "set-scale"
-. 
-. Lato Regular/I scale = 0.7897335863911148.
-.................................................
-.................................................
-. fontspec info: "set-scale"
-. 
-. Lato Bold/I scale = 0.7797268490977592.
-.................................................
+\symDigits:m:n=\mathgroup6
+\symLatin:m:n=\mathgroup7
+\symLatin:m:it=\mathgroup8
+\symGreek:m:n=\mathgroup9
+\symGreek:m:it=\mathgroup10
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'LatoRegular(0)' created for font 'Lato Regular' with options
-. [Ligatures=TeX,Scale=MatchLowercase,BoldFont={Lato Bold}].
+. Font family 'EBGaramond(1)' created for font 'EB Garamond' with options [].
 . 
 . This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->s*[0.7897335863911148]"Lato
-. Regular/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'small caps'  (m/sc) with NFSS spec.: - 'bold' (bx/n) with NFSS spec.:
-. <->s*[0.7797268490977592]"Lato
-. Bold/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: - 'italic' (m/it) with NFSS
-. spec.: <->s*[0.7897335863911148]"Lato
-. Regular/I/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: - 'bold italic' (bx/it)
-. with NFSS spec.: <->s*[0.7797268490977592]"Lato
-. Bold/I/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+. - 'normal' (m/n) with NFSS spec.: <->"EB
+. Garamond/OT:script=latn;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: <->"EB
+. Garamond/OT:script=latn;language=DFLT;+smcp;"- 'bold' (bx/n) with NFSS
+. spec.: <->"EB Garamond/B/OT:script=latn;language=DFLT;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: <->"EB
+. Garamond/B/OT:script=latn;language=DFLT;+smcp;"- 'italic' (m/it) with NFSS
+. spec.: <->"EB Garamond/I/OT:script=latn;language=DFLT;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: <->"EB
+. Garamond/I/OT:script=latn;language=DFLT;+smcp;"- 'bold italic' (bx/it) with
+. NFSS spec.: <->"EB Garamond/BI/OT:script=latn;language=DFLT;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"EB
+. Garamond/BI/OT:script=latn;language=DFLT;+smcp;"
 .................................................
-.................................................
-. fontspec info: "set-scale"
-. 
-. Source Code Pro scale = 0.833334657882258.
-.................................................
-\g__fontspec_family_SourceCodePro_int=\count160
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font Source Code Pro/I (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "set-scale"
-. 
-. Source Code Pro scale = 0.833334657882258.
-.................................................
-.................................................
-. fontspec info: "set-scale"
-. 
-. Source Code Pro/B scale = 0.833334657882258.
-.................................................
-.................................................
-. fontspec info: "set-scale"
-. 
-. Source Code Pro/BI scale = 0.833334657882258.
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'SourceCodePro(0)' created for font 'Source Code Pro' with
-. options [WordSpace={1,0,0},PunctuationSpace=WordSpace,Scale=MatchLowercase].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->s*[0.833334657882258]"Source Code
-. Pro/OT:script=latn;language=DFLT;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
-. - 'bold' (bx/n) with NFSS spec.: <->s*[0.833334657882258]"Source Code
-. Pro/B/OT:script=latn;language=DFLT;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: 
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
-. - 'bold italic' (bx/it) with NFSS spec.: <->s*[0.833334657882258]"Source
-. Code Pro/BI/OT:script=latn;language=DFLT;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
-.................................................
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 84.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  EU1/EBGaramond(1)/m/n --> EU1/EBGaramond(1)/bx/n on inp
+ut line 84.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 84.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/EBGaramond(1)/m/it on input line 8
+4.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU1/EBGaramond(1)/m/it on input line 
+84.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 84.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/EBGaramond(1)/bx/n on input line 8
+4.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU1/EBGaramond(1)/bx/n on input line 8
+4.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  EU1/EBGaramond(1)/m/it --> EU1/EBGaramond(1)/bx/it on i
+nput line 84.
+\symOperators:m:n=\mathgroup11
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen176
-\captionmargin@=\dimen177
-\captionwidth=\dimen178
-\caption@tempdima=\dimen179
-\caption@indent=\dimen180
-\caption@parindent=\dimen181
-\caption@hangindent=\dimen182
-)
-Package caption Info: We need package `newfloat' on input line 292.
-
-(/usr/share/texlive/texmf-dist/tex/latex/caption/newfloat.sty
-Package: newfloat 2015/09/17 v1.1-109 Defining new floating environments (AR)
-)
-\c@ContinuedFloat=\count161
-Package caption Info: hyperref package is loaded.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks28
-\MT@count=\count162
+\MT@count=\count159
 LaTeX Info: Redefining \textls on input line 766.
-\MT@outer@kern=\dimen183
+\MT@outer@kern=\dimen176
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count163
+\MT@listname@count=\count160
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-xetex.def
 File: microtype-xetex.def 2013/05/23 v2.5a Definitions specific to xetex (RS)
@@ -885,8 +775,8 @@ File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks29
-\pgfutil@tempdima=\dimen184
-\pgfutil@tempdimb=\dimen185
+\pgfutil@tempdima=\dimen177
+\pgfutil@tempdimb=\dimen178
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -912,20 +802,20 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 ex
 \pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen186
-\pgf@y=\dimen187
-\pgf@xa=\dimen188
-\pgf@ya=\dimen189
-\pgf@xb=\dimen190
-\pgf@yb=\dimen191
-\pgf@xc=\dimen192
-\pgf@yc=\dimen193
+\pgf@x=\dimen179
+\pgf@y=\dimen180
+\pgf@xa=\dimen181
+\pgf@ya=\dimen182
+\pgf@xb=\dimen183
+\pgf@yb=\dimen184
+\pgf@xc=\dimen185
+\pgf@yc=\dimen186
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count164
-\c@pgf@countb=\count165
-\c@pgf@countc=\count166
-\c@pgf@countd=\count167
+\c@pgf@counta=\count161
+\c@pgf@countb=\count162
+\c@pgf@countc=\count163
+\c@pgf@countd=\count164
 \t@pgf@toka=\toks33
 \t@pgf@tokb=\toks34
 \t@pgf@tokc=\toks35
@@ -944,13 +834,13 @@ File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
 f
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )
-\pgfsys@objnum=\count168
+\pgfsys@objnum=\count165
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count169
-\pgfsyssoftpath@bigbuffer@items=\count170
+\pgfsyssoftpath@smallbuffer@items=\count166
+\pgfsyssoftpath@bigbuffer@items=\count167
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -963,8 +853,8 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen194
-\pgfmath@count=\count171
+\pgfmath@dimen=\dimen187
+\pgfmath@count=\count168
 \pgfmath@box=\box47
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
@@ -988,37 +878,37 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count172
+\c@pgfmathroundto@lastzeros=\count169
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen195
-\pgf@picmaxx=\dimen196
-\pgf@picminy=\dimen197
-\pgf@picmaxy=\dimen198
-\pgf@pathminx=\dimen199
-\pgf@pathmaxx=\dimen256
-\pgf@pathminy=\dimen257
-\pgf@pathmaxy=\dimen258
-\pgf@xx=\dimen259
-\pgf@xy=\dimen260
-\pgf@yx=\dimen261
-\pgf@yy=\dimen262
-\pgf@zx=\dimen263
-\pgf@zy=\dimen264
+\pgf@picminx=\dimen188
+\pgf@picmaxx=\dimen189
+\pgf@picminy=\dimen190
+\pgf@picmaxy=\dimen191
+\pgf@pathminx=\dimen192
+\pgf@pathmaxx=\dimen193
+\pgf@pathminy=\dimen194
+\pgf@pathmaxy=\dimen195
+\pgf@xx=\dimen196
+\pgf@xy=\dimen197
+\pgf@yx=\dimen198
+\pgf@yy=\dimen199
+\pgf@zx=\dimen256
+\pgf@zy=\dimen257
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen265
-\pgf@path@lasty=\dimen266
+\pgf@path@lastx=\dimen258
+\pgf@path@lasty=\dimen259
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen267
-\pgf@shorten@start@additional=\dimen268
+\pgf@shorten@end@additional=\dimen260
+\pgf@shorten@start@additional=\dimen261
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
@@ -1026,19 +916,19 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box48
 \pgf@hbox=\box49
 \pgf@layerbox@main=\box50
-\pgf@picture@serial@count=\count173
+\pgf@picture@serial@count=\count170
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen269
+\pgflinewidth=\dimen262
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen270
-\pgf@pt@y=\dimen271
-\pgf@pt@temp=\dimen272
+\pgf@pt@x=\dimen263
+\pgf@pt@y=\dimen264
+\pgf@pt@temp=\dimen265
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -1054,12 +944,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen273
+\pgfarrowsep=\dimen266
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen274
-\pgf@sys@shading@range@num=\count174
+\pgf@max=\dimen267
+\pgf@sys@shading@range@num=\count171
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1090,8 +980,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen275
-\pgf@nodesepend=\dimen276
+\pgf@nodesepstart=\dimen268
+\pgf@nodesepend=\dimen269
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
@@ -1105,8 +995,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen277
-\pgffor@skip=\dimen278
+\pgffor@iter=\dimen270
+\pgffor@skip=\dimen271
 \pgffor@stack=\toks39
 \pgffor@toks=\toks40
 ))
@@ -1116,31 +1006,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count175
-\pgfplotmarksize=\dimen279
+\pgf@plot@mark@count=\count172
+\pgfplotmarksize=\dimen272
 )
-\tikz@lastx=\dimen280
-\tikz@lasty=\dimen281
-\tikz@lastxsaved=\dimen282
-\tikz@lastysaved=\dimen283
-\tikzleveldistance=\dimen284
-\tikzsiblingdistance=\dimen285
+\tikz@lastx=\dimen273
+\tikz@lasty=\dimen274
+\tikz@lastxsaved=\dimen275
+\tikz@lastysaved=\dimen276
+\tikzleveldistance=\dimen277
+\tikzsiblingdistance=\dimen278
 \tikz@figbox=\box53
 \tikz@figbox@bg=\box54
 \tikz@tempbox=\box55
 \tikz@tempbox@bg=\box56
-\tikztreelevel=\count176
-\tikznumberofchildren=\count177
-\tikznumberofcurrentchild=\count178
-\tikz@fig@count=\count179
+\tikztreelevel=\count173
+\tikznumberofchildren=\count174
+\tikznumberofcurrentchild=\count175
+\tikz@fig@count=\count176
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count180
-\pgfmatrixcurrentcolumn=\count181
-\pgf@matrix@numberofcolumns=\count182
+\pgfmatrixcurrentrow=\count177
+\pgfmatrixcurrentcolumn=\count178
+\pgf@matrix@numberofcolumns=\count179
 )
-\tikz@expandcount=\count183
+\tikz@expandcount=\count180
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -1155,9 +1045,9 @@ Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
 \t@pgfplots@toka=\toks41
 \t@pgfplots@tokb=\toks42
 \t@pgfplots@tokc=\toks43
-\pgfplots@tmpa=\dimen286
-\c@pgfplots@coordindex=\count184
-\c@pgfplots@scanlineindex=\count185
+\pgfplots@tmpa=\dimen279
+\c@pgfplots@coordindex=\count181
+\c@pgfplots@scanlineindex=\count182
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -1173,7 +1063,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 gfsupp_pgflibraryfpu.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
 gfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count186
+\c@pgfmathroundto@lastzeros=\count183
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
@@ -1182,13 +1072,13 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count187
+\c@pgfplotsarray@tmp=\count184
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count188
+\c@pgfplotstable@counta=\count185
 \t@pgfplotstable@a=\toks44
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
@@ -1201,13 +1091,13 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count189
+\c@pgfplotslibrarysurf@no=\count186
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-xetex.def
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-dvipdfmx.def
-\c@pgfplotslibrarysurf@streamlen=\count190
+\c@pgfplotslibrarysurf@streamlen=\count187
 ))))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
 tex
@@ -1232,14 +1122,14 @@ e.tex)
 zlibrarydecorations.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
 e.tex
-\pgfdecoratedcompleteddistance=\dimen287
-\pgfdecoratedremainingdistance=\dimen288
-\pgfdecoratedinputsegmentcompleteddistance=\dimen289
-\pgfdecoratedinputsegmentremainingdistance=\dimen290
-\pgf@decorate@distancetomove=\dimen291
-\pgf@decorate@repeatstate=\count191
-\pgfdecorationsegmentamplitude=\dimen292
-\pgfdecorationsegmentlength=\dimen293
+\pgfdecoratedcompleteddistance=\dimen280
+\pgfdecoratedremainingdistance=\dimen281
+\pgfdecoratedinputsegmentcompleteddistance=\dimen282
+\pgfdecoratedinputsegmentremainingdistance=\dimen283
+\pgf@decorate@distancetomove=\dimen284
+\pgf@decorate@repeatstate=\count188
+\pgfdecorationsegmentamplitude=\dimen285
+\pgfdecorationsegmentlength=\dimen286
 )
 \tikz@lib@dec@box=\box57
 )
@@ -1251,13 +1141,13 @@ decorations.pathmorphing.code.tex))
 zlibrarydecorations.pathreplacing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count192
-\pgfplots@xmin@reg=\dimen294
-\pgfplots@xmax@reg=\dimen295
-\pgfplots@ymin@reg=\dimen296
-\pgfplots@ymax@reg=\dimen297
-\pgfplots@zmin@reg=\dimen298
-\pgfplots@zmax@reg=\dimen299
+\pgfplots@numplots=\count189
+\pgfplots@xmin@reg=\dimen287
+\pgfplots@xmax@reg=\dimen288
+\pgfplots@ymin@reg=\dimen289
+\pgfplots@ymax@reg=\dimen290
+\pgfplots@zmin@reg=\dimen291
+\pgfplots@zmax@reg=\dimen292
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryplotmarks.code.tex
@@ -1271,31 +1161,49 @@ File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 \fwidth=\skip68
  (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen300
-\lightrulewidth=\dimen301
-\cmidrulewidth=\dimen302
-\belowrulesep=\dimen303
-\belowbottomsep=\dimen304
-\aboverulesep=\dimen305
-\abovetopsep=\dimen306
-\cmidrulesep=\dimen307
-\cmidrulekern=\dimen308
-\defaultaddspace=\dimen309
-\@cmidla=\count193
-\@cmidlb=\count194
-\@aboverulesep=\dimen310
-\@belowrulesep=\dimen311
-\@thisruleclass=\count195
-\@lastruleclass=\count196
-\@thisrulewidth=\dimen312
+\heavyrulewidth=\dimen293
+\lightrulewidth=\dimen294
+\cmidrulewidth=\dimen295
+\belowrulesep=\dimen296
+\belowbottomsep=\dimen297
+\aboverulesep=\dimen298
+\abovetopsep=\dimen299
+\cmidrulesep=\dimen300
+\cmidrulekern=\dimen301
+\defaultaddspace=\dimen302
+\@cmidla=\count190
+\@cmidlb=\count191
+\@aboverulesep=\dimen303
+\@belowrulesep=\dimen304
+\@thisruleclass=\count192
+\@lastruleclass=\count193
+\@thisrulewidth=\dimen305
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen313
+\bigstrutjot=\dimen306
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
-\c@subfigure=\count197
-\c@subtable=\count198
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen307
+\captionmargin@=\dimen308
+\captionwidth=\dimen309
+\caption@tempdima=\dimen310
+\caption@indent=\dimen311
+\caption@parindent=\dimen312
+\caption@hangindent=\dimen313
+)
+\c@ContinuedFloat=\count194
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count195
+\c@subtable=\count196
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypatterns.code.tex
@@ -1332,7 +1240,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip69
 \backup@length=\skip70
 )
-\TY@count=\count199
+\TY@count=\count197
 \TY@linewidth=\dimen316
 \tymin=\dimen317
 \tymax=\dimen318
@@ -1345,7 +1253,7 @@ nment
 
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count266
+\c@float@type=\count198
 \float@exts=\toks47
 \float@box=\box62
 \@float@everytoks=\toks48
@@ -1355,7 +1263,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks49
-\c@algorithm=\count267
+\c@algorithm=\count199
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -1364,15 +1272,15 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count268
-\c@ALG@rem=\count269
-\c@ALG@nested=\count270
+\c@ALG@line=\count266
+\c@ALG@rem=\count267
+\c@ALG@nested=\count268
 \ALG@tlm=\skip71
 \ALG@thistlm=\skip72
-\c@ALG@Lnr=\count271
-\c@ALG@blocknr=\count272
-\c@ALG@storecount=\count273
-\c@ALG@tmpcounter=\count274
+\c@ALG@Lnr=\count269
+\c@ALG@blocknr=\count270
+\c@ALG@storecount=\count271
+\c@ALG@tmpcounter=\count272
 \ALG@tmplength=\skip73
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -1440,8 +1348,8 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \cftbeforefigskip=\skip114
 \cftfigindent=\skip115
 \cftfignumwidth=\skip116
-\c@lofdepth=\count275
-\c@lotdepth=\count276
+\c@lofdepth=\count273
+\c@lotdepth=\count274
 \cftbeforelottitleskip=\skip117
 \cftafterlottitleskip=\skip118
 \cftbeforetabskip=\skip119
@@ -1450,27 +1358,28 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count277
-\c@@ppsavesec=\count278
-\c@@ppsaveapp=\count279
+\c@@pps=\count275
+\c@@ppsavesec=\count276
+\c@@ppsaveapp=\count277
 )
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip122
 \bibsep=\skip123
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count280
+\c@NAT@ctr=\count278
 )
 (/usr/share/texlive/texmf-dist/tex/latex/quotchap/quotchap.sty
 Package: quotchap 2012/10/20 v1.1 Decorative Chapter Headings with Quotes
 \@quotebox=\box65
 )
 \mybibindent=\skip124
-Package hyperref Info: Option `colorlinks' set `true' on input line 235.
+Package hyperref Info: Option `colorlinks' set `true' on input line 224.
 )
-(./dissertation.aux (./chapters/introduction.aux) (./chapters/chapter1.aux)
-(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
-(./chapters/conclusion.aux))
+(./dissertation.aux (./chapters/introduction.aux) (./chapters/chapter2.aux)
+(./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux)
+(./chapters/chapter6.aux) (./chapters/chapter7.aux) (./chapters/conclusion.aux)
+)
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -1543,7 +1452,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count281
+\c@section@level=\count279
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
@@ -1553,9 +1462,6 @@ LaTeX Info: Redefining \nameref on input line 6.
 \@outlinefile=\write4
 \openout4 = `dissertation.out'.
 
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
-Package caption Info: End \AtBeginDocument code.
 LaTeX Info: Redefining \microtypecontext on input line 6.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1563,6 +1469,71 @@ Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
 
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
+File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mod
+ern Roman (RS)
+)
+ABD: EveryShipout initializing macros
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.13}).
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+(./frontmatter/personalize.tex) (./frontmatter/personalize.tex)
+File: resources/unipd-light.png Graphic file (type QTm)
+
+<use  "resources/unipd-light.png" >
+File: resources/unipd-bn.png Graphic file (type QTm)
+ <use  "resources/unipd-bn.png" >
+
+LaTeX Font Warning: Font shape `EU1/lmr/bx/sc' undefined
+(Font)              using `EU1/lmr/bx/n' instead on input line 12.
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
+File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
+
+)
+[1
+
+] [2
+
+] (./frontmatter/dedication.tex) [3] [4
+
+]
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 12.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
+)
+(./frontmatter/preface.tex) [5
+
+] [6
+
+] (./dissertation.toc
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/ebgaramond/mt-EBGaramond.cfg
 File: mt-EBGaramond.cfg 2013/05/22 v1.1 microtype config. file: EB Garamond
 )
@@ -1614,18 +1585,53 @@ Package microtype Warning: Unknown slot number of character
 (microtype)                in font encoding `EU1' in protrusion list
 (microtype)                `EBGaramond-EU'.
 
-ABD: EveryShipout initializing macros
-Package pgfplots notification 'compat/show suggested version=true': document ha
-s been generated with the most recent feature set (\pgfplotsset{compat=1.13}).
 
-(./frontmatter/personalize.tex) (./frontmatter/personalize.tex)
-File: resources/unipd-light.png Graphic file (type QTm)
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/one.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
 
-<use  "resources/unipd-light.png" >
-File: resources/unipd-bn.png Graphic file (type QTm)
- <use  "resources/unipd-bn.png" >
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 12.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/two.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/three.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/four.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/five.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/six.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/seven.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/nine.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
 
 
 Package microtype Warning: Unknown slot number of character
@@ -1675,419 +1681,77 @@ Package microtype Warning: Unknown slot number of character
 (microtype)                in font encoding `EU1' in protrusion list
 (microtype)                `EBGaramond-EU'.
 
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/sc' will be
-(Font)              scaled to size 17.28pt on input line 12.
 
 Package microtype Warning: Unknown slot number of character
 (microtype)                `/one.lnum'
 (microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
+(microtype)                `EBGaramond-it-EU'.
 
 
 Package microtype Warning: Unknown slot number of character
 (microtype)                `/two.lnum'
 (microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
+(microtype)                `EBGaramond-it-EU'.
 
 
 Package microtype Warning: Unknown slot number of character
 (microtype)                `/four.lnum'
 (microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
+(microtype)                `EBGaramond-it-EU'.
 
 
 Package microtype Warning: Unknown slot number of character
 (microtype)                `/seven.lnum'
 (microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
+(microtype)                `EBGaramond-it-EU'.
 
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/bx/sc' will be
-(Font)              scaled to size 17.28pt on input line 12.
 
 Package microtype Warning: Unknown slot number of character
 (microtype)                `/one.lnum'
 (microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
+(microtype)                `EBGaramond-it-EU'.
 
 
 Package microtype Warning: Unknown slot number of character
 (microtype)                `/two.lnum'
 (microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
+(microtype)                `EBGaramond-it-EU'.
 
 
 Package microtype Warning: Unknown slot number of character
 (microtype)                `/four.lnum'
 (microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
+(microtype)                `EBGaramond-it-EU'.
 
 
 Package microtype Warning: Unknown slot number of character
 (microtype)                `/seven.lnum'
 (microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
+(microtype)                `EBGaramond-it-EU'.
 
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/sc' will be
-(Font)              scaled to size 14.4pt on input line 12.
 
 Package microtype Warning: Unknown slot number of character
 (microtype)                `/one.lnum'
 (microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
+(microtype)                `EBGaramond-it-EU'.
 
 
 Package microtype Warning: Unknown slot number of character
 (microtype)                `/two.lnum'
 (microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
+(microtype)                `EBGaramond-it-EU'.
 
 
 Package microtype Warning: Unknown slot number of character
 (microtype)                `/four.lnum'
 (microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
+(microtype)                `EBGaramond-it-EU'.
 
 
 Package microtype Warning: Unknown slot number of character
 (microtype)                `/seven.lnum'
 (microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 12.
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/itsc' will be
-(Font)              scaled to size 10.95pt on input line 12.
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/sc' will be
-(Font)              scaled to size 20.74pt on input line 12.
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/bx/sc' will be
-(Font)              scaled to size 20.74pt on input line 12.
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/itsc' will be
-(Font)              scaled to size 12.0pt on input line 12.
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
-File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
-
-)
-[1
-
-] [2
-
-] (./frontmatter/dedication.tex) [3] [4
-
-]
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 12.
+(microtype)                `EBGaramond-it-EU'.
 
 
 Package microtype Warning: Unknown slot number of character
@@ -2137,23 +1801,53 @@ Package microtype Warning: Unknown slot number of character
 (microtype)                in font encoding `EU1' in protrusion list
 (microtype)                `EBGaramond-EU'.
 
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 12.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
-File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ppl.cfg
-File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
-)
-(./frontmatter/abstract.tex) [5
 
-] [6
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/one.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
 
-] (./frontmatter/preface.tex) [7] [8
 
-]
-(./dissertation.toc
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/bx/n' will be
-(Font)              scaled to size 12.0pt on input line 1.
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/two.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/three.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/four.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/five.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/six.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/seven.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/nine.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-EU'.
 
 
 Package microtype Warning: Unknown slot number of character
@@ -2203,350 +1897,62 @@ Package microtype Warning: Unknown slot number of character
 (microtype)                in font encoding `EU1' in protrusion list
 (microtype)                `EBGaramond-EU'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-)
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 1.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [9])
+[7])
 \tf@toc=\write5
 \openout5 = `dissertation.toc'.
 
- [10]
-(./dissertation.lof)
+ [8] (./dissertation.lof)
 \tf@lof=\write6
 \openout6 = `dissertation.lof'.
 
- [11
+ [9
 
 
-] [12
+] [10
 
 ] (./dissertation.lot)
 \tf@lot=\write7
 \openout7 = `dissertation.lot'.
 
- [13
+ [11
 
-] [14
+] [12
 
 ]
 \openout2 = `chapters/introduction.aux'.
 
 
 (./chapters/introduction.tex
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 2.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/sl' in size <10> not availa
-ble
-(Font)              Font shape `EU1/EBGaramond(0)/m/it' tried instead on input 
-line 2.
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 2.
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-it-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-it-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-it-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-it-EU'.
-
 Chapter 1.
 [1
 
 
 
 ] [2]) [3]
-\openout2 = `chapters/chapter1.aux'.
+\openout2 = `chapters/chapter2.aux'.
 
- (./chapters/chapter1.tex [4
+ (./chapters/chapter2.tex [4
 
 
 
 ]
 Chapter 2.
-[5]
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 27.
+[5] [6] [7] [8]
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 95; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+* 
+* The current font is "\EU1/lmr/m/n/12 ".
+* The requested feature is "RawFeature=+tnum".
+*************************************************
 
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 138.
+See the caption package documentation for explanation.
 
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-it-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-it-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-it-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-it-EU'.
-
-[6] [7] [8]
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'EBGaramond(2)' created for font 'EB Garamond' with options
-. [Ligatures=TeX,Numbers=OldStyle,Ligatures={Common,
-. TeX},Scale=1.0,RawFeature=+tnum].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping=te
-x-text;+tnum;"
-. - 'small caps'  (m/sc) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping=te
-x-text;+tnum;+smcp;"-
-. 'bold' (bx/n) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/B/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping=
-tex-text;+tnum;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/B/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping=
-tex-text;+tnum;+smcp;"-
-. 'italic' (m/it) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/I/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping=
-tex-text;+tnum;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/I/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping=
-tex-text;+tnum;+smcp;"-
-. 'bold italic' (bx/it) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/BI/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping
-=tex-text;+tnum;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->s*[1.0]"EB
-. Garamond/BI/OT:script=latn;language=DFLT;mapping=tex-text;+onum;+liga;mapping
-=tex-text;+tnum;+smcp;"
-.................................................
-LaTeX Font Info:    Font shape `EU1/EBGaramond(2)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 85.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-LaTeX Font Info:    Font shape `EU1/EBGaramond(2)/bx/n' will be
-(Font)              scaled to size 12.0pt on input line 87.
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-LaTeX Font Info:    Font shape `EU1/EBGaramond(2)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 91.
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-it-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-it-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-it-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-it-EU'.
-
-
-Underfull \vbox (badness 1755) has occurred while \output is active []
-
- [9]
-[10] [11]) [12]
-\openout2 = `chapters/chapter2.aux'.
-
- (./chapters/chapter2.tex
-Chapter 3.
-) [13
-
-
-
-]
+[9] [10] [11] [12]) [13]
 \openout2 = `chapters/chapter3.aux'.
 
  (./chapters/chapter3.tex [14
@@ -2554,172 +1960,268 @@ Chapter 3.
 
 
 ]
-Chapter 4.
-[15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29]
-[30] [31] [32] [33] [34] [35] [36] [37] [38]) [39]
+Chapter 3.
+[15]
+File: figures/bin_packing.jpg Graphic file (type QTm)
+ <use  "figures/bin_packing.jpg" >
+Underfull \vbox (badness 4217) has occurred while \output is active []
+
+ [16])
+[17]
 \openout2 = `chapters/chapter4.aux'.
 
- (./chapters/chapter4.tex
-[40
+ (./chapters/chapter4.tex [18
+
+
+
+]
+Chapter 4.
+[19] [20]
+File: figures/cartesian_wd.png Graphic file (type QTm)
+ <use  "figures/cartesian_wd.png" > [21] [22]
+File: figures/2dr.png Graphic file (type QTm)
+
+<use  "figures/2dr.png" > [23] [24] [25]
+File: figures/abg_2drs.jpg Graphic file (type QTm)
+ <use  "figures/abg_2drs.jpg" >
+File: figures/2d3d.png Graphic file (type QTm)
+
+<use  "figures/2d3d.png" >
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/one.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-it-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/two.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-it-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/four.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-it-EU'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `/seven.lnum'
+(microtype)                in font encoding `EU1' in protrusion list
+(microtype)                `EBGaramond-it-EU'.
+
+[26] [27] [28] [29] [30]
+File: figures/3d.png Graphic file (type QTm)
+ <use  "figures/3d.png" > [31] [32] [33] [34]) [35]
+\openout2 = `chapters/chapter5.aux'.
+
+
+(./chapters/chapter5.tex [36
 
 
 
 ]
 Chapter 5.
-[41]
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 30.
+[37]
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 21; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+* 
+* The current font is "\EU1/lmr/m/n/12 ".
+* The requested feature is "RawFeature=+tnum".
+*************************************************
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 37.
+See the caption package documentation for explanation.
+
+File: figures/time_nitems.png Graphic file (type QTm)
+<use  "figures/time_nitems.png" > [38] [39]) [40]
+\openout2 = `chapters/chapter6.aux'.
+
+ (./chapters/chapter6.tex
+Chapter 6.
+File: figures/python.png Graphic file (type QTm)
+<use  "figures/python.png" > [41
 
 
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
 
+]
+File: figures/google_or_tools.png Graphic file (type QTm)
+ <use  "figures/google_or_tools.png" >
+File: figures/coin_banner.png Graphic file (type QTm)
 
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
+<use  "figures/coin_banner.png" > [42]
+File: figures/boost.png Graphic file (type QTm)
+ <use  "figures/boost.png" >
+File: figures/pandas_logo.png Graphic file (type QTm)
 
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-LaTeX Font Info:    Font shape `EU1/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 30.
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/one.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/two.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/three.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/four.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/five.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/six.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/seven.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-
-Package microtype Warning: Unknown slot number of character
-(microtype)                `/nine.lnum'
-(microtype)                in font encoding `EU1' in protrusion list
-(microtype)                `EBGaramond-EU'.
-
-[42] [43]
+<use  "figures/pandas_logo.png" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
+File: figures/matplotlib-1.jpg Graphic file (type QTm)
+
+<use  "figures/matplotlib-1.jpg" >
+File: figures/python.png Graphic file (type QTm)
+ <use  "figures/python.png" >
+Underfull \vbox (badness 3000) has occurred while \output is active []
 
  [44]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+File: figures/dropbox_2017_logo.png Graphic file (type QTm)
 
- [45]
-Overfull \hbox (58.94223pt too wide) detected at line 152
-[] []
- []
-
-
-Underfull \vbox (badness 1365) has occurred while \output is active []
+<use  "figures/dropbox_2017_logo.png" >
+File: figures/github-logo.png Graphic file (type QTm)
+ <use  "figures/github-logo.png" >
+[45]
+File: figures/Visual_Studio_code.png Graphic file (type QTm)
+ <use  "figures/Visual_Studio_code.png" >
+File: figures/jupyter.png Graphic file (type QTm)
+ <use  "figures/jupyter.png" >
+Underfull \vbox (badness 1917) has occurred while \output is active []
 
  [46]
-[47]) [48]
+File: figures/pip.png Graphic file (type QTm)
+
+<use  "figures/pip.png" >) [47]
+\openout2 = `chapters/chapter7.aux'.
+
+ (./chapters/chapter7.tex [48
+
+
+
+]
+Chapter 7.
+[49] [50]
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 34; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+* 
+* The current font is "\EU1/lmr/m/n/12 ".
+* The requested feature is "RawFeature=+tnum".
+*************************************************
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 54; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+* 
+* The current font is "\EU1/lmr/m/n/12 ".
+* The requested feature is "RawFeature=+tnum".
+*************************************************
+[51]
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 83; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+* 
+* The current font is "\EU1/lmr/m/n/12 ".
+* The requested feature is "RawFeature=+tnum".
+*************************************************
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 103; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+* 
+* The current font is "\EU1/lmr/m/n/12 ".
+* The requested feature is "RawFeature=+tnum".
+*************************************************
+[52]
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 132; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+* 
+* The current font is "\EU1/lmr/m/n/12 ".
+* The requested feature is "RawFeature=+tnum".
+*************************************************
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 152; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+* 
+* The current font is "\EU1/lmr/m/n/12 ".
+* The requested feature is "RawFeature=+tnum".
+*************************************************
+) [53]
 \openout2 = `chapters/conclusion.aux'.
 
- (./chapters/conclusion.tex
-Chapter 6.
-) [49
+ (./chapters/conclusion.tex [54
 
-
-
-] (./dissertation.bbl [50
 
 
 ]
+Chapter 8.
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 11; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+* 
+* The current font is "\EU1/lmr/m/sc/12 ".
+* The requested feature is "RawFeature=+tnum".
+*************************************************
 
-LaTeX Warning: Empty `thebibliography' environment on input line 24.
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 65.
+See the caption package documentation for explanation.
 
-) [51] [52
 
-] (./frontmatter/thanks.tex) [53
+Underfull \vbox (badness 6461) has occurred while \output is active []
+
+ [55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+[57]
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 91.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) [58]
+(./endmatter/glossario.tex) [59
+
+
+] [60
+
+] (./endmatter/abbr.tex [61] [62] [63])
+(./dissertation.bbl [64]) [65
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
- (./dissertation.aux
-(./chapters/introduction.aux) (./chapters/chapter1.aux)
-(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
+ (./dissertation.aux (./chapters/introduction.aux) (./chapters/chapter2.aux) (.
+/chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./
+chapters/chapter6.aux) (./chapters/chapter7.aux)
 (./chapters/conclusion.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 48.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 48.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 35.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 35.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 46774 strings out of 493638
- 1015465 string characters out of 6146795
- 1156162 words of memory out of 5000000
- 49343 multiletter control sequences out of 15000+600000
- 10637 words of font info for 74 fonts, out of 8000000 for 9000
+ 46922 strings out of 493638
+ 1016570 string characters out of 6146795
+ 1171074 words of memory out of 5000000
+ 49459 multiletter control sequences out of 15000+600000
+ 10613 words of font info for 71 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 62i,13n,107p,10463b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,15n,96p,10470b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dissertation.pdf (67 pages).
+Output written on dissertation.pdf (77 pages).

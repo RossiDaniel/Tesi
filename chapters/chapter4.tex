@@ -38,6 +38,7 @@ Il modello 2D considera solo larghezza e profondità degli oggetti e non ne perm
 \begin{itemize}
 	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
+	\item la variabile continua $D$ rappresenta i metri lineari rispettola profondità e va minimizzata.
 \end{itemize}
 Il modello consiste delle seguenti variabili binarie:
 \begin{itemize}
@@ -46,7 +47,7 @@ Il modello consiste delle seguenti variabili binarie:
 \end{itemize}
 
 \begin{align}
-	& \underset{}{\text{min D}}\\
+	& \underset{}{\text{min D}} \label{equa10}\\
 	  & \text{s.t.} &   & l_{ij} + l_{ji} + b_{ij} + b_{ji} \geq 1      & i < j    &   & i,j \in I \label{equa11} \\
 	  &             &   & y_i - y_j + M_d b_{ij} \leq M_d - d_i         &          &   & i,j \in I \label{equa12} \\
 	  &             &   & x_i - x_j + M_w l_{ij} \leq M_w - w_i         &          &   & i,j \in I \label{equa13} \\
@@ -58,6 +59,7 @@ Il modello consiste delle seguenti variabili binarie:
 
 Spiegiamo ora il significato di ciascun vincolo:
 \begin{itemize}
+	\item il vincolo~\eqref{equa10} la funzione obiettivo minimizza i metri lineari rispetto alla profondità;
 	\item il vincolo~\eqref{equa11} impone che presi due oggetti almeno uno dei due si trovi dietro o alla sinistra dell'altro;
 	\item il vincolo~\eqref{equa12} dice che se $b_{ij} = 1$ allora si impone che l'oggetto i si trovi dietro l'oggetto j, altrimenti il vincolo viene disattivato. 
 	\item il vincolo~\eqref{equa13} dice che se $l_{ij} = 1$ allora si impone che l'oggetto i si trovi alla sinistra l'oggetto j, altrimenti il vincolo viene disattivato. 
@@ -77,6 +79,7 @@ Spiegiamo ora il significato di ciascun vincolo:
 \begin{itemize}
 	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
+	\item la variabile continua $D$ rappresenta i metri lineari rispettola profondità e va minimizzata.
 	\item la variabile continua $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
 	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $w_i$ se l'oggetto è stato ruotato altrimenti $d_i$;
 \end{itemize}
@@ -111,6 +114,7 @@ Spiegiamo ora il significato di ciascun vincolo:
 	\item il vincolo~\eqref{equa27} impone che dato il valore $y_i$, corrispondente alla coordinata y dell'angolo sinistro più arretrato dell'oggetto, sommandoci la profondità $d_i$ dell'oggetto e ottenendo quindi la coordinata y dell'angolo sinistro più avanzato, questa sia contenuta nell'intervallo [0,D];
 \end{itemize}
 
+\newpage
 \section{Modello 2D con rotazione e sequenza scarico}
 Con questo modello ci proponiamo di disporre nel miglior modo possibile gli oggetti sul pianale del camion tenendo conto della sequenza di scarico, un oggetto può essere scaricato lateralmente alla sua destra/sinistra oppure dal fondo del camion.
 
@@ -125,7 +129,7 @@ Con questo modello ci proponiamo di disporre nel miglior modo possibile gli ogge
 	\begin{minipage}{.5\textwidth}
 		\centering
 		\includegraphics[width=1.\linewidth]{figures/2d3d}
-		\caption[corretta sequenza di scarico]{Sequenza corretta}  
+		\caption[Corretta sequenza di scarico]{Sequenza corretta}  
 		\label{fig:2drs_abg}
 	\end{minipage}
 \end{figure}
@@ -138,11 +142,11 @@ Come si può notare nella figura \ref{fig:abg_2drs}, le vie attraverso cui può 
 	\item $v = \gamma$: via di fronte al pacco da cui può essere sfilato; 
 \end{itemize}
 
-\newpage
 Il modello introduce le seguenti variabili continue positive:
 \begin{itemize}
 	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
+	\item la variabile continua $D$ rappresenta i metri lineari rispettola profondità e va minimizzata.
 	\item la variabile continua $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
 	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $w_i$ se l'oggetto è stato ruotato altrimenti $d_i$;
 \end{itemize}
@@ -211,7 +215,7 @@ Con questo modello, evoluzione del modello 2D con rotazione, ci si propone di in
 
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.7]{figures/3d}
-		\caption[ciucia]{Veduta 3d di alcuni pacchi.}
+		\caption[Grafico con merci 3D]{Veduta 3d di alcuni pacchi.}
 		\label{fig:3d_grafics}
 	\end{center}
 \end{figure}
@@ -223,6 +227,7 @@ Il modello 3D con rotazione e sovrapposizione introduce in più rispetto al prec
 	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $z_{i}$ con $i \in I$ individua la coordinata sull'asse z del vertice in basso a sinistra dell'oggetto i;
+	\item la variabile continua $D$ rappresenta i metri lineari rispettola profondità e va minimizzata.
 	\item la variabile continua $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
 	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $w_i$ se l'oggetto è stato ruotato altrimenti $d_i$;
 \end{itemize}

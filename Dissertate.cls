@@ -73,12 +73,15 @@
 \RequirePackage{verbatim}
 
 % Fonts.
+\usepackage{mfirstuc}
+\usepackage{datatool}
+\usepackage{amsfonts,amssymb,amsmath}
 \RequirePackage{color}
 \RequirePackage{xcolor}
 \usepackage{hyperref}
 \RequirePackage{url}
-\RequirePackage{amssymb}
-\usepackage{amsmath}
+%\RequirePackage{amssymb}
+%\usepackage{amsmath}
 \RequirePackage{mathspec}
 \setmathsfont(Digits,Latin,Greek)[Numbers={Proportional}]{EB Garamond}
 \setmathrm{EB Garamond}
@@ -133,14 +136,14 @@
 \usepackage[titletoc]{appendix}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \renewcommand{\cftchapfont}{\normalsize \scshape}
-\renewcommand\listfigurename{Listing of figures}
-\renewcommand\listtablename{Listing of tables}
+\renewcommand\listfigurename{Lista delle figure}
+\renewcommand\listtablename{Lista delle tabelle}
 
 % Endmatter
 \renewcommand{\setthesection}{\arabic{chapter}.A\arabic{section}}
 
 % References.
-\renewcommand\bibname{References}
+\renewcommand\bibname{Bibliografia}
 %\RequirePackage[super,comma,numbers]{natbib}
 \RequirePackage[comma,numbers]{natbib}
 \renewcommand{\bibnumfmt}[1]{[#1]}
@@ -230,20 +233,19 @@
 	\maketitle
 	\frontispiece
 	\dedicationpage
-	\abstractpage
 	\sommario
 	\tableofcontents
 	\phantomsection
 	\clearpage
 
 	% figure listing - required if you have any figures
-	\addcontentsline{toc}{chapter}{List of figures}
+	\addcontentsline{toc}{chapter}{Lista delle figure}
 	\listoffigures
 	\phantomsection
 	\cleardoublepage
 
 	% table listing - required if you have any tables
-	\addcontentsline{toc}{chapter}{List of tables}
+	\addcontentsline{toc}{chapter}{Lista delle tabelle}
 	\listoftables
 	\phantomsection
 	\cleardoublepage
@@ -355,35 +357,48 @@
 
 \newcommand{\acronyms}{
 	\phantomsection
-	\addcontentsline{toc}{chapter}{Listing of acronyms}
-	\chapter*{Listing of acronyms}
-	\input{frontmatter/abbr.tex}
+	\addcontentsline{toc}{chapter}{Acronimi}
+	\chapter*{Lista degli acronimi}
+	\input{endmatter/abbr.tex}
 }
-
-\newcommand{\abstractpage}{
-	\phantomsection
-	\setcounter{page}{5}
-	\addcontentsline{toc}{chapter}{Abstract}
-	\chapter*{Abstract}
-	\input{frontmatter/abstract}
-}
-
 
 \renewcommand{\backmatter}{
-    \begin{appendices}
-        \include{chapters/appendixA}
-    \end{appendices}
-    \input{endmatter/personalize}
-    \clearpage
-    \bibliography{references}
-    \addcontentsline{toc}{chapter}{References}
-    \bibliographystyle{apalike2}
-    \include{endmatter/colophon}
+	\glossario
+	\acronyms
+	\bibliographystyle{unsrt}
+	\bibliography{references}
+}
+
+\newcommand{\glossario}{
+	\phantomsection
+	\addcontentsline{toc}{chapter}{Glossario}
+	\chapter*{Glossario}
+	\input{endmatter/glossario}
 }
 
 %glossario
-\newcommand{\glo}[1]{\hyperlink{(#1)}{\textit{#1$^{[g]}$}}}
-\newcommand{\gloTarget}[1]{\hypertarget{(#1)}{\textbf{#1}}}
+\newcommand{\glo}[1]{\hyperref[#1]{\textit{#1$^{[g]}$}}
+}
+\newcommand{\gloTarget}[1]{\label{#1}\textbf{\capitalisewords{#1}}: }
 
 %\usepackage[parfill]{parskip}
 \setlength{\parindent}{0pt}
+
+\usepackage{etoolbox}
+\apptocmd{\thebibliography}{\csname phantomsection\endcsname\addcontentsline{toc}{chapter}{Bibliografia}}{}{}
+
+\newcommand{\sortitem}[2]{%
+  \DTLnewrow{list}%
+  \DTLnewdbentry{list}{label}{#1}%
+  \DTLnewdbentry{list}{description}{#2}%
+}
+
+\newenvironment{sortedlist}{%
+  \DTLifdbexists{list}{\DTLcleardb{list}}{\DTLnewdb{list}}%
+}{%
+  \DTLsort{label}{list}%
+  \begin{description}%
+    \DTLforeach*{list}{\theLabel=label,\theDesc=description}{%
+      \item[\theLabel] \theDesc }%
+  \end{description}%
+}

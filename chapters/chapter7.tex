@@ -11,6 +11,20 @@ Per ciascun modello verranno riportate due tabelle con i risultati ottenuti, que
 Le tabelle riporteranno il numero di istanze per gruppo, errore relativo $\epsilon_r$ nel rapporto la tra i metri lineari ottenute, errore assoluto $\epsilon_a$ espresso in metri e il tempo medio di esecuzione di quel gruppo di istanze. Successivamente verranno riportate alcune osservazioni sui risultati di alcuni gruppi di istanze e un rapporto generale sulla bontà delle soluzioni dei modelli aldilà dei gruppi di istanze, ricordiamo che sia il modello che l'euristica venivano eseguite sulla stessa istanze e con le stesse caratteristiche, questo permette un confronto oggettivo.
 
 \newpage
+\section{Errori}
+Sia modello che euristica restituiscono il valore minimizzato dalla funzione obiettivo ossia i metri lineari occupati. La nomenclatura sarà la seguente:
+\begin{itemize}
+	\item Metri lineare modello: $Obj_m$
+	\item Metri lineare euristica: $Obj_h$
+\end{itemize}
+
+Gli errori che verranno riportati successivamente vengono calcolati come segue:
+\begin{center}
+	$$\epsilon_a = Obj_h - Obj_m$$
+	$$\epsilon_r = \frac{100 (Obj_h - Obj_m) }{Obj_m}$$
+\end{center}
+
+\newpage
 \section{Risultati modello 2DR}
 Di seguito verranno riportati i risultati ottenuti dal confronto tra soluzioni ottime fornite da euristica e modello 2DR:
 \begin{center}
@@ -57,7 +71,7 @@ Di seguito verranno riportati i risultati ottenuti dal confronto tra soluzioni o
 		\end{minipage}
 	\end{table}
 \end{center}
-Le prime osservazioni che mi sento di riferire è il perché gruppi di istanze come il 4,7,8 riportino $\epsilon_r$ e $\epsilon_a$ entrambe uguali a 0, questo perché mediamente i pacchi di tali gruppi di istanze avevano dimensioni che non permettevano di affiancare tra loro i pacchi, per questo ogni caso si è ridotto ad allinearli uno dietro l'altro portando ad ottenere sempre lo stesso risultato. Sembra essere interessante anche il gruppo di istanze 9 che riporta mediamente il tempo di esecuzione minore, questo gruppo di istanze è un formata da mix di pacchi stretti e corti e stretti e lunghi, questo porta gli errori $\epsilon_r$ per quanto riguarda le soluzioni ottime ad un valore del 10\% di errore, mentre invece con le soluzioni best bound questo aumenta fino al 20\% aumentando così considerevolmente, altra considerazione interessante è come ci si aspetterebbe di veder diminuire gli errori con le soluzioni best bound, questo non accade ma anzi aumentano il distacco dalle soluzioni fornite dall'euristica, segno che le soluzione best bound fornite dal modello sono comunque soluzione valide per il confronto.
+Le prime osservazioni che mi sento di dare sono sul perché gruppi di istanze come il 4,7,8 riportino errori $\epsilon_r$ e $\epsilon_a$ uguali a 0, perché mediamente i pacchi di tali gruppi di istanze avevano dimensioni che non permettevano di essere affiancati tra loro, per questo ogni istanza il modello ed euristica si sono ridotti ad allinearli uno davanti l'altro portando ed ottenendo sempre lo stesso risultato. Sembra interessante anche il gruppo di istanze 9 che riporta mediamente un tempo di esecuzione minore, questo gruppo di istanze è un formata da mix di pacchi stretti e corti e stretti e lunghi, questo porta gli errori $\epsilon_r$ per quanto riguarda le soluzioni ottime ad un valore del 10\%, mentre invece con le soluzioni best bound questo aumenta fino al 20\% aumentando così considerevolmente, altra considerazione interessante è come ci si aspetterebbe di veder diminuire gli errori con le soluzioni best bound, questo non accade ed anzi aumenti il distacco dalle soluzioni fornite dall'euristica, segno che le soluzione best bound fornite dal modello sono comunque soluzione valide per il confronto.
 
 \newpage
 \section{Risultati modello 2DRS}
