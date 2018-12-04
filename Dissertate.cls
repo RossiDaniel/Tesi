@@ -83,9 +83,8 @@
 %\RequirePackage{amssymb}
 %\usepackage{amsmath}
 \RequirePackage{mathspec}
-\setmathsfont(Digits,Latin,Greek)[Numbers={Proportional}]{EB Garamond}
-\setmathrm{EB Garamond}
-\AtBeginEnvironment{tabular}{\addfontfeature{RawFeature=+tnum}}
+%\setmathsfont(Digits,Latin,Greek)[Numbers={Proportional}]{Computer Modern}
+%\AtBeginEnvironment{tabular}{\addfontfeature{RawFeature=+tnum}}
 \widowpenalty=300
 \clubpenalty=300
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
@@ -365,7 +364,7 @@
 \renewcommand{\backmatter}{
 	\glossario
 	\acronyms
-	\bibliographystyle{unsrt}
+	\bibliographystyle{apa}
 	\bibliography{references}
 }
 
@@ -401,4 +400,4 @@
       \item[\theLabel] \theDesc }%
   \end{description}%
 }
-\newcommand{\bit}[1]{(#1) \cite{(#1)}}
+\newcommand{\bit}[2]{#1~\cite{#2}}

@@ -16,7 +16,7 @@ Il progetto generale nasce dalla visione di Filippo Sottovia, titolare dell'azie
 Il software, fornisce un'interfaccia grafica web intuitiva che fa dell'usabilità la propria punta di diamante, essa infatti persegue l'idea di rendere il più semplice possibile operare sul sistema senza però mancare di professionalità, il sistema inoltre è equipaggiato con algoritmi che permettono di ottimizzare gli ordini organizzando al meglio le merci da trasportare ripartendole nei diversi camion della flotta, tenendo conto degli orari di carico e scarico, delle sedi dei clienti/fornitori, delle condizioni di traffico sulle strade, delle pause dovute per legge agli autisti e della particolarità delle merci.
 
 \section{Introduzione al progetto}
-L'azienda per permettere di stimare lo spazio occupato dalle merci ha sviluppato un'euristica, questa riceve in input le merci da trasportare divise nei diversi ordini, le approssima a parallelepipedi e le dispone al meglio sul pianale del camion, sovrapponendole dove possibile, con l'obiettivo di ridurre al minimo lo spazio lineare occupato dalle stesse, così facendo si risparmia spazio per eventuali altre merci da caricare qualora arrivassero nuovi ordini.
+L'azienda per permettere di stimare lo spazio occupato dalle merci ha sviluppato un'\glo{euristica}, questa riceve in input le merci da trasportare divise nei diversi ordini, le approssima a parallelepipedi e le dispone al meglio sul pianale del camion, sovrapponendole dove possibile, con l'obiettivo di ridurre al minimo lo spazio lineare occupato dalle stesse, così facendo si risparmia spazio per eventuali altre merci da caricare qualora arrivassero nuovi ordini.
 A rendere ancora più complicato il lavoro dell'euristica riportiamo tre principali problemi da tenere in considerazione:
 \begin{itemize}
 	\item Stabilità degli oggetti: la faccia inferiore di ciascun oggetto deve poggiare per intero sulle facce superiori di altri oggetti sotto di sè o sul pianale del camion;
@@ -26,7 +26,7 @@ A rendere ancora più complicato il lavoro dell'euristica riportiamo tre princip
 \end{itemize}
 
 \section{Vincoli temporali, tecnologici e metodologici}
-Nel periodo di stage svolto presso l'azienda mi è stato chiesto di tenere un \textit{diario} condiviso utilizzando \textit{dropbox}, nel suddetto diario mi si richiedeva di annotare giornalieramente l'avanzare del lavoro riportando idee, osservazione riguardanti criticità rilevate e positività riscontrate negli strumenti utilizzati, nella cartella condivisa mi è stato chiesto di includere anche gli articoli accademici letti e le presentazioni fatte in azienda man mano che si proseguiva con lo stage.\\
+Nel periodo di stage svolto presso l'azienda mi è stato chiesto di tenere un \textit{diario} condiviso utilizzando \bit{DropBox}{dropbox}, nel suddetto diario mi si richiedeva di annotare giornalieramente l'avanzare del lavoro riportando idee, osservazione riguardanti criticità rilevate e positività riscontrate negli strumenti utilizzati, nella cartella condivisa mi è stato chiesto di includere anche gli articoli accademici letti e le presentazioni fatte in azienda man mano che si proseguiva con lo stage.\\
 
 La presentazione di metà stage è stato un evento importante alla quale ha presenziato tutto il team di sviluppo, parte del personale d'amministrazione e il Professor De Giovanni che mi ha fornito preziosi consigli su cosa orientare gli sforzi per la seconda metà dello stage alla luce di quanto ottenuto nella prima metà.\\
 Prima di iniziare lo stage è stato concordato con l'azienda un piano di lavoro su un totale di 320 ore, lavorando 5 giorni a settimana, 8 ore per ciascun giorno. 
@@ -75,8 +75,8 @@ Si prevede lo svolgimento dei seguenti obiettivi:
 \section{Pianificazione}
 Con le ore a disposizione per questo stage si è proceduto a organizzare come segue le attività:
 \begin{itemize}
-	\item \textbf{Formazione}: si è visto necessario approfondire la programmazione lineare e la letteratura correlata al problema del bin packing, imparare il linguaggio di programmazione Python, l'ambiente fornito dallo strumento \textit{Jupyter} e imparare ad usare il framework Or-Tools.
-	\item \textbf{Modello 2D}: questo periodo di stage ha richiesto la prototipazione, realizzazione e test del modello 2D e il confronto con l'euristica.
+	\item \textbf{Formazione}: si è visto necessario approfondire la programmazione lineare e la letteratura correlata al problema del bin packing, imparare il linguaggio di programmazione \bit{Python}{python}, l'ambiente fornito dallo strumento \bit{Jupyter notebook}{jupyter} e imparare ad usare il framework \bit{Google Or-Tools}{ortools}.
+	\item \textbf{Modello 2D}: questo periodo di stage ha richiesto la \glo{prototipazione}, realizzazione e test del modello 2D e il confronto con l'euristica.
 	\item \textbf{Modello 2DR}: questo periodo di stage ha richiesto la prototipazione, realizzazione e test del modello 2DR e il confronto con l'euristica.
 	\item \textbf{Modello 3D}: questo periodo di stage ha richiesto la prototipazione, realizzazione e test del modello 3D e il confronto con l'euristica.
 	\item \textbf{Lavoro sviluppo euristica}: periodo richiesto per realizzare delle funzionalità aggiuntive fornite all'euristica.
@@ -140,7 +140,7 @@ La pianificazione delle attività è stata così distribuita:
 	
 \section{Ambiente di lavoro}
 \subsection{Metodi di sviluppo}
-Il ciclo di vita di un prodotto in Trans-Cel segue il metodo incrementale, in particolare il tutto inizia da una fase di concezione dell'idea, analisi della stessa, progettazione ed infine partendo dagli obiettivi più importanti si realizza il prodotto rilasciando periodicamente una versione dello stesso che mostri le nuove funzionalità inserite e dimostri così l'\glo{incremento} fatto. In quest'ottica lo sviluppo di un modello può essere associato ad un incremento, la cui \textit{milestone} è la ricezione dei risultati, a sua volta lo sviluppo di ciasun modello segue il metodo incrementale, lo sviluppo di un modello può essere visto come l'insieme di tre principali attività:
+Il \glo{ciclo di vita} di un prodotto in Trans-Cel segue il \glo{metodo incrementale}, in particolare il tutto inizia da una fase di concezione dell'idea, analisi della stessa, progettazione ed infine partendo dagli obiettivi più importanti si realizza il prodotto rilasciando periodicamente una versione dello stesso che mostri le nuove funzionalità inserite e dimostri così l'\glo{incremento} fatto. In quest'ottica lo sviluppo di un modello può essere associato ad un incremento, la cui \glo{milestone} è la ricezione dei risultati, a sua volta lo sviluppo di ciasun modello segue il metodo incrementale, che può essere visto come l'insieme di tre principali attività:
 \begin{itemize}
 	\item Analisi letteratura: lettura articoli accademici riportanti moodelli simili o idee per lo sviluppo degli stessi.
 	\item Scrittura: scrittura del modello e integrazione con il sistema grazie al framework Or-Tools.
@@ -149,22 +149,22 @@ Il ciclo di vita di un prodotto in Trans-Cel segue il metodo incrementale, in pa
 Inoltre è possibile cogliere analogie con il metodo \glo{agile} se si pensa ai \glo{brainstorming}, momenti di confronto creativo che stimolano il ragionamento in modo critico, utili per fare il punto della situazione oltre che esporre le problematicità che si stanno incontrando.
 	
 \subsection{Gestione di progetto}
-Per quanto riguarda la gestione di progetto sono stati utilizzati alcuni strumenti descritti con maggiore dettaglio nel \hyperlink{(chap:capitolo6)}{\textbf{Capitolo 6}}, in generale per la gestione dei task da eseguire si è fatto uso di \glo{Taiga}, uno strumento di gestione delle task molto simile per funzionamento a \glo{Trello}, per la gestione della comunicazione e condivisione informazioni si è fatto uso dell'applicazione \glo{Telegram}, per la condivisione di documentazione e articoli si è fatto uso del servizio Dropbox, per il versionamento si è fatto uso del servizio \glo{GitHub} per la familiarità dello strumento, per quanto riguarda l'interfaccia con cui versionare ho utilizzato \glo{git} da terminale.
+Per quanto riguarda la gestione di progetto sono stati utilizzati alcuni strumenti descritti con maggiore dettaglio nel \hyperlink{(chap:capitolo6)}{\textbf{Capitolo 6}}, in generale per la gestione dei task da eseguire si è fatto uso di \bit{Taiga}{taiga}, uno strumento di \glo{project management}, per la gestione della comunicazione e condivisione informazioni si è fatto uso dell'applicazione \bit{Telegram}{telegram}, per la condivisione di documentazione e articoli si è fatto uso del servizio \bit{DropBox}{dropbox}, per il versionamento si è fatto uso del servizio \bit{GitHub}{github} per la familiarità dello strumento, per quanto riguarda l'interfaccia con cui versionare ho utilizzato \bit{git}{git} da terminale.
 	
 \subsection{Linguaggio di programmazione e ambiente di sviluppo}
-Per la totalità dello stage si è lavorato utilizzando Jupyter Notebook, con questo strumento è stato possibile scrivere programmi in linguaggio Python in modo molto agevole. Questo linguaggio di programmazione è orientato agli oggetti ed interpretato dinamicamente al momento dell’esecuzione da un interprete. Python risulta veramente versatile in quanto fornisce incredibili funzionalità utilizzabili in modo semplice e intuitivo, dispone di moltissimi moduli che permettono le più svariate cose, inoltre è stato possibile grazie alla libreria \glo{Boost} esporre costrutti \glo{C++} a Python permettendo di utilizzarli nei propri programmi, questo ha permesso di mantenere efficienza e modularità. L'unico punto a sfavore è la non possibilità di realizzare programmi \glo{multithreading} se non utilizzando il modulo \glo{multiprocessing} che comporta però dei compromessi.
+Per la totalità dello stage si è lavorato utilizzando \bit{Jupyter notebook}{jupyter}, con questo strumento è stato possibile scrivere programmi in linguaggio \bit{Python}{python} in modo molto agevole. Questo linguaggio di programmazione è orientato agli oggetti ed interpretato dinamicamente al momento dell’esecuzione da un interprete. \bit{Python}{python} risulta veramente versatile in quanto fornisce incredibili funzionalità utilizzabili in modo semplice e intuitivo, dispone di moltissimi moduli che permettono le più svariate cose, inoltre è stato possibile grazie alla libreria \bit{Boost}{boost} esporre costrutti \bit{C++}{cpp} a \bit{Python}{python} permettendo di utilizzarli nei propri programmi, questo ha permesso di mantenere efficienza e modularità. L'unico punto a sfavore è la non possibilità di realizzare programmi \glo{multithreading} se non utilizzando il modulo \bit{Multiprocessing}{multiprocessing} che comporta però dei compromessi.
 	
 \section{Analisi dei rischi}
 In questa sezione vengono riportati i principali rischi che si prefiggevano all'inizio dello stage, ciascuno di essi oltre ad avere una breve descrizione riporta il livello di rischio e come si possa fare per evitarli:
 \begin{itemize}
 	\item \textbf{Difficoltà nelle tecnologie adottate}\\
-	      Ad inizio stage è stato chiaro che Python avrebbe avuto un ruolo dominante nel progetto ma la mole di librerie e etensioni rendeva il linguaggio troppo vasto da poter approfondire nella sua interezza, ed oltre a questo vi era il modulo Or-Tools e \glo{Pandas} da approfondire e utilizzare.
+	      Ad inizio stage è stato chiaro che \bit{Python}{python} avrebbe avuto un ruolo dominante nel progetto ma la mole di librerie e etensioni rendeva il linguaggio troppo vasto da poter approfondire nella sua interezza, ed oltre a questo vi era il modulo Or-Tools e \bit{Pandas}{pandas} da approfondire e utilizzare.
 	      \begin{itemize}
 	      	\item \textbf{Livello di rischio}: Basso;
-	      	\item \textbf{Contromisure}: Studiare in modo il più possibile approfondito Python e i moduli sopra citati.
+	      	\item \textbf{Contromisure}: Studiare in modo il più possibile approfondito \bit{Python}{python} e i moduli sopra citati.
 	      \end{itemize}
 	\item \textbf{Difficoltà di integrazione nel team}\\
-	      Di fondamentale importanza per la riuscita di un progetto è la cooperazione con i colleghi e la creazione di un ambiente di lavoro sano e che stimoli la produttività, essendo un nuovo arrivato inserito in un ambiente a forte stress per le stringenti scadenze vi era la possibilità di entrare in conflitto con qualche collega.
+	      Di fondamentale importanza per la riuscita di un progetto è la cooperazione con i colleghi e la creazione di un ambiente di lavoro sano e che stimoli la produttività, essendo un nuovo arrivato inserito in un ambiente soggetto a forte stress per le stringenti scadenze vi era la possibilità di entrare in conflitto con qualche collega.
 	      \begin{itemize}
 	      	\item \textbf{Livello di rischio}: Basso;
 	      	\item \textbf{Contromisure}: Perseguire un atteggiamento positivo, critico e oggettivo.

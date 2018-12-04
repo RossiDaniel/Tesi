@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.11.16)  3 DEC 2018 21:07
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  4 DEC 2018 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -799,88 +799,14 @@ LaTeX Info: Redefining \- on input line 2746.
 \c@eu@i=\count188
 \c@mkern=\count189
 )
-\g__fontspec_family_EBGaramond_int=\count190
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font EB Garamond/B (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'EBGaramond(0)' created for font 'EB Garamond' with options
-. [Numbers={Proportional}].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->"EB
-. Garamond/OT:script=latn;language=DFLT;+pnum;"
-. - 'small caps'  (m/sc) with NFSS spec.: <->"EB
-. Garamond/OT:script=latn;language=DFLT;+pnum;+smcp;"- 'italic' (m/it) with
-. NFSS spec.: <->"EB Garamond/I/OT:script=latn;language=DFLT;+pnum;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: <->"EB
-. Garamond/I/OT:script=latn;language=DFLT;+pnum;+smcp;"- 'bold italic' (bx/it)
-. with NFSS spec.: <->"EB Garamond/BI/OT:script=latn;language=DFLT;+pnum;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"EB
-. Garamond/BI/OT:script=latn;language=DFLT;+pnum;+smcp;"
-.................................................
-\symDigits:m:n=\mathgroup6
-\symLatin:m:n=\mathgroup7
-\symLatin:m:it=\mathgroup8
-\symGreek:m:n=\mathgroup9
-\symGreek:m:it=\mathgroup10
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font EB Garamond/B (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'EBGaramond(1)' created for font 'EB Garamond' with options [].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->"EB
-. Garamond/OT:script=latn;language=DFLT;"
-. - 'small caps'  (m/sc) with NFSS spec.: <->"EB
-. Garamond/OT:script=latn;language=DFLT;+smcp;"- 'italic' (m/it) with NFSS
-. spec.: <->"EB Garamond/I/OT:script=latn;language=DFLT;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: <->"EB
-. Garamond/I/OT:script=latn;language=DFLT;+smcp;"- 'bold italic' (bx/it) with
-. NFSS spec.: <->"EB Garamond/BI/OT:script=latn;language=DFLT;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"EB
-. Garamond/BI/OT:script=latn;language=DFLT;+smcp;"
-.................................................
-LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 87.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  EU1/EBGaramond(1)/m/n --> EU1/EBGaramond(1)/bx/n on inp
-ut line 87.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 87.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/EBGaramond(1)/m/it on input line 8
-7.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/EBGaramond(1)/m/it on input line 
-87.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 87.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/EBGaramond(1)/bx/n on input line 8
-7.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/EBGaramond(1)/bx/n on input line 8
-7.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  EU1/EBGaramond(1)/m/it --> EU1/EBGaramond(1)/bx/it on i
-nput line 87.
-\symOperators:m:n=\mathgroup11
-
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks50
-\MT@count=\count191
+\MT@count=\count190
 LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen176
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count192
+\MT@listname@count=\count191
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-xetex.def
 File: microtype-xetex.def 2013/05/23 v2.5a Definitions specific to xetex (RS)
@@ -933,10 +859,10 @@ ex
 \pgf@yc=\dimen186
 \w@pgf@writea=\write4
 \r@pgf@reada=\read4
-\c@pgf@counta=\count193
-\c@pgf@countb=\count194
-\c@pgf@countc=\count195
-\c@pgf@countd=\count196
+\c@pgf@counta=\count192
+\c@pgf@countb=\count193
+\c@pgf@countc=\count194
+\c@pgf@countd=\count195
 \t@pgf@toka=\toks55
 \t@pgf@tokb=\toks56
 \t@pgf@tokc=\toks57
@@ -955,13 +881,13 @@ File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
 f
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )
-\pgfsys@objnum=\count197
+\pgfsys@objnum=\count196
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count198
-\pgfsyssoftpath@bigbuffer@items=\count199
+\pgfsyssoftpath@smallbuffer@items=\count197
+\pgfsyssoftpath@bigbuffer@items=\count198
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -975,7 +901,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen187
-\pgfmath@count=\count266
+\pgfmath@count=\count199
 \pgfmath@box=\box47
 \pgfmath@toks=\toks58
 \pgfmath@stack@operand=\toks59
@@ -999,7 +925,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count267
+\c@pgfmathroundto@lastzeros=\count266
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
@@ -1037,7 +963,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box48
 \pgf@hbox=\box49
 \pgf@layerbox@main=\box50
-\pgf@picture@serial@count=\count268
+\pgf@picture@serial@count=\count267
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -1070,7 +996,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen267
-\pgf@sys@shading@range@num=\count269
+\pgf@sys@shading@range@num=\count268
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1127,7 +1053,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count270
+\pgf@plot@mark@count=\count269
 \pgfplotmarksize=\dimen272
 )
 \tikz@lastx=\dimen273
@@ -1140,18 +1066,18 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box54
 \tikz@tempbox=\box55
 \tikz@tempbox@bg=\box56
-\tikztreelevel=\count271
-\tikznumberofchildren=\count272
-\tikznumberofcurrentchild=\count273
-\tikz@fig@count=\count274
+\tikztreelevel=\count270
+\tikznumberofchildren=\count271
+\tikznumberofcurrentchild=\count272
+\tikz@fig@count=\count273
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count275
-\pgfmatrixcurrentcolumn=\count276
-\pgf@matrix@numberofcolumns=\count277
+\pgfmatrixcurrentrow=\count274
+\pgfmatrixcurrentcolumn=\count275
+\pgf@matrix@numberofcolumns=\count276
 )
-\tikz@expandcount=\count278
+\tikz@expandcount=\count277
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -1167,8 +1093,8 @@ Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
 \t@pgfplots@tokb=\toks64
 \t@pgfplots@tokc=\toks65
 \pgfplots@tmpa=\dimen279
-\c@pgfplots@coordindex=\count279
-\c@pgfplots@scanlineindex=\count280
+\c@pgfplots@coordindex=\count278
+\c@pgfplots@scanlineindex=\count279
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -1184,7 +1110,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 gfsupp_pgflibraryfpu.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
 gfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count281
+\c@pgfmathroundto@lastzeros=\count280
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
@@ -1193,13 +1119,13 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count282
+\c@pgfplotsarray@tmp=\count281
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count283
+\c@pgfplotstable@counta=\count282
 \t@pgfplotstable@a=\toks66
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
@@ -1212,13 +1138,13 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count284
+\c@pgfplotslibrarysurf@no=\count283
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-xetex.def
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-dvipdfmx.def
-\c@pgfplotslibrarysurf@streamlen=\count285
+\c@pgfplotslibrarysurf@streamlen=\count284
 ))))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
 tex
@@ -1248,7 +1174,7 @@ e.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen282
 \pgfdecoratedinputsegmentremainingdistance=\dimen283
 \pgf@decorate@distancetomove=\dimen284
-\pgf@decorate@repeatstate=\count286
+\pgf@decorate@repeatstate=\count285
 \pgfdecorationsegmentamplitude=\dimen285
 \pgfdecorationsegmentlength=\dimen286
 )
@@ -1262,7 +1188,7 @@ decorations.pathmorphing.code.tex))
 zlibrarydecorations.pathreplacing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count287
+\pgfplots@numplots=\count286
 \pgfplots@xmin@reg=\dimen287
 \pgfplots@xmax@reg=\dimen288
 \pgfplots@ymin@reg=\dimen289
@@ -1292,12 +1218,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen300
 \cmidrulekern=\dimen301
 \defaultaddspace=\dimen302
-\@cmidla=\count288
-\@cmidlb=\count289
+\@cmidla=\count287
+\@cmidlb=\count288
 \@aboverulesep=\dimen303
 \@belowrulesep=\dimen304
-\@thisruleclass=\count290
-\@lastruleclass=\count291
+\@thisruleclass=\count289
+\@lastruleclass=\count290
 \@thisrulewidth=\dimen305
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
@@ -1320,11 +1246,11 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen312
 \caption@hangindent=\dimen313
 )
-\c@ContinuedFloat=\count292
+\c@ContinuedFloat=\count291
 Package caption Info: hyperref package is loaded.
 )
-\c@subfigure=\count293
-\c@subtable=\count294
+\c@subfigure=\count292
+\c@subtable=\count293
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypatterns.code.tex
@@ -1361,7 +1287,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip70
 \backup@length=\skip71
 )
-\TY@count=\count295
+\TY@count=\count294
 \TY@linewidth=\dimen316
 \tymin=\dimen317
 \tymax=\dimen318
@@ -1374,14 +1300,14 @@ nment
 
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count296
+\c@float@type=\count295
 \float@exts=\toks69
 \float@box=\box62
 \@float@everytoks=\toks70
 \@floatcapt=\box63
 )
 \@float@every@algorithm=\toks71
-\c@algorithm=\count297
+\c@algorithm=\count296
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -1390,15 +1316,15 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count298
-\c@ALG@rem=\count299
-\c@ALG@nested=\count300
+\c@ALG@line=\count297
+\c@ALG@rem=\count298
+\c@ALG@nested=\count299
 \ALG@tlm=\skip72
 \ALG@thistlm=\skip73
-\c@ALG@Lnr=\count301
-\c@ALG@blocknr=\count302
-\c@ALG@storecount=\count303
-\c@ALG@tmpcounter=\count304
+\c@ALG@Lnr=\count300
+\c@ALG@blocknr=\count301
+\c@ALG@storecount=\count302
+\c@ALG@tmpcounter=\count303
 \ALG@tmplength=\skip74
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -1466,8 +1392,8 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \cftbeforefigskip=\skip115
 \cftfigindent=\skip116
 \cftfignumwidth=\skip117
-\c@lofdepth=\count305
-\c@lotdepth=\count306
+\c@lofdepth=\count304
+\c@lotdepth=\count305
 \cftbeforelottitleskip=\skip118
 \cftafterlottitleskip=\skip119
 \cftbeforetabskip=\skip120
@@ -1476,23 +1402,23 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count307
-\c@@ppsavesec=\count308
-\c@@ppsaveapp=\count309
+\c@@pps=\count306
+\c@@ppsavesec=\count307
+\c@@ppsaveapp=\count308
 )
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip123
 \bibsep=\skip124
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count310
+\c@NAT@ctr=\count309
 )
 (/usr/share/texlive/texmf-dist/tex/latex/quotchap/quotchap.sty
 Package: quotchap 2012/10/20 v1.1 Decorative Chapter Headings with Quotes
 \@quotebox=\box65
 )
 \mybibindent=\skip125
-Package hyperref Info: Option `colorlinks' set `true' on input line 227.
+Package hyperref Info: Option `colorlinks' set `true' on input line 226.
 )
 (./dissertation.aux (./chapters/introduction.aux) (./chapters/chapter2.aux)
 (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux)
@@ -1570,7 +1496,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count311
+\c@section@level=\count310
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
@@ -1651,70 +1577,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/ebgaramond/mt-EBGaramond.cfg
-File: mt-EBGaramond.cfg 2013/05/22 v1.1 microtype config. file: EB Garamond
-)
-Package microtype Info: Character `•' is missing
-(microtype)             in font `\EU1/EBGaramond(0)/m/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `℃' is missing
-(microtype)             in font `\EU1/EBGaramond(0)/m/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `™' is missing
-(microtype)             in font `\EU1/EBGaramond(0)/m/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `−' is missing
-(microtype)             in font `\EU1/EBGaramond(0)/m/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `•' is missing
-(microtype)             in font `\EU1/EBGaramond(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `℃' is missing
-(microtype)             in font `\EU1/EBGaramond(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `™' is missing
-(microtype)             in font `\EU1/EBGaramond(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `−' is missing
-(microtype)             in font `\EU1/EBGaramond(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `~' has a width of 0pt 
-(microtype)             in font `EU1/EBGaramond(0)/m/it/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `~' has a width of 0pt 
-(microtype)             in font `EU1/EBGaramond(0)/m/it/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `•' is missing
-(microtype)             in font `\EU1/EBGaramond(1)/m/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `℃' is missing
-(microtype)             in font `\EU1/EBGaramond(1)/m/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `™' is missing
-(microtype)             in font `\EU1/EBGaramond(1)/m/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `−' is missing
-(microtype)             in font `\EU1/EBGaramond(1)/m/n/8'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `•' is missing
-(microtype)             in font `\EU1/EBGaramond(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `℃' is missing
-(microtype)             in font `\EU1/EBGaramond(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `™' is missing
-(microtype)             in font `\EU1/EBGaramond(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `−' is missing
-(microtype)             in font `\EU1/EBGaramond(1)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
- [7])
+) [7])
 \tf@toc=\write6
 \openout6 = `dissertation.toc'.
 
-
-[8] (./dissertation.lof)
+ [8]
+(./dissertation.lof)
 \tf@lof=\write7
 \openout7 = `dissertation.lof'.
 
@@ -1756,75 +1624,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
  []
 
 [6] [7] [8]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 95; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-* 
-* The current font is "\EU1/lmr/m/n/12 ".
-* The requested feature is "RawFeature=+tnum".
-*************************************************
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 138.
 See the caption package documentation for explanation.
 
-[9]
-
-LaTeX Warning: Hyper reference `incremento' on page 10 undefined on input line 
-143.
-
-[10]
-
-LaTeX Warning: Hyper reference `agile' on page 11 undefined on input line 149.
-
-
-Overfull \hbox (16.65742pt too wide) in paragraph at lines 149--150
-[]\EU1/lmr/m/n/12 Inoltre è possibile cogliere analogie con il metodo \EU1/lmr/
-m/it/12 agile$[]$  \EU1/lmr/m/n/12 se si pensa ai [][]\EU1/lmr/m/it/12 brainsto
-rming$[]$[][]
+[9] [10]
+Overfull \hbox (17.33743pt too wide) in paragraph at lines 149--150
+[]\EU1/lmr/m/n/12 Inoltre è possibile cogliere analogie con il metodo [][]\EU1/
+lmr/m/it/12 agile$[]$[][] \EU1/lmr/m/n/12 se si pensa ai [][]\EU1/lmr/m/it/12 b
+rainstorming$[]$[][]\EU1/lmr/m/n/12 ,
  []
 
-
-LaTeX Warning: Hyper reference `Taiga' on page 11 undefined on input line 152.
-
-
-LaTeX Warning: Hyper reference `Trello' on page 11 undefined on input line 152.
-
-
-
-LaTeX Warning: Hyper reference `Telegram' on page 11 undefined on input line 15
-2.
-
-
-LaTeX Warning: Hyper reference `GitHub' on page 11 undefined on input line 152.
-
-
-
-LaTeX Warning: Hyper reference `git' on page 11 undefined on input line 152.
-
-
-LaTeX Warning: Hyper reference `Boost' on page 11 undefined on input line 155.
-
-
-LaTeX Warning: Hyper reference `C++' on page 11 undefined on input line 155.
-
-
-LaTeX Warning: Hyper reference `multithreading' on page 11 undefined on input l
-ine 155.
-
-
-LaTeX Warning: Hyper reference `multiprocessing' on page 11 undefined on input 
-line 155.
-
 [11]
-
-LaTeX Warning: Hyper reference `Pandas' on page 12 undefined on input line 161.
-
-
-
-LaTeX Warning: Hyper reference `slack' on page 12 undefined on input line 176.
+Overfull \hbox (14.79727pt too wide) in paragraph at lines 164--165
+[]\EU1/lmr/bx/n/12 Contromisure\EU1/lmr/m/n/12 : Studiare in modo il più possib
+ile approfondito Python [[]]
+ []
 
 [12]) [13]
 \openout2 = `chapters/chapter3.aux'.
@@ -1835,22 +1651,15 @@ LaTeX Warning: Hyper reference `slack' on page 12 undefined on input line 176.
 
 ]
 Chapter 3.
-
-LaTeX Warning: Hyper reference `vehicle routing' on page 15 undefined on input 
-line 8.
-
 [15]
-
-LaTeX Warning: Hyper reference `StageIt' on page 16 undefined on input line 12.
-
-
-
-LaTeX Warning: Hyper reference `istanza' on page 16 undefined on input line 14.
-
+Overfull \hbox (29.02965pt too wide) in paragraph at lines 12--15
+\EU1/lmr/m/n/12 dell’istanza corrente, questa potrà poi essere confrontata con 
+quella fornita dall’euristica.
+ []
 
 File: figures/bin_packing.jpg Graphic file (type QTm)
 <use  "figures/bin_packing.jpg" >
-Underfull \vbox (badness 3690) has occurred while \output is active []
+Underfull \vbox (badness 2781) has occurred while \output is active []
 
  [16])
 [17]
@@ -1862,59 +1671,33 @@ Underfull \vbox (badness 3690) has occurred while \output is active []
 
 ]
 Chapter 4.
-[19]
-
-LaTeX Warning: Hyper reference `commerciali' on page 20 undefined on input line
- 25.
-
-
-LaTeX Warning: Hyper reference `open source' on page 20 undefined on input line
- 25.
-
-[20]
+[19] [20]
 File: figures/cartesian_wd.png Graphic file (type QTm)
  <use  "figures/cartesian_wd.png" > [21] [22]
 File: figures/2dr.png Graphic file (type QTm)
- <use  "figures/2dr.png" >
-[23] [24] [25]
+
+<use  "figures/2dr.png" > [23] [24] [25]
 File: figures/abg_2drs.jpg Graphic file (type QTm)
  <use  "figures/abg_2drs.jpg" >
 File: figures/2d3d.png Graphic file (type QTm)
- <use  "figures/2d3d.png" >
-[26] [27] [28] [29] [30]
+
+<use  "figures/2d3d.png" > [26] [27] [28] [29] [30]
 File: figures/3d.png Graphic file (type QTm)
- <use  "figures/3d.png" > [31] [32] [33] [34]) [35]
+ <use  "figures/3d.png" >
+[31] [32] [33] [34]) [35]
 \openout2 = `chapters/chapter5.aux'.
 
-
-(./chapters/chapter5.tex [36
+ (./chapters/chapter5.tex [36
 
 
 
 ]
 Chapter 5.
 [37]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 21; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-* 
-* The current font is "\EU1/lmr/m/n/12 ".
-* The requested feature is "RawFeature=+tnum".
-*************************************************
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 37.
+(caption)                particular \caption on input line 36.
 See the caption package documentation for explanation.
-
-
-LaTeX Warning: Hyper reference `time limit' on page 38 undefined on input line 
-47.
-
-
-LaTeX Warning: Hyper reference `best bound' on page 38 undefined on input line 
-47.
 
 File: figures/time_nitems.png Graphic file (type QTm)
 <use  "figures/time_nitems.png" > [38] [39]) [40]
@@ -1930,26 +1713,19 @@ File: figures/python.png Graphic file (type QTm)
 ]
 File: figures/google_or_tools.png Graphic file (type QTm)
  <use  "figures/google_or_tools.png" >
-
-LaTeX Warning: Hyper reference `CPLEX' on page 42 undefined on input line 21.
-
-
-LaTeX Warning: Hyper reference `Gurobi' on page 42 undefined on input line 21.
-
-
-LaTeX Warning: Hyper reference `SCIP' on page 42 undefined on input line 21.
-
-
-LaTeX Warning: Hyper reference `CBC' on page 42 undefined on input line 21.
-
 File: figures/coin_banner.png Graphic file (type QTm)
-<use  "figures/coin_banner.png" > [42]
-File: figures/boost.png Graphic file (type QTm)
- <use  "figures/boost.png" >
-File: figures/pandas_logo.png Graphic file (type QTm)
 
-<use  "figures/pandas_logo.png" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<use  "figures/coin_banner.png" > [42]
+Overfull \hbox (7.03688pt too wide) in paragraph at lines 37--38
+\EU1/lmr/m/n/12 Cbc [[]] è un solver di programmazione lineare intera scritto i
+n linguaggio C++ [[]],
+ []
+
+File: figures/boost.png Graphic file (type QTm)
+<use  "figures/boost.png" >
+File: figures/pandas_logo.png Graphic file (type QTm)
+ <use  "figures/pandas_logo.png" >
+Underfull \vbox (badness 7851) has occurred while \output is active []
 
  [43]
 File: figures/matplotlib-1.jpg Graphic file (type QTm)
@@ -1957,101 +1733,37 @@ File: figures/matplotlib-1.jpg Graphic file (type QTm)
 <use  "figures/matplotlib-1.jpg" >
 File: figures/python.png Graphic file (type QTm)
  <use  "figures/python.png" >
-Underfull \vbox (badness 2865) has occurred while \output is active []
+Underfull \vbox (badness 2591) has occurred while \output is active []
 
  [44]
-
-LaTeX Warning: Hyper reference `Global Interpreter Lock' on page 45 undefined o
-n input line 70.
-
 File: figures/dropbox_2017_logo.png Graphic file (type QTm)
+
 <use  "figures/dropbox_2017_logo.png" >
 File: figures/github-logo.png Graphic file (type QTm)
  <use  "figures/github-logo.png" >
 [45]
-
-LaTeX Warning: Hyper reference `git' on page 46 undefined on input line 87.
-
 File: figures/Visual_Studio_code.png Graphic file (type QTm)
-<use  "figures/Visual_Studio_code.png" >
+ <use  "figures/Visual_Studio_code.png" >
 File: figures/jupyter.png Graphic file (type QTm)
  <use  "figures/jupyter.png" >
-Underfull \vbox (badness 1824) has occurred while \output is active []
+Underfull \vbox (badness 1629) has occurred while \output is active []
 
  [46]
 File: figures/pip.png Graphic file (type QTm)
 
-<use  "figures/pip.png" >) [47]
+<use  "figures/pip.png" >
+File: figures/taiga.png Graphic file (type QTm)
+ <use  "figures/taiga.png" >) [47] [48]
 \openout2 = `chapters/chapter7.aux'.
 
- (./chapters/chapter7.tex [48
 
-
-
-]
+(./chapters/chapter7.tex
 Chapter 7.
-[49] [50]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 34; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-* 
-* The current font is "\EU1/lmr/m/n/12 ".
-* The requested feature is "RawFeature=+tnum".
-*************************************************
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 54; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-* 
-* The current font is "\EU1/lmr/m/n/12 ".
-* The requested feature is "RawFeature=+tnum".
-*************************************************
-[51]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 83; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-* 
-* The current font is "\EU1/lmr/m/n/12 ".
-* The requested feature is "RawFeature=+tnum".
-*************************************************
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 103; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-* 
-* The current font is "\EU1/lmr/m/n/12 ".
-* The requested feature is "RawFeature=+tnum".
-*************************************************
-[52]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 132; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-* 
-* The current font is "\EU1/lmr/m/n/12 ".
-* The requested feature is "RawFeature=+tnum".
-*************************************************
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 152; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-* 
-* The current font is "\EU1/lmr/m/n/12 ".
-* The requested feature is "RawFeature=+tnum".
-*************************************************
+[49
 
-LaTeX Warning: Hyper reference `stackable' on page 53 undefined on input line 1
-72.
 
-) [53]
+
+] [50] [51] [52]) [53]
 \openout2 = `chapters/conclusion.aux'.
 
  (./chapters/conclusion.tex [54
@@ -2060,22 +1772,13 @@ LaTeX Warning: Hyper reference `stackable' on page 53 undefined on input line 1
 
 ]
 Chapter 8.
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 11; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-* 
-* The current font is "\EU1/lmr/m/sc/12 ".
-* The requested feature is "RawFeature=+tnum".
-*************************************************
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 65.
 See the caption package documentation for explanation.
 
 
-Underfull \vbox (badness 5908) has occurred while \output is active []
+Underfull \vbox (badness 4899) has occurred while \output is active []
 
  [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2084,41 +1787,43 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [57] [58] (./endmatter/glossario.tex
 \dtldb@list=\toks73
 \dtlkeys@list=\toks74
-\dtlrows@list=\count312
-\dtlcols@list=\count313
-) [59
+\dtlrows@list=\count311
+\dtlcols@list=\count312
+ [59
 
 
-] [60
+]) [60] (./endmatter/abbr.tex)
+(./dissertation.bbl [61
 
-] (./endmatter/abbr.tex [61]
-[62] [63]) (./dissertation.bbl [64]) [65
+] [62
 
 ]
+Underfull \hbox (badness 1320) in paragraph at lines 109--111
+[]\EU1/lmr/m/n/12 Cplex. [Online]. Available: [][]$[][][][][] [] [] [] [][][] [
+] [][][] [] [][][] [] [][][][][][][][][] []
+ []
+
+[63]) [64]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
- (./dissertation.aux
-(./chapters/introduction.aux) (./chapters/chapter2.aux)
-(./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux)
-(./chapters/chapter6.aux) (./chapters/chapter7.aux) (./chapters/conclusion.aux)
-)
+ (./dissertation.aux (./chapters/introduction.aux)
+(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
+(./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/chapter7.aux)
+(./chapters/conclusion.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 35.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 35.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 48573 strings out of 493638
- 1036891 string characters out of 6146795
- 1230142 words of memory out of 5000000
- 51062 multiletter control sequences out of 15000+600000
- 10581 words of font info for 67 fonts, out of 8000000 for 9000
+ 48307 strings out of 493638
+ 1028598 string characters out of 6146795
+ 1221828 words of memory out of 5000000
+ 50873 multiletter control sequences out of 15000+600000
+ 10461 words of font info for 52 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 66i,15n,96p,10470b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,14n,96p,10417b,1128s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dissertation.pdf (77 pages).
+Output written on dissertation.pdf (76 pages).

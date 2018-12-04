@@ -2,7 +2,7 @@
 
 \hypertarget{(chap:capitolo4)}{}
 \chapter{Modelli per il Bin Packing}
-In questo capitolo presenteremo prima una rapida introduzione ai modelli matematici per poi analizzare nel dettaglio ciascun modello utilizzato spiegando ciascun vincolo e delineandone quindi l'idea di base.
+In questo capitolo presenteremo prima una rapida introduzione ai modelli matematici, tratta dal \bit{libro}{ricerca}, per poi analizzare nel dettaglio ciascun modello utilizzato spiegando ciascun vincolo e delineandone quindi l'idea di base.
 \section{Modelli di programmazione matematica}
 Quando si parla di problemi di ottimizzazione spesso si fa riferimento alla ricerca operativa e ai modelli matematici, questi modelli producono una soluzione che massimizza o minimizza una funzione obiettivo su un certo dominio, questa funzione può rappresentare un aspetto di costo o guadagno. 
 La soluzione restituita ha la proprietà di essere una soluzione ottima. La funzione obiettivo solitamente viene rappresentata come segue:
@@ -22,11 +22,11 @@ $$ max\; z = \sum_{j=1}^n c_j x_j $$
 s.t.
 $$\sum_{j=1}^n a_{ij} x_j = \begin{cases} \leq b_i \\ = b_i, & i = 1,\dots,m \\ \geq b_i \end{cases}$$
 $$x = (x_1,\dots,x_n) \in X \subseteq \mathbb{R}^n$$
-Nonostante i modelli non lineari siano a volte molto più compatti ed intuivi da capire, i modelli lineari mantengono comunque semplicità e sono facilmente risolvibili, sono molti i solver \glo{commerciali} e \glo{open source} disponibili per la loro risoluzione, quello utilizzato durante lo stage è il solver open source di programmazione lineare intera CBC scritto in C++ interfacciato con Python grazie a Or-Tools. La creazione di un modello lineare parte dall'osservazione di un problema reale, fissando un obiettivo e creando vincoli che descrivano i requisiti estratti dal problema astraendo il tutto ad un insieme di vincoli lineari.
+Nonostante i modelli non lineari siano a volte molto più compatti ed intuivi da capire, i modelli lineari mantengono comunque semplicità e sono facilmente risolvibili, sono molti gli strumenti ad uso \glo{commerciale} e \glo{open source} disponibili per la loro risoluzione, quello utilizzato durante lo stage è il \glo{solver} open source di programmazione lineare intera \bit{Cbc}{cbc} scritto in \bit{C++}{cpp} interfacciato con \bit{Python}{python} grazie a \bit{Google Or-Tools}{ortools}. La creazione di un modello lineare parte dall'osservazione di un problema reale, fissando un obiettivo e creando vincoli che descrivano i requisiti estratti dal problema astraendo il tutto ad un insieme di vincoli lineari.
 Ogni variabile può avere un dominio differente, continua ($x_j \in \mathbb{R}$), intera positiva ($x_j \in \mathbb{Z}^+$) o binaria ($x_j \in \{0,1\}$) a seconda dell'utilizzo che se ne deve fare.
 
 \section{Modello 2D}
-Il modello 2D considera solo larghezza e profondità degli oggetti e non ne permette la rotazione, l'idea di base è quella di considerare solo la \textit{visione aerea} del contenitore che viene così approssimata ad un rettangolo, questo rettangolo ha larghezza prefissita e profondità infinita, le due dimensioni posso essere considerate come assi di un piano cartesiano aventi origine nel punto di intersezione tra i due assi, individuato nella figura \eqref{fig:veduta_aerea} dal pallino verde, per convenzione diciamo che l'asse x sarà quello della larghezza e l'asse y quello della profondità.
+Il modello per la versione 2D è stato preso dall'\bit{articolo}{modello}, esso considera solo larghezza e profondità degli oggetti e non ne permette la rotazione, l'idea di base è quella di considerare solo la \textit{visione aerea} del contenitore che viene così approssimata ad un rettangolo, questo rettangolo ha larghezza prefissita e profondità infinita, le due dimensioni posso essere considerate come assi di un piano cartesiano aventi origine nel punto di intersezione tra i due assi, individuato nella figura \eqref{fig:veduta_aerea} dal pallino verde, per convenzione diciamo che l'asse x sarà quello della larghezza e l'asse y quello della profondità.
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.6]{figures/cartesian_wd}
 		\caption[Veduta area - piano cartesiano]{Veduta area del container}  
