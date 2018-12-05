@@ -1,4 +1,5 @@
 %!TEX root = ../dissertation.tex
+
 \hypertarget{(chap:capitolo2)}{}
 \chapter{Processi e metodologie}
 In questo capitolo verranno riportati in modo approfondito lo scopo e gli obiettivi dello stage, contestualizzazione delle attività alla realtà aziendale e scandenziario delle stesse.
@@ -76,7 +77,7 @@ Si prevede lo svolgimento dei seguenti obiettivi:
 Con le ore a disposizione per questo stage si è proceduto a organizzare come segue le attività:
 \begin{itemize}
 	\item \textbf{Formazione}: si è visto necessario approfondire la programmazione lineare e la letteratura correlata al problema del bin packing, imparare il linguaggio di programmazione \bit{Python}{python}, l'ambiente fornito dallo strumento \bit{Jupyter notebook}{jupyter} e imparare ad usare il framework \bit{Google Or-Tools}{ortools}.
-	\item \textbf{Modello 2D}: questo periodo di stage ha richiesto la \glo{prototipazione}, realizzazione e test del modello 2D e il confronto con l'euristica.
+	\item \textbf{Modello 2D}: questo periodo di stage ha richiesto la prototipazione, realizzazione e test del modello 2D e il confronto con l'euristica.
 	\item \textbf{Modello 2DR}: questo periodo di stage ha richiesto la prototipazione, realizzazione e test del modello 2DR e il confronto con l'euristica.
 	\item \textbf{Modello 3D}: questo periodo di stage ha richiesto la prototipazione, realizzazione e test del modello 3D e il confronto con l'euristica.
 	\item \textbf{Lavoro sviluppo euristica}: periodo richiesto per realizzare delle funzionalità aggiuntive fornite all'euristica.
@@ -140,19 +141,19 @@ La pianificazione delle attività è stata così distribuita:
 	
 \section{Ambiente di lavoro}
 \subsection{Metodi di sviluppo}
-Il \glo{ciclo di vita} di un prodotto in Trans-Cel segue il \glo{metodo incrementale}, in particolare il tutto inizia da una fase di concezione dell'idea, analisi della stessa, progettazione ed infine partendo dagli obiettivi più importanti si realizza il prodotto rilasciando periodicamente una versione dello stesso che mostri le nuove funzionalità inserite e dimostri così l'\glo{incremento} fatto. In quest'ottica lo sviluppo di un modello può essere associato ad un incremento, la cui \glo{milestone} è la ricezione dei risultati, a sua volta lo sviluppo di ciasun modello segue il metodo incrementale, che può essere visto come l'insieme di tre principali attività:
+Il \glo{ciclo di vita} di un prodotto in Trans-Cel segue il \glo{modello incrementale}, in particolare il tutto inizia da una fase di concezione dell'idea, analisi della stessa, progettazione ed infine partendo dagli obiettivi più importanti si realizza il prodotto rilasciando periodicamente una versione dello stesso che mostri le nuove funzionalità inserite e dimostri così l'\glo{incremento} fatto. In quest'ottica lo sviluppo di un modello può essere associato ad un incremento, la cui \glo{milestone} è la ricezione dei risultati, a sua volta lo sviluppo di ciasun modello segue il modello incrementale, che può essere visto come l'insieme di tre principali attività:
 \begin{itemize}
 	\item Analisi letteratura: lettura articoli accademici riportanti moodelli simili o idee per lo sviluppo degli stessi.
 	\item Scrittura: scrittura del modello e integrazione con il sistema grazie al framework Or-Tools.
 	\item Verifica: testing massimo e verifica delle soluzioni fornite.
 \end{itemize}
 Inoltre è possibile cogliere analogie con il metodo \glo{agile} se si pensa ai \glo{brainstorming}, momenti di confronto creativo che stimolano il ragionamento in modo critico, utili per fare il punto della situazione oltre che esporre le problematicità che si stanno incontrando.
-	
+
 \subsection{Gestione di progetto}
 Per quanto riguarda la gestione di progetto sono stati utilizzati alcuni strumenti descritti con maggiore dettaglio nel \hyperlink{(chap:capitolo6)}{\textbf{Capitolo 6}}, in generale per la gestione dei task da eseguire si è fatto uso di \bit{Taiga}{taiga}, uno strumento di \glo{project management}, per la gestione della comunicazione e condivisione informazioni si è fatto uso dell'applicazione \bit{Telegram}{telegram}, per la condivisione di documentazione e articoli si è fatto uso del servizio \bit{DropBox}{dropbox}, per il versionamento si è fatto uso del servizio \bit{GitHub}{github} per la familiarità dello strumento, per quanto riguarda l'interfaccia con cui versionare ho utilizzato \bit{git}{git} da terminale.
 	
 \subsection{Linguaggio di programmazione e ambiente di sviluppo}
-Per la totalità dello stage si è lavorato utilizzando \bit{Jupyter notebook}{jupyter}, con questo strumento è stato possibile scrivere programmi in linguaggio \bit{Python}{python} in modo molto agevole. Questo linguaggio di programmazione è orientato agli oggetti ed interpretato dinamicamente al momento dell’esecuzione da un interprete. \bit{Python}{python} risulta veramente versatile in quanto fornisce incredibili funzionalità utilizzabili in modo semplice e intuitivo, dispone di moltissimi moduli che permettono le più svariate cose, inoltre è stato possibile grazie alla libreria \bit{Boost}{boost} esporre costrutti \bit{C++}{cpp} a \bit{Python}{python} permettendo di utilizzarli nei propri programmi, questo ha permesso di mantenere efficienza e modularità. L'unico punto a sfavore è la non possibilità di realizzare programmi \glo{multithreading} se non utilizzando il modulo \bit{Multiprocessing}{multiprocessing} che comporta però dei compromessi.
+Per la totalità dello stage si è lavorato utilizzando \bit{Jupyter notebook}{jupyter}, con questo strumento è stato possibile scrivere programmi in linguaggio \bit{Python}{python} in modo molto agevole. Questo linguaggio di programmazione è orientato agli oggetti ed interpretato dinamicamente al momento dell’esecuzione da un interprete. \bit{Python}{python} risulta veramente versatile in quanto fornisce incredibili funzionalità utilizzabili in modo semplice e intuitivo, dispone di moltissimi moduli che permettono le più svariate cose, inoltre è stato possibile grazie alla libreria \bit{Boost}{boost} esporre costrutti \bit{C++}{cpp} a \bit{Python}{python} permettendo di utilizzarli nei propri programmi, questo ha permesso di mantenere efficienza e modularità.
 	
 \section{Analisi dei rischi}
 In questa sezione vengono riportati i principali rischi che si prefiggevano all'inizio dello stage, ciascuno di essi oltre ad avere una breve descrizione riporta il livello di rischio e come si possa fare per evitarli:
