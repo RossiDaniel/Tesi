@@ -232,7 +232,7 @@
 	\maketitle
 	\frontispiece
 	\dedicationpage
-	\sommario
+	\abstract
 	\tableofcontents
 	\phantomsection
 	\clearpage
@@ -331,8 +331,12 @@
 }
 
 \newcommand{\dedicationpage}{
+	\pagestyle{empty}
+	\thispagestyle{empty}
+	\pagenumbering{arabic}
+	\lhead{\nouppercase{\slshape Ringraziamenti}}
 	\phantomsection
-	\setcounter{page}{3}
+	\chapter*{Ringraziamenti}
 	\noindent {\itshape \input{frontmatter/dedication}}
 }
 
@@ -344,10 +348,13 @@
 	\vspace*{\fill} \newpage
 }
 
-\newcommand{\sommario}{
-	\phantomsection
-	\chapter*{Sommario}
-	\input{frontmatter/preface}
+\newcommand{\abstract}{
+	\pagestyle{empty}
+	\thispagestyle{empty}
+	\pagenumbering{arabic}
+	\lhead{\nouppercase{\slshape Ringraziamenti}}
+	\chapter*{Abstract}
+	\noindent {\itshape \input{frontmatter/abstract}}
 }
 
 \newcommand{\acronyms}{
