@@ -333,11 +333,7 @@
 \newcommand{\dedicationpage}{
 	\phantomsection
 	\setcounter{page}{3}
-	\vspace*{\fill}
-	\scshape \noindent \input{frontmatter/dedication}
-	\vspace*{\fill}
-	\cleardoublepage
-	\rm
+	\noindent {\itshape \input{frontmatter/dedication}}
 }
 
 \newcommand{\acknowledgments}{
@@ -376,8 +372,8 @@
 }
 
 %glossario
-\newcommand{\glo}[1]{\hyperref[#1]{\textit{#1$^{[g]}$}}}
-\newcommand{\gloTarget}[1]{\label{#1}\textbf{\capitalisewords{#1}}: }
+\newcommand{\glo}[1]{\hyperlink{#1}{\textit{#1$^{[g]}$}}}
+\newcommand{\gloTarget}[1]{\hypertarget{#1}{\textbf{\capitalisewords{#1}}: }}
 
 %\usepackage[parfill]{parskip}
 \setlength{\parindent}{0pt}
@@ -385,19 +381,4 @@
 \usepackage{etoolbox}
 \apptocmd{\thebibliography}{\csname phantomsection\endcsname\addcontentsline{toc}{chapter}{Bibliografia}}{}{}
 
-\newcommand{\sortitem}[2]{%
-  \DTLnewrow{list}%
-  \DTLnewdbentry{list}{label}{#1}%
-  \DTLnewdbentry{list}{description}{#2}%
-}
-
-\newenvironment{sortedlist}{%
-  \DTLifdbexists{list}{\DTLcleardb{list}}{\DTLnewdb{list}}%
-}{%
-  \DTLsort{label}{list}%
-  \begin{description}%
-    \DTLforeach*{list}{\theLabel=label,\theDesc=description}{%
-      \item[\theLabel] \theDesc }%
-  \end{description}%
-}
 \newcommand{\bit}[2]{#1~\cite{#2}}
