@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  6 DEC 2018 15:17
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  7 DEC 2018 15:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1590,7 +1590,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--12
 
 [1] [2
 
-] (./frontmatter/abstract.tex) [3] [4
+] (./frontmatter/abstract.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 4--12
+
+ []
+
+[3] [4
 
 ] (./dissertation.toc
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -1653,31 +1658,13 @@ Chapter 1.
 
 ]
 Chapter 2.
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
-[6] [7] [8]
+[5] [6] [7] [8]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 139.
+(caption)                particular \caption on input line 141.
 See the caption package documentation for explanation.
 
-[9] [10]
-Overfull \hbox (17.33743pt too wide) in paragraph at lines 150--151
-[]\EU1/lmr/m/n/12 Inoltre è possibile cogliere analogie con il metodo [][]\EU1/
-lmr/m/it/12 agile$[]$[][] \EU1/lmr/m/n/12 se si pensa ai [][]\EU1/lmr/m/it/12 b
-rainstorming$[]$[][]\EU1/lmr/m/n/12 ,
- []
-
-[11]
-Overfull \hbox (14.79727pt too wide) in paragraph at lines 165--166
-[]\EU1/lmr/bx/n/12 Contromisure\EU1/lmr/m/n/12 : Studiare in modo il più possib
-ile approfondito Python [[]]
- []
-
-[12]) [13]
+[9] [10] [11] [12]) [13]
 \openout2 = `chapters/chapter3.aux'.
 
  (./chapters/chapter3.tex [14
@@ -1687,14 +1674,9 @@ ile approfondito Python [[]]
 ]
 Chapter 3.
 [15]
-Overfull \hbox (29.02965pt too wide) in paragraph at lines 12--15
-\EU1/lmr/m/n/12 dell’istanza corrente, questa potrà poi essere confrontata con 
-quella fornita dall’euristica.
- []
-
 File: figures/bin_packing.jpg Graphic file (type QTm)
-<use  "figures/bin_packing.jpg" >
-Underfull \vbox (badness 2781) has occurred while \output is active []
+ <use  "figures/bin_packing.jpg" >
+Underfull \vbox (badness 1442) has occurred while \output is active []
 
  [16])
 [17]
@@ -1714,9 +1696,9 @@ File: figures/2dr.png Graphic file (type QTm)
 <use  "figures/2dr.png" > [23] [24] [25]
 File: figures/abg_2drs.jpg Graphic file (type QTm)
  <use  "figures/abg_2drs.jpg" >
-File: figures/2d3d.png Graphic file (type QTm)
+File: figures/2drs.png Graphic file (type QTm)
 
-<use  "figures/2d3d.png" > [26] [27] [28] [29] [30]
+<use  "figures/2drs.png" > [26] [27] [28] [29] [30]
 File: figures/3d.png Graphic file (type QTm)
  <use  "figures/3d.png" >
 [31] [32] [33] [34]) [35]
@@ -1750,20 +1732,14 @@ File: figures/google_or_tools.png Graphic file (type QTm)
 ]
 File: figures/coin_banner.png Graphic file (type QTm)
 
-<use  "figures/coin_banner.png" >
-Overfull \hbox (7.03688pt too wide) in paragraph at lines 37--38
-\EU1/lmr/m/n/12 Cbc [[]] è un solver di programmazione lineare intera scritto i
-n linguaggio C++ [[]],
- []
-
-[42]
+<use  "figures/coin_banner.png" > [42]
 File: figures/boost.png Graphic file (type QTm)
  <use  "figures/boost.png" >
 File: figures/pandas_logo.png Graphic file (type QTm)
- <use  "figures/pandas_logo.png" >
-File: figures/matplotlib-1.jpg Graphic file (type QTm)
 
-<use  "figures/matplotlib-1.jpg" >
+<use  "figures/pandas_logo.png" >
+File: figures/matplotlib-1.jpg Graphic file (type QTm)
+ <use  "figures/matplotlib-1.jpg" >
 Underfull \vbox (badness 1303) has occurred while \output is active []
 
  [43]
@@ -1848,7 +1824,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  48265 strings out of 493638
  1028059 string characters out of 6146795
- 1217525 words of memory out of 5000000
+ 1217529 words of memory out of 5000000
  50832 multiletter control sequences out of 15000+600000
  10461 words of font info for 52 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
