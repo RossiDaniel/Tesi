@@ -8,7 +8,7 @@ In questo capitolo verranno riportati in modo approfondito lo scopo e gli obiett
 Il progetto generale nasce dalla visione di Filippo Sottovia, titolare dell'azienda, di realizzare un software decisionale di supporto che permettesse di soddisfare molteplici obiettivi quali:
 \begin{itemize}
 	\item agevolazione degli operatori nello svolgimento delle loro mansioni;
-	\item facilitazione del processo decisionale richiedendo così lavoratore meno esperti;
+	\item facilitazione del processo decisionale richiedendo così lavoratori meno esperti;
 	\item nuove attività frutto del tempo risparmiato grazie all'aumento della produttività;
 	\item condivisione in tempo reale delle informazioni sullo stato dei trasporti;
 	\item stima di costi e profitti disponibile in ogni momento.
@@ -21,7 +21,7 @@ L'azienda per permettere di stimare lo spazio occupato dalle merci ha sviluppato
 A rendere ancora più complicato il lavoro dell'euristica riportiamo tre principali problemi da tenere in considerazione:
 \begin{itemize}
 	\item Stabilità degli oggetti: la faccia inferiore di ciascun oggetto deve poggiare per intero sulle facce superiori di altri oggetti sotto di sé o sul pianale del camion;
-	\item Sequenza di scarico: ogni oggetto deve poter essere scaricato lateralmente o frontalmente, questo implica che non può avere intorno a sé merci che ne blocchino lo scarico, in quanto appartenenti ad ordini maggiori;
+	\item Sequenza di scarico: ogni oggetto deve poter essere scaricato lateralmente o frontalmente, questo implica che non può avere intorno a sé merci che ne blocchino lo scarico, in quanto appartenenti ad ordini successivi;
 	\item Baricentro degli oggetti: peso delle merci deve essere equamente distribuito sul pianale del camion;
 	\item Sovrapponibilità delle merci: alcune merci non sono sovrapponibili.
 \end{itemize}
@@ -42,7 +42,6 @@ Ogni obiettivo è provvisto di un codice identificativo formato da una delle seg
 	[importanza][identificativo].
 \end{figure}
 
-\newpage
 Il livello di importanza di ciascun obiettivo può essere uno tra i seguenti:
 \begin{itemize}
 	\item Obbligatorio: individuato dalla stringa \textit{ob}, sono obiettivi fondamentali per la riuscita del progetto, il loro soddisfacimento dovrà verificarsi obbligatoriamente entro la fine dello stage, pena il fallimento dello stesso;
@@ -94,6 +93,12 @@ Ogni periodo di sviluppo di un modello sarà poi diviso a sua volta nelle seguen
 \end{itemize}
 
 La pianificazione delle attività è stata così distribuita:
+\begin{figure}[H]
+	\begin{center} \includegraphics[scale=0.6]{figures/cartesian_wd}
+		\caption[Veduta area - piano cartesiano]{Veduta area del container}  
+		\label{fig:veduta_aerea}
+	\end{center}
+\end{figure}
 \begin{center}
 	\begin{tabular}{|l|l|c l|}
 		\hline
