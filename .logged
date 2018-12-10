@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.11.16)  10 DEC 2018 11:53
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.11.16)  10 DEC 2018 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1528,14 +1528,9 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 )
 [1
 
-] [2
-
-] [3] [4] [3] [4
-
-]
+] [2]
 LaTeX Font Info:    Try loading font information for T1+ppl on input line 12.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ppl.cfg
@@ -1577,7 +1572,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--12
 
  []
 
-[5] [6
+[3
+
+] [4
 
 ] (./frontmatter/abstract.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 4--12
@@ -1608,11 +1605,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [7])
+) [7] [8])
 \tf@toc=\write6
 \openout6 = `dissertation.toc'.
 
- [8]
+
 [9] [10
 
 
@@ -1654,32 +1651,32 @@ Overfull \hbox (0.60228pt too wide) in paragraph at lines 29--29
 []\EU1/lmr/bx/n/17.28 Vincoli temporali, tecnologici e metodologici 
  []
 
-[6] [7]
+[6] [7] [8]
 File: figures/stage.png Graphic file (type QTm)
- <use  "figures/stage.png" > [8]
+ <use  "figures/stage.png" > [9] [10]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 146.
 See the caption package documentation for explanation.
 
-[9] [10]
-Overfull \hbox (8.59991pt too wide) in paragraph at lines 162--162
+[11]
+Overfull \hbox (8.59991pt too wide) in paragraph at lines 163--163
 []\EU1/lmr/bx/n/14.4 Linguaggio di programmazione e ambiente di sviluppo 
  []
 
-[11] [12]) [13]
+[12] [13]) [14]
 \openout2 = `chapters/chapter3.aux'.
 
- (./chapters/chapter3.tex [14
-
-
-
-]
+ (./chapters/chapter3.tex
 Chapter 3.
 
 Underfull \vbox (badness 2818) has occurred while \output is active []
 
- [15]
+ [15
+
+
+
+]
 File: figures/bin_packing.jpg Graphic file (type QTm)
 
 <use  "figures/bin_packing.jpg" > [16]) [17]
@@ -1693,27 +1690,30 @@ File: figures/bin_packing.jpg Graphic file (type QTm)
 Chapter 4.
 [19] [20]
 File: figures/cartesian_wd.png Graphic file (type QTm)
- <use  "figures/cartesian_wd.png" > [21] [22]
+ <use  "figures/cartesian_wd.png" > [21]
+Underfull \vbox (badness 2781) has occurred while \output is active []
+
+ [22]
 File: figures/2dr.png Graphic file (type QTm)
 
-<use  "figures/2dr.png" > [23] [24] [25]
+<use  "figures/2dr.png" > [23] [24] [25] [26]
 File: figures/abg_2drs.jpg Graphic file (type QTm)
  <use  "figures/abg_2drs.jpg" >
 File: figures/2drs.png Graphic file (type QTm)
 
-<use  "figures/2drs.png" > [26] [27] [28] [29] [30]
+<use  "figures/2drs.png" > [27] [28] [29] [30] [31]
 File: figures/3d.png Graphic file (type QTm)
  <use  "figures/3d.png" >
-[31] [32] [33] [34]) [35]
+[32] [33] [34] [35]) [36]
 \openout2 = `chapters/chapter5.aux'.
 
- (./chapters/chapter5.tex [36
+ (./chapters/chapter5.tex
+Chapter 5.
+[37
 
 
 
 ]
-Chapter 5.
-[37]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 36.
@@ -1804,14 +1804,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ] [62
 
-] [63]) [64]
+]
+Underfull \hbox (badness 1320) in paragraph at lines 102--104
+[]\EU1/lmr/m/n/12 Cplex. [Online]. Available: [][]$[][][][][] [] [] [] [][][] [
+] [][][] [] [][][] [] [][][][][][][][][] []
+ []
+
+[63]) [64]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
- (./dissertation.aux
-(./chapters/introduction.aux) (./chapters/chapter2.aux)
-(./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux)
-(./chapters/chapter6.aux) (./chapters/chapter7.aux) (./chapters/conclusion.aux)
-)
+ (./dissertation.aux (./chapters/introduction.aux)
+(./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
+(./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/chapter7.aux)
+(./chapters/conclusion.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 36.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 36.
 
@@ -1820,12 +1825,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 48021 strings out of 493638
- 1025172 string characters out of 6146795
- 1213436 words of memory out of 5000000
- 50585 multiletter control sequences out of 15000+600000
- 10501 words of font info for 57 fonts, out of 8000000 for 9000
+ 48016 strings out of 493638
+ 1025007 string characters out of 6146795
+ 1213555 words of memory out of 5000000
+ 50583 multiletter control sequences out of 15000+600000
+ 10485 words of font info for 55 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 66i,14n,96p,10417b,552s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,14n,96p,10417b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dissertation.pdf (82 pages).
+Output written on dissertation.pdf (78 pages).
