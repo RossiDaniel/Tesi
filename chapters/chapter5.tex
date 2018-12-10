@@ -8,42 +8,45 @@ Diamo prima una definizione di istanza:
 \begin{center}
 	Una \textbf{istanza} è un insieme formato dai pacchi da disporre nel contenitore.
 \end{center}
-Mentre invece la definizione di gruppo di istanze:
+Diamo inoltre la definizione di gruppo di istanze:
 \begin{center}
 	Un \textbf{gruppo di istanze} è un insieme di istanze accomunate tra loro dalle simili dimensioni o dal numero di oggetti.
 \end{center}
-La prassi generale nell'eseguire il testing dei modelli è stata quella di creare un centinaio di istanze casualmente, eseguire il modello sulle istanze generate e verificare la correttezza delle soluzioni fornite, con l'obiettivo di individuare imperfezioni o testare la tenuta dei vincoli, la verifica della correttezza delle soluzioni veniva fatto attraverso funzioni realizzate appositamente che verranno illustrate nelle sezioni successive.
-Questa procedura richiedeva circa una ventina di minuti di esecuzione ed è stata utilizzata solo dopo modifiche importanti che da un punto di vista teorico erano corrette, inoltre venivano eseguite su istanze con pochi oggetti per risparmiare tempo e individuare subito eventuali errori.
+La prassi generale nell'eseguire il testing dei modelli è stata quella di creare un centinaio di istanze casualmente, eseguire il modello sulle istanze generate e verificare la correttezza delle soluzioni fornite, con l'obiettivo di individuare imperfezioni o testare la tenuta dei vincoli.
+La verifica della correttezza delle soluzioni veniva fatto attraverso funzioni realizzate appositamente che verranno illustrate nelle sezioni successive.
+Questa procedura richiedeva circa una ventina di minuti di esecuzione, questa è stata utilizzata solo dopo che i modelli avessero espresso correttamente tutti i requisiti di partenza. La loro esecuzione è avvenuta su istanze con pochi oggetti per risparmiare tempo e individuare subito eventuali errori.
 
 Dopo la realizzazione di tutti i modelli, sicuri delle soluzioni fornite grazie alla validazione effettuata, si è passati all'esecuzione di 100 test per ciascuna delle istanze riportate di seguito per ottenere maggiori informazioni in merito, il tutto eseguito per ciascun modello.
 \begin{center}
 	\begin{tabular}{lrrrr}
 		\toprule
-		{} & width\_a & width\_b & depth\_a & depth\_b \\
+		{}
+		\#ist & width\_a & width\_b & depth\_a & depth\_b \\
 		\midrule
-		0  & 0.5      & 2.45     & 0.5      & 2.45     \\
-		1  & 0.5      & 1.50     & 0.5      & 4.00     \\
-		2  & 1.5      & 2.45     & 0.5      & 4.00     \\
-		3  & 0.5      & 1.50     & 3.0      & 4.00     \\
-		4  & 1.5      & 2.45     & 3.0      & 4.00     \\
-		5  & 0.1      & 1.00     & 0.1      & 1.00     \\
-		6  & 0.1      & 1.00     & 3.0      & 4.00     \\
-		7  & 2.0      & 2.45     & 3.0      & 4.00     \\
-		8  & 2.0      & 2.45     & 2.0      & 2.45     \\
-		9  & 0.1      & 1.00     & 0.1      & 4.00     \\
+		0     & 0.5      & 2.45     & 0.5      & 2.45     \\
+		1     & 0.5      & 1.50     & 0.5      & 4.00     \\
+		2     & 1.5      & 2.45     & 0.5      & 4.00     \\
+		3     & 0.5      & 1.50     & 3.0      & 4.00     \\
+		4     & 1.5      & 2.45     & 3.0      & 4.00     \\
+		5     & 0.1      & 1.00     & 0.1      & 1.00     \\
+		6     & 0.1      & 1.00     & 3.0      & 4.00     \\
+		7     & 2.0      & 2.45     & 3.0      & 4.00     \\
+		8     & 2.0      & 2.45     & 2.0      & 2.45     \\
+		9     & 0.1      & 1.00     & 0.1      & 4.00     \\
 		\bottomrule
 	\end{tabular}
 	\captionof{table}{Le dimensioni dei gruppi di istanze eseguite}
+	\label{tab:istanze}
 \end{center}
 
-La tabella riporta gli intervalli entro cui si è deciso casualmente le dimensioni dei pacchi, ogni gruppo di istanze aveva dimensioni particolari entro cui dovevano trovarsi i pacchi:
+Nella tabella \ref{tab:istanze} l'indice \#ist è un codice identificativo del gruppo di istanze. Vengono riportati anche gli intervalli entro cui si è deciso casualmente le dimensioni dei pacchi, ogni gruppo di istanze aveva dimensioni particolari entro cui dovevano trovarsi i pacchi:
 \begin{itemize}
 	\item \textbf{Larghezza}: [width\_a, width\_b]
 	\item \textbf{Profondità}: [depth\_a, depth\_b]
 \end{itemize}
 
 \section{Numero di oggetti}
-Fin dal modello 2D abbiamo capito che il numero di pacchi per ogni istanza sarebbe dovuto essere limitato in quanto già con 7 pacchi i tempi di esecuzione aumentavano vertiginosamente, abbiamo quindi deciso di scegliere in modo casuale in un intervallo [3,10] il numero di pacchi da assegnare a ciascuna istanza, imponendo un \glo{time limit} di 300 secondi, questo portava ad ottenere soluzioni ottime e soluzioni \glo{best bound}, l'analisi dei risultati sarà divisa in queste due categorie infatti.
+Fin dal modello 2D abbiamo capito che il numero di pacchi per ogni istanza sarebbe dovuto essere limitato in quanto già con 7 pacchi i tempi di esecuzione aumentavano vertiginosamente, abbiamo quindi deciso di scegliere in modo casuale in un intervallo [3,10] il numero di pacchi da assegnare a ciascuna istanza, imponendo un \glo{time limit} di 300 secondi, questo portava ad ottenere soluzioni ottime e soluzioni \glo{best bound}, l'analisi dei risultati sarà divisa in queste due categorie.
 
 \begin{figure}[!ht]
 	\begin{center} \includegraphics[scale=0.8]{figures/time_nitems}
@@ -52,7 +55,8 @@ Fin dal modello 2D abbiamo capito che il numero di pacchi per ogni istanza sareb
 	\end{center}
 \end{figure}
 
-Nel grafico sopra riportato~\eqref{fig:times} viene riportato come ordinata il numero di oggetti e sull'ascissa il tempo espresso in secondi, come si può vedere man mano che gli oggetti aumentano il tempo aumenta notevolmente passando da pochi secondi a minuti, risultano molto interessanti quelle istanze che nonostante abbiano molti oggetti richiedano meno tempo per essere eseguiti, forse questo dovuto alle particolari dimensioni degli oggetti.
+Nel grafico riportato in figura \ref{fig:times} viene riportato come ordinata il numero di oggetti e sull'ascissa il tempo espresso in secondi. 
+Come si può vedere man mano che gli oggetti aumentano il tempo aumenta notevolmente passando da pochi secondi a minuti, risultano molto interessanti quelle istanze che nonostante abbiano molti oggetti richiedano meno tempo per essere eseguiti, forse questo dovuto alle particolari dimensioni degli oggetti.
 
 \section{Validazione soluzioni fornite}
 Di fondamentale importanza per il confronto è stato che le soluzioni fornite dal modello fossero corrette, questo ha richiesto lo sviluppo di alcune funzione che controllassero la validità delle stesse. Per fare questo sono state realizzate le seguenti funzioni:
