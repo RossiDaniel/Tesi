@@ -3,6 +3,15 @@
 
 \documentclass{Dissertate}
 
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\makeatletter
+%\patchcmd{\@makechapterhead}{\bfseries}{\relax}{}{}% Non-bold \chapter name
+%\patchcmd{\@makechapterhead}{\bfseries}{\relax}{}{}% Non-bold \chapter title
+\patchcmd{\section}{\bfseries}{\relax}{}{}% Non-bold \section
+\patchcmd{\subsection}{\bfseries}{\relax}{}{}% Non-bold \subsection
+\makeatother
+
+
 \begin{document}
 
 % the front matter
