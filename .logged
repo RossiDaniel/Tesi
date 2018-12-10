@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.11.16)  10 DEC 2018 15:44
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.11.16)  10 DEC 2018 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1716,11 +1716,16 @@ Chapter 5.
 ]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 36.
+(caption)                particular \caption on input line 38.
 See the caption package documentation for explanation.
 
+[38]
 File: figures/time_nitems.png Graphic file (type QTm)
-<use  "figures/time_nitems.png" > [38] [39]) [40]
+ <use  "figures/time_nitems.png" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39])
+[40]
 \openout2 = `chapters/chapter6.aux'.
 
  (./chapters/chapter6.tex
@@ -1742,31 +1747,26 @@ File: figures/pandas_logo.png Graphic file (type QTm)
 
 <use  "figures/pandas_logo.png" >
 File: figures/matplotlib-1.jpg Graphic file (type QTm)
- <use  "figures/matplotlib-1.jpg" >
-Underfull \vbox (badness 1389) has occurred while \output is active []
-
- [43]
-File: figures/python.png Graphic file (type QTm)
-
-<use  "figures/python.png" >
+ <use  "figures/matplotlib-1.jpg" > [43]
 File: figures/dropbox_2017_logo.png Graphic file (type QTm)
- <use  "figures/dropbox_2017_logo.png" >
+
+<use  "figures/dropbox_2017_logo.png" > [44]
+File: figures/github-logo.png Graphic file (type QTm)
+ <use  "figures/github-logo.png" >
+File: figures/Visual_Studio_code.png Graphic file (type QTm)
+
+<use  "figures/Visual_Studio_code.png" >
+File: figures/jupyter.png Graphic file (type QTm)
+ <use  "figures/jupyter.png" > [45]
+File: figures/pip.png Graphic file (type QTm)
+
+<use  "figures/pip.png" >
+File: figures/taiga.png Graphic file (type QTm)
+ <use  "figures/taiga.png" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44]
-File: figures/github-logo.png Graphic file (type QTm)
-
-<use  "figures/github-logo.png" >
-File: figures/Visual_Studio_code.png Graphic file (type QTm)
- <use  "figures/Visual_Studio_code.png" >
-[45]
-File: figures/jupyter.png Graphic file (type QTm)
- <use  "figures/jupyter.png" >
-File: figures/pip.png Graphic file (type QTm)
- <use  "figures/pip.png" >
-File: figures/taiga.png Graphic file (type QTm)
-
-<use  "figures/taiga.png" > [46]) [47]
+ [46])
+[47]
 \openout2 = `chapters/chapter7.aux'.
 
  (./chapters/chapter7.tex [48
@@ -1789,10 +1789,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 65.
 See the caption package documentation for explanation.
 
-
-Underfull \vbox (badness 2326) has occurred while \output is active []
-
- [55]
+[55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56])
@@ -1825,10 +1822,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 48016 strings out of 493638
- 1025007 string characters out of 6146795
- 1213555 words of memory out of 5000000
- 50583 multiletter control sequences out of 15000+600000
+ 48029 strings out of 493638
+ 1025172 string characters out of 6146795
+ 1214217 words of memory out of 5000000
+ 50596 multiletter control sequences out of 15000+600000
  10485 words of font info for 55 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  66i,14n,96p,10417b,550s stack positions out of 5000i,500n,10000p,200000b,80000s

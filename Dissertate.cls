@@ -142,7 +142,7 @@
 %\renewcommand{\setthesection}{\arabic{chapter}.A\arabic{section}}
 
 % References.
-\renewcommand\bibname{Bibliografia}
+\renewcommand\bibname{Rifermenti bibliografici}
 %\RequirePackage[super,comma,numbers]{natbib}
 \RequirePackage[comma,numbers]{natbib}
 \renewcommand{\bibnumfmt}[1]{[#1]}
@@ -376,6 +376,6 @@
 \setlength{\parindent}{0pt}
 
 \usepackage{etoolbox}
-\apptocmd{\thebibliography}{\csname phantomsection\endcsname\addcontentsline{toc}{chapter}{Bibliografia}}{}{}
+\apptocmd{\thebibliography}{\csname phantomsection\endcsname\addcontentsline{toc}{chapter}{Rifermenti bibliografici}}{}{}
 
 \newcommand{\bit}[2]{#1~\cite{#2}}
