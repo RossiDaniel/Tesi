@@ -124,7 +124,7 @@
 
 % Headings and headers.
 \RequirePackage{fancyhdr}
-\RequirePackage[tiny, md, sc]{titlesec}
+%\RequirePackage[tiny, md, sc]{titlesec}
 \setlength{\headheight}{15pt}
 \pagestyle{plain}
 \RequirePackage{titling}
@@ -139,7 +139,7 @@
 \renewcommand\listtablename{Lista delle tabelle}
 
 % Endmatter
-\renewcommand{\setthesection}{\arabic{chapter}.A\arabic{section}}
+%\renewcommand{\setthesection}{\arabic{chapter}.A\arabic{section}}
 
 % References.
 \renewcommand\bibname{Bibliografia}
@@ -231,6 +231,7 @@
 	\input{frontmatter/personalize}
 	\maketitle
 	\frontispiece
+	\copyrightpage
 	\dedicationpage
 	\abstract
 	\tableofcontents
@@ -306,19 +307,17 @@
 	\end{center}
 	\vspace*{\fill}
 	\singlespacing
-	\cleardoublepage
+	%\cleardoublepage
 }
 
 \newcommand{\copyrightpage}{
-	\newpage
 	\thispagestyle{empty}
+	\mbox{}
 	\vspace*{25pt}
 	\begin{center}
 	\scshape \noindent \small \copyright \  \small  \theauthor \\
-	all rights reserved, \@degreeyear
+	all rights reserved, 2018
 	\end{center}
-	\newpage
-	\rm
 }
 
 \newcommand{\frontispiece}{
@@ -331,28 +330,19 @@
 }
 
 \newcommand{\dedicationpage}{
-	\pagestyle{empty}
-	\thispagestyle{empty}
-	\pagenumbering{arabic}
-	\lhead{\nouppercase{\slshape Ringraziamenti}}
 	\phantomsection
+	\vspace*{\fill}
+	\addcontentsline{toc}{chapter}{Ringraziamenti}
 	\chapter*{Ringraziamenti}
 	\noindent {\itshape \input{frontmatter/dedication}}
-}
-
-\newcommand{\acknowledgments}{
-	\phantomsection
-	\chapter*{Acknowledgments}
-	\noindent
-	\input{frontmatter/thanks}
-	\vspace*{\fill} \newpage
+	\vspace*{\fill}
+	\cleardoublepage
+	\rm
 }
 
 \newcommand{\abstract}{
-	\pagestyle{empty}
-	\thispagestyle{empty}
-	\pagenumbering{arabic}
-	\lhead{\nouppercase{\slshape Ringraziamenti}}
+	\phantomsection
+	\addcontentsline{toc}{chapter}{Abstract}
 	\chapter*{Abstract}
 	\noindent {\itshape \input{frontmatter/abstract}}
 }
