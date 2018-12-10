@@ -1678,26 +1678,27 @@ File: figures/bin_packing.jpg Graphic file (type QTm)
 
 ]
 Chapter 4.
-[19] [20]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+[20]
 File: figures/cartesian_wd.png Graphic file (type QTm)
- <use  "figures/cartesian_wd.png" > [21]
-Underfull \vbox (badness 2781) has occurred while \output is active []
-
- [22]
+ <use  "figures/cartesian_wd.png" > [21] [22]
 File: figures/2dr.png Graphic file (type QTm)
-
-<use  "figures/2dr.png" > [23] [24] [25] [26]
+ <use  "figures/2dr.png" >
+[23] [24] [25] [26]
 File: figures/abg_2drs.jpg Graphic file (type QTm)
  <use  "figures/abg_2drs.jpg" >
 File: figures/2drs.png Graphic file (type QTm)
-
-<use  "figures/2drs.png" > [27] [28] [29] [30] [31]
+ <use  "figures/2drs.png" >
+[27] [28] [29] [30] [31]
 File: figures/3d.png Graphic file (type QTm)
- <use  "figures/3d.png" >
-[32] [33] [34] [35]) [36]
+ <use  "figures/3d.png" > [32] [33] [34] [35]) [36]
 \openout2 = `chapters/chapter5.aux'.
 
- (./chapters/chapter5.tex
+
+(./chapters/chapter5.tex
 Chapter 5.
 [37
 
