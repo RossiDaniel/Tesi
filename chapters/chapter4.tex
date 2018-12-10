@@ -2,9 +2,9 @@
 
 \hypertarget{(chap:capitolo4)}{}
 \chapter{Modelli per il Bin Packing}
-In questo capitolo presenteremo prima una rapida introduzione ai modelli matematici, tratta dal \bit{libro}{ricerca}, per poi analizzare nel dettaglio ciascun modello utilizzato spiegando ciascun vincolo e delineandone quindi l'idea di base.
+In questo capitolo presenteremo prima una rapida introduzione ai modelli matematici, tratta dal libro \bit{esercizi svolti di ricerca operativa}{ricerca}, per poi analizzare nel dettaglio ciascun modello utilizzato, spiegando ciascun vincolo e delineandone quindi l'idea di base.
 \section{Modelli di programmazione matematica}
-Quando si parla di problemi di ottimizzazione spesso si fa riferimento alla ricerca operativa e ai modelli matematici. Questi modelli producono una soluzione che massimizza o minimizza una funzione obiettivo $f ( x ) $ su un certo dominio, questa funzione può rappresentare un aspetto di costo o guadagno. I polinomi lineari $g_{i} (x)$. 		 
+Quando si parla di problemi di ottimizzazione spesso si fa riferimento alla ricerca operativa e ai modelli matematici. Questi modelli producono una soluzione che massimizza o minimizza una funzione obiettivo $f ( x ) $ su un certo dominio, questa può rappresentare un aspetto di costo o guadagno.
 La soluzione restituita ha la proprietà di essere una soluzione ottima. La funzione obiettivo solitamente viene rappresentata come segue:
 $$ max\; z = f ( x )\;\; (oppure\; min\; z = f ( x ))$$
 s.t.
@@ -23,14 +23,15 @@ $$ max\; z = \sum_{j=1}^n c_j x_j $$
 s.t.
 $$\sum_{j=1}^n a_{ij} x_j = \begin{cases} \leq b_i \\ = b_i, & i = 1,\dots,m \\ \geq b_i \end{cases}$$
 $$x = (x_1,\dots,x_n) \in X \subseteq \mathbb{R}^n$$
-Nonostante i modelli non lineari siano a volte molto più compatti ed intuitivi da capire, i modelli lineari mantengono comunque semplicità e sono facilmente risolvibili. Sono molti gli strumenti ad uso commerciale e \glo{open source} disponibili per la loro risoluzione. Quello utilizzato durante lo stage è il \glo{solver} open source di programmazione lineare intera \bit{Cbc}{cbc} scritto in \bit{C++}{cpp} interfacciato con \bit{Python}{python} grazie a \bit{Google Or-Tools}{ortools}. La creazione di un modello lineare parte dall'osservazione di un problema reale, fissando un obiettivo e creando vincoli che descrivano i requisiti estratti dal problema astraendo il tutto ad un insieme di vincoli lineari.
+Nonostante i modelli non lineari siano a volte molto più compatti ed intuitivi da capire, i modelli lineari mantengono comunque una maggiore semplicità e sono facilmente risolvibili. Sono molti gli strumenti ad uso commerciale e \glo{open source} disponibili per la loro risoluzione. Quello utilizzato durante lo stage è il \glo{solver} open source di programmazione lineare intera \bit{Cbc}{cbc} scritto in \bit{C++}{cpp} interfacciato con \bit{Python}{python} grazie a \bit{Google Or-Tools}{ortools}. La creazione di un modello lineare parte dall'osservazione di un problema reale, fissando un obiettivo e creando vincoli che descrivano i requisiti estratti dal problema astraendo il tutto ad un insieme di vincoli lineari.
 Ogni variabile può avere un dominio differente, continua ($x_j \in \mathbb{R}$), intera positiva ($x_j \in \mathbb{Z}^+$) o binaria ($x_j \in \{0,1\}$) a seconda dell'utilizzo che se ne deve fare.
 \section{Big M}
-Le Big M, valori opportunamenti definiti che permettono di attivare o disattivare alcuni vincoli, sono state definite cercando di assegnargli un valore come segue:
+Le Big M, valori opportunamente definiti che permettono di attivare o disattivare alcuni vincoli, sono state definite cercando di assegnargli un valore come segue:
 \begin{itemize}
 	\item M: dato gli n oggetti, M è la somma della massima dimensione tra $w_i$ e $d_i$ dell'oggetto i-esimo;
 	\item $M_w$: viene definito come la larghezza del camion W sommato ad M;
-	\item $M_d$: viene definito come la lunghezza del camion D sommato ad M.
+	\item $M_d$: viene definito come la profondità del camion D sommato ad M.
+	\item $M_h$: viene definito come la altezza del camion H sommato ad M.
 \end{itemize}
 
 \section{Modello 2D}
@@ -146,9 +147,9 @@ Con questo modello ci proponiamo di disporre nel miglior modo possibile gli ogge
 	\end{minipage}
 \end{figure}
 
-Nel momento in cui l'oggetto verrà scaricato questo dovrà avere almeno una di queste vie libere affinché possa essere scaricato.
+Nel momento in cui l'oggetto verrà scaricato, dovrà avere almeno una di queste vie libere.
 Nella Figura \ref{fig:2drs_abg} vengono riportati colori diversi per indicare i diversi ordini di scarico, riconoscibili grazie alla legenda.
-Come si può notare nella Figura \ref{fig:abg_2drs}, le vie attraverso cui può essere effettuato uno scarico vengono deciso attraverso l'indice $v \in \theta = \{\alpha,\beta,\gamma\}$ che individua rispettivamente:
+Come si può notare nella Figura \ref{fig:abg_2drs}, le vie attraverso cui può essere effettuato uno scarico vengono decise dall'indice $v \in \theta = \{\alpha,\beta,\gamma\}$ che individua rispettivamente:
 \begin{itemize}
 	\item $v = \alpha$: via alla sinistra del pacco da cui può essere sfilato; 
 	\item $v = \beta$: via alla destra del pacco da cui può essere sfilato; 
@@ -159,21 +160,21 @@ Il modello introduce le seguenti variabili continue positive:
 \begin{itemize}
 	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
-	\item la variabile continua $D$ rappresenta i metri lineari rispetto la profondità e va minimizzata.
+	\item la variabile continua $D$ rappresenta i metri lineari rispetto la profondità e va minimizzata;
 	\item la variabile continua $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
-	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $w_i$ se l'oggetto è stato ruotato altrimenti $d_i$;
+	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $w_i$ se l'oggetto è stato ruotato altrimenti $d_i$.
 \end{itemize}
 
 Il modello introduce le seguenti variabili binarie:
 \begin{itemize}
 	\item la variabile binaria $l_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato alla sinistra dell'oggetto j, altrimenti è 0;
-	\item la variabile binaria $b_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato al di sotto dell'oggetto j, altrimenti è 0.
+	\item la variabile binaria $b_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato al di sotto dell'oggetto j, altrimenti è 0;
 	\item la variabile binaria $r_{i}$ con $i \in I$ assume il valore 1 se l'oggetto i è ruotato su se stesso di $90^{\circ}$, ne risulta che $w_{i}$ e $d_{i}$ sono invertiti, altrimenti è 0;
-	\item la variabile binaria $\alpha_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i ha alla sua sinistra l'oggetto j e questo gli impedisca di essere sfilato da sinistra, altrimenti è 0;
-	\item la variabile binaria $\beta_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i ha alla sua destra l'oggetto j e questo gli impedisca di essere sfilato da destra, altrimenti è 0;
-	\item la variabile binaria $\gamma_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i ha davanti a se l'oggetto j e questo gli impedisca di essere sfilato centralmente, altrimenti è 0;
+	\item la variabile binaria $\alpha_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i ha alla sua sinistra l'oggetto j e questo gli impedisce di essere sfilato da sinistra, altrimenti è 0;
+	\item la variabile binaria $\beta_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i ha alla sua destra l'oggetto j e questo gli impedisce di essere sfilato da destra, altrimenti è 0;
+	\item la variabile binaria $\gamma_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i ha davanti a se l'oggetto j e questo gli impedisce di essere sfilato centralmente, altrimenti è 0;
 	\item la variabile binaria $s_{vi}$ con $i \in I$ e $v \in \theta$ assume il valore 1 se l'oggetto i ha nella direzione v almeno un oggetto che gli impedisca di essere sfilato nella rispettiva direzione, altrimenti è 0;
-	\item la parametro binario $o_{ij}$ assume il valore 1 se l'oggetto i appartiene ad un ordine che deve essere scaricato prima dell'ordine a cui appartiene l'oggetto j, altrimenti è 0;
+	\item il parametro binario $o_{ij}$ assume il valore 1 se l'oggetto i appartiene ad un ordine che deve essere scaricato prima dell'ordine a cui appartiene l'oggetto j, altrimenti è 0.
 \end{itemize}
 
 \begin{align}
@@ -208,7 +209,7 @@ Spieghiamo ora il significato di ciascun vincolo:
 \begin{itemize}
 	\item il vincolo~\eqref{equa30} impone che presi due oggetti almeno uno dei due si trovi dietro o alla sinistra dell'altro;
 	\item il vincolo~\eqref{equa31} dice che se $b_{ij} = 1$ allora impone che l'oggetto i si trovi dietro l'oggetto j, altrimenti il vincolo viene disattivato;
-	\item il vincolo~\eqref{equa32} dice che se $l_{ij} = 1$ allora impone che l'oggetto i si trovi alla sinistra l'oggetto j, altrimenti il vincolo viene disattivato;
+	\item il vincolo~\eqref{equa32} dice che se $l_{ij} = 1$ allora impone che l'oggetto i si trovi alla sinistra dell'oggetto j, altrimenti il vincolo viene disattivato;
 	\item il vincolo~\eqref{equa33} impone che dato il valore $x_i$, corrispondente alla coordinata x dell'angolo sinistro più arretrato dell'oggetto, sommandoci la larghezza $w_i$ dell'oggetto e ottenendo quindi la coordinata x dell'angolo destro più arretrato, questa sia contenuta nell'intervallo [0,W];
 	\item il vincolo~\eqref{equa34} impone che dato il valore $y_i$, corrispondente alla coordinata y dell'angolo sinistro più arretrato dell'oggetto, sommandoci la profondità $d_i$ dell'oggetto e ottenendo quindi la coordinata y dell'angolo sinistro più avanzato, questa sia contenuta nell'intervallo [0,D];
 	\item il vincolo~\eqref{equa35} impone che $\Delta_i$ corrisponda alla profondità corretta considerando la rotazione;
@@ -225,7 +226,7 @@ Spieghiamo ora il significato di ciascun vincolo:
 \newpage
 \section{Modello 3D con rotazione e sovrapposizione}
 Il modello è stato basato su quello fornito dall'\bit{articolo}{modello}.
-Con questo modello, evoluzione del modello 2D con rotazione, ci si propone di introdurre la sovrapposizione degli oggetti, considerando però che alcuni oggetti potranno avere come condizione quella di non poter avere altri oggetti al di sopra, come mostrato nella Figura \ref{fig:3d_grafics}.
+Con questo modello, evoluzione del modello 2D con rotazione, ci si propone di introdurre la sovrapposizione degli oggetti, considerando però che alcuni di essi potranno avere come condizione quella di non poter avere altri oggetti al di sopra di sé, come mostrato nella Figura \ref{fig:3d_grafics}.
 
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.7]{figures/3d}
@@ -234,7 +235,8 @@ Con questo modello, evoluzione del modello 2D con rotazione, ci si propone di in
 	\end{center}
 \end{figure}
 
-Un problema non indifferente inerente questo modello viene individuato nella stabilità degli oggetti, soluzioni che riportino oggetti sopraelevati, le cui aree di base non poggino completamente sugli oggetti sottostanti sono da ritenersi non valide. Per risolvere questo problema si è deciso di optare per una semplificazione, se un oggetto i si trova sopra ad un oggetto j, allora l'area di base dell'oggetto i dovrà essere interamente appoggiata alla faccia superiore dell'oggetto j.
+Un problema non indifferente inerente questo modello viene individuato nella stabilità degli oggetti. 
+Soluzioni che riportino oggetti sopraelevati, le cui aree di base non poggino completamente sugli oggetti sottostanti sono da ritenersi non valide. Per risolvere questo problema si è deciso di optare per una semplificazione: se un oggetto i si trova sopra ad uno j, allora l'area di base dell'oggetto i dovrà essere interamente appoggiata alla faccia superiore dell'oggetto j.
 \newpage
 Il modello 3D con rotazione e sovrapposizione utilizza le seguenti variabili continue positive:
 \begin{itemize}
