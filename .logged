@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.11.16)  10 DEC 2018 20:39
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.11.16)  10 DEC 2018 21:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1414,30 +1414,30 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 226.
 )
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 6.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 15.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 15.
  (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    ... okay on input line 15.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1474,9 +1474,9 @@ LaTeX Font Info:    ... okay on input line 6.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 6.
+LaTeX Info: Redefining \selectfont on input line 15.
 \AtBeginShipoutBox=\box65
-Package hyperref Info: Link coloring ON on input line 6.
+Package hyperref Info: Link coloring ON on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1486,15 +1486,15 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count310
 )
-LaTeX Info: Redefining \ref on input line 6.
-LaTeX Info: Redefining \pageref on input line 6.
-LaTeX Info: Redefining \nameref on input line 6.
+LaTeX Info: Redefining \ref on input line 15.
+LaTeX Info: Redefining \pageref on input line 15.
+LaTeX Info: Redefining \nameref on input line 15.
 
 (./dissertation.out) (./dissertation.out)
 \@outlinefile=\write5
 \openout5 = `dissertation.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 6.
+LaTeX Info: Redefining \microtypecontext on input line 15.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1520,7 +1520,7 @@ File: resources/unipd-bn.png Graphic file (type QTm)
  <use  "resources/unipd-bn.png" >
 
 LaTeX Font Warning: Font shape `EU1/lmr/bx/sc' undefined
-(Font)              using `EU1/lmr/bx/n' instead on input line 12.
+(Font)              using `EU1/lmr/bx/n' instead on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
@@ -1529,7 +1529,7 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 [1
 
 ] [2]
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 12.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 21.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
@@ -1537,38 +1537,38 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 (./frontmatter/dedication.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 4--12
+Underfull \hbox (badness 10000) in paragraph at lines 4--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--12
+Underfull \hbox (badness 10000) in paragraph at lines 4--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--12
+Underfull \hbox (badness 10000) in paragraph at lines 4--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--12
+Underfull \hbox (badness 10000) in paragraph at lines 4--21
 
  []
 
 
-Overfull \hbox (2.20088pt too wide) in paragraph at lines 4--12
+Overfull \hbox (2.20088pt too wide) in paragraph at lines 4--21
 \EU1/lmr/m/it/12 Ai miei compagni di Università, per le giornate passate insiem
 e in Torre Archimede,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--12
+Underfull \hbox (badness 10000) in paragraph at lines 4--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--12
+Underfull \hbox (badness 10000) in paragraph at lines 4--21
 
  []
 
@@ -1577,7 +1577,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--12
 ] [4
 
 ] (./frontmatter/abstract.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 4--12
+Underfull \hbox (badness 10000) in paragraph at lines 4--21
 
  []
 
@@ -1646,12 +1646,7 @@ Chapter 1.
 
 ]
 Chapter 2.
-[5]
-Overfull \hbox (0.60228pt too wide) in paragraph at lines 29--29
-[]\EU1/lmr/bx/n/17.28 Vincoli temporali, tecnologici e metodologici 
- []
-
-[6] [7]
+[5] [6] [7]
 File: figures/stage.png Graphic file (type QTm)
  <use  "figures/stage.png" > [8] [9]
 
@@ -1659,12 +1654,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 146.
 See the caption package documentation for explanation.
 
-[10]
-Overfull \hbox (8.59991pt too wide) in paragraph at lines 163--163
-[]\EU1/lmr/bx/n/14.4 Linguaggio di programmazione e ambiente di sviluppo 
- []
-
-[11] [12]) [13]
+[10] [11] [12]) [13]
 \openout2 = `chapters/chapter3.aux'.
 
  (./chapters/chapter3.tex [14
@@ -1804,25 +1794,25 @@ Underfull \hbox (badness 1320) in paragraph at lines 102--104
  []
 
 [63]) [64]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
  (./dissertation.aux (./chapters/introduction.aux)
 (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux)
 (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/chapter7.aux)
 (./chapters/conclusion.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 36.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 36.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 45.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 45.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 48030 strings out of 493638
- 1025195 string characters out of 6146795
+ 48027 strings out of 493638
+ 1025119 string characters out of 6146795
  1214292 words of memory out of 5000000
- 50597 multiletter control sequences out of 15000+600000
- 10485 words of font info for 55 fonts, out of 8000000 for 9000
+ 50595 multiletter control sequences out of 15000+600000
+ 10477 words of font info for 54 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  66i,14n,96p,10417b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
 
