@@ -34,7 +34,7 @@ Le Big M, valori opportunamenti definiti che permettono di attivare o disattivar
 \end{itemize}
 
 \section{Modello 2D}
-Il modello per la versione 2D è stato preso dall'\bit{articolo}{modello}, esso considera solo larghezza e profondità degli oggetti e non ne permette la rotazione. L'idea di base è quella di considerare solo la \textit{visione aerea} del contenitore che viene così approssimata ad un rettangolo. Questo rettangolo ha larghezza prefissata e profondità infinita, le due dimensioni posso essere considerate come assi di un piano cartesiano aventi origine nel punto di intersezione tra i due assi, individuato nella figura \eqref{fig:veduta_aerea} dal pallino verde, per convenzione diciamo che l'asse x sarà quello della larghezza e l'asse y quello della profondità.
+Il modello per la versione 2D è stato preso dall'\bit{articolo}{modello}, esso considera solo larghezza e profondità degli oggetti e non ne permette la rotazione. L'idea di base è quella di considerare solo la \textit{visione aerea} del contenitore che viene così approssimata ad un rettangolo. Questo rettangolo ha larghezza prefissata e profondità infinita, le due dimensioni posso essere considerate come assi di un piano cartesiano aventi origine nel punto di intersezione tra i due assi, individuato nella Figura \ref{fig:veduta_aerea} dal pallino verde, per convenzione diciamo che l'asse x sarà quello della larghezza e l'asse y quello della profondità.
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.6]{figures/cartesian_wd}
 		\caption[Veduta area - piano cartesiano]{Veduta area del container}  
@@ -69,14 +69,14 @@ Spieghiamo ora il significato di ciascun vincolo:
 \begin{itemize}
 	\item il vincolo~\eqref{equa10} la funzione obiettivo minimizza i metri lineari rispetto alla profondità;
 	\item il vincolo~\eqref{equa11} impone che presi due oggetti almeno uno dei due si trovi dietro o alla sinistra dell'altro;
-	\item il vincolo~\eqref{equa12} dice che se $b_{ij} = 1$ allora impone che l'oggetto i si trovi dietro l'oggetto j, altrimenti il vincolo viene disattivato. 
-	\item il vincolo~\eqref{equa13} dice che se $l_{ij} = 1$ allora impone che l'oggetto i si trovi alla sinistra l'oggetto j, altrimenti il vincolo viene disattivato. 
+	\item il vincolo~\eqref{equa12} dice che se $b_{ij} = 1$ allora impone che l'oggetto i si trovi dietro l'oggetto j, altrimenti il vincolo viene disattivato;
+	\item il vincolo~\eqref{equa13} dice che se $l_{ij} = 1$ allora impone che l'oggetto i si trovi alla sinistra l'oggetto j, altrimenti il vincolo viene disattivato;
 	\item il vincolo~\eqref{equa14} impone che dato il valore $x_i$, corrispondente alla coordinata x dell'angolo sinistro più arretrato dell'oggetto, sommandoci la larghezza $w_i$ dell'oggetto e ottenuta quindi la coordinata x dell'angolo destro più arretrato, questa sia contenuta nell'intervallo [0,W];
-	\item il vincolo~\eqref{equa15} impone che dato il valore $y_i$, corrispondente alla coordinata y dell'angolo sinistro più arretrato dell'oggetto, sommandoci la profondità $d_i$ dell'oggetto e ottenuta quindi la coordinata y dell'angolo sinistro più avanzato, questa sia contenuta nell'intervallo [0,D];
+	\item il vincolo~\eqref{equa15} impone che dato il valore $y_i$, corrispondente alla coordinata y dell'angolo sinistro più arretrato dell'oggetto, sommandoci la profondità $d_i$ dell'oggetto e ottenuta quindi la coordinata y dell'angolo sinistro più avanzato, questa sia contenuta nell'intervallo [0,D].
 \end{itemize}
 
 \section{Modello 2D con rotazione}
-Il modello 2D con rotazione introduce in più rispetto al modello 2D la rotazione degli oggetti rispetto la propria base come mostrato in figura~\eqref{fig:pacchi_ruotati}.
+Il modello 2D con rotazione introduce in più rispetto al modello 2D la rotazione degli oggetti rispetto la propria base come mostrato in Figura \ref{fig:pacchi_ruotati}.
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.6]{figures/2dr}
 		\caption[Pacchi ruotati]{Veduta aerea di 9 pacchi, alcuni ruotati.}
@@ -88,15 +88,15 @@ Il modello 2D con rotazione introduce in più rispetto al modello 2D la rotazion
 \begin{itemize}
 	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
-	\item la variabile continua $D$ rappresenta i metri lineari rispetto la profondità e va minimizzata.
+	\item la variabile continua $D$ rappresenta i metri lineari rispetto la profondità e va minimizzata;
 	\item la variabile continua $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
-	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $w_i$ se l'oggetto è stato ruotato altrimenti $d_i$;
+	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $w_i$ se l'oggetto è stato ruotato altrimenti $d_i$.
 \end{itemize}
 Il modello consiste delle seguenti variabili binarie:
 \begin{itemize}
 	\item la variabile binaria $l_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato alla sinistra dell'oggetto j, altrimenti è 0;
-	\item la variabile binaria $b_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato al di sotto dell'oggetto j, altrimenti è 0.
-	\item la variabile binaria $r_{i}$ con $i \in I$ assume il valore 1 se l'oggetto i è ruotato rispetto la propria base di 90°, ne risulta che $w_{i}$ e $d_{i}$ sono invertiti, altrimenti 0;
+	\item la variabile binaria $b_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato al di sotto dell'oggetto j, altrimenti è 0;
+	\item la variabile binaria $r_{i}$ con $i \in I$ assume il valore 1 se l'oggetto i è ruotato rispetto la propria base di 90°, ne risulta che $w_{i}$ e $d_{i}$ sono invertiti, altrimenti 0.
 \end{itemize}
 
 \begin{align}
@@ -117,14 +117,15 @@ Spieghiamo ora il significato di ciascun vincolo:
 	\item il vincolo~\eqref{equa21} impone che presi due oggetti almeno uno dei due si trovi dietro o alla sinistra dell'altro;
 	\item il vincolo~\eqref{equa22} impone che $\Delta_i$ corrisponda alla profondità corretta considerando la rotazione;
 	\item il vincolo~\eqref{equa23} impone che $\Omega_i$ corrisponda alla larghezza corretta considerando la rotazione;
-	\item il vincolo~\eqref{equa24} dice che se $b_{ij} = 1$ allora impone che l'oggetto i si trovi dietro l'oggetto j, altrimenti il vincolo viene disattivato.
-	\item il vincolo~\eqref{equa25} dice che se $l_{ij} = 1$ allora impone che l'oggetto i si trovi alla sinistra l'oggetto j, altrimenti il vincolo viene disattivato. 
+	\item il vincolo~\eqref{equa24} dice che se $b_{ij} = 1$ allora impone che l'oggetto i si trovi dietro l'oggetto j, altrimenti il vincolo viene disattivato;
+	\item il vincolo~\eqref{equa25} dice che se $l_{ij} = 1$ allora impone che l'oggetto i si trovi alla sinistra l'oggetto j, altrimenti il vincolo viene disattivato;
 	\item il vincolo~\eqref{equa26} impone che dato il valore $x_i$, corrispondente alla coordinata x dell'angolo sinistro più arretrato dell'oggetto, sommandoci la larghezza $w_i$ dell'oggetto e ottenendo quindi la coordinata x dell'angolo destro più arretrato, questa sia contenuta nell'intervallo [0,W];
-	\item il vincolo~\eqref{equa27} impone che dato il valore $y_i$, corrispondente alla coordinata y dell'angolo sinistro più arretrato dell'oggetto, sommandoci la profondità $d_i$ dell'oggetto e ottenendo quindi la coordinata y dell'angolo sinistro più avanzato, questa sia contenuta nell'intervallo [0,D];
+	\item il vincolo~\eqref{equa27} impone che dato il valore $y_i$, corrispondente alla coordinata y dell'angolo sinistro più arretrato dell'oggetto, sommandoci la profondità $d_i$ dell'oggetto e ottenendo quindi la coordinata y dell'angolo sinistro più avanzato, questa sia contenuta nell'intervallo [0,D].
 \end{itemize}
 
 \newpage
 \section{Modello 2D con rotazione e sequenza scarico}
+Il modello è stato basato su quello fornito dall'\bit{articolo}{modello}.
 Con questo modello ci proponiamo di disporre nel miglior modo possibile gli oggetti sul pianale del camion tenendo conto della sequenza di scarico, un oggetto può essere scaricato lateralmente alla sua destra/sinistra oppure dal fondo del camion.
 
 \begin{figure}[H]
@@ -144,7 +145,8 @@ Con questo modello ci proponiamo di disporre nel miglior modo possibile gli ogge
 \end{figure}
 
 Nel momento in cui l'oggetto verrà scaricato questo dovrà avere almeno una di queste vie libere affinché possa essere scaricato.
-Come si può notare nella figura \ref{fig:abg_2drs}, le vie attraverso cui può essere effettuato uno scarico vengono deciso attraverso l'indice $v \in \theta = \{\alpha,\beta,\gamma\}$ che individua rispettivamente:
+Nella Figura \ref{fig:2drs_abg} vengono riportati colori diversi per indicare i diversi ordini di scarico, riconoscibili grazie alla legenda.
+Come si può notare nella Figura \ref{fig:abg_2drs}, le vie attraverso cui può essere effettuato uno scarico vengono deciso attraverso l'indice $v \in \theta = \{\alpha,\beta,\gamma\}$ che individua rispettivamente:
 \begin{itemize}
 	\item $v = \alpha$: via alla sinistra del pacco da cui può essere sfilato; 
 	\item $v = \beta$: via alla destra del pacco da cui può essere sfilato; 
@@ -220,7 +222,8 @@ Spieghiamo ora il significato di ciascun vincolo:
 
 \newpage
 \section{Modello 3D con rotazione e sovrapposizione}
-Con questo modello, evoluzione del modello 2D con rotazione, ci si propone di introdurre la sovrapposizione degli oggetti, considerando però che alcuni oggetti potranno avere come condizione quella di non poter avere altri oggetti al di sopra.
+Il modello è stato basato su quello fornito dall'\bit{articolo}{modello}.
+Con questo modello, evoluzione del modello 2D con rotazione, ci si propone di introdurre la sovrapposizione degli oggetti, considerando però che alcuni oggetti potranno avere come condizione quella di non poter avere altri oggetti al di sopra, come mostrato nella Figura \ref{fig:3d_grafics}.
 
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.7]{figures/3d}
@@ -236,14 +239,14 @@ Il modello 3D con rotazione e sovrapposizione introduce in più rispetto al prec
 	\item la variabile continua $x_{i}$ con $i \in I$ individua la coordinata sull'asse x del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $y_{i}$ con $i \in I$ individua la coordinata sull'asse y del vertice in basso a sinistra dell'oggetto i;
 	\item la variabile continua $z_{i}$ con $i \in I$ individua la coordinata sull'asse z del vertice in basso a sinistra dell'oggetto i;
-	\item la variabile continua $D$ rappresenta i metri lineari rispetto la profondità e va minimizzata.
+	\item la variabile continua $D$ rappresenta i metri lineari rispetto la profondità e va minimizzata;
 	\item la variabile continua $\Omega_{i}$ con $i \in I$ assume il valore $d_i$ se l'oggetto è stato ruotato altrimenti $w_i$;
-	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $w_i$ se l'oggetto è stato ruotato altrimenti $d_i$;
+	\item la variabile continua $\Delta_{i}$ con $i \in I$ assume il valore $w_i$ se l'oggetto è stato ruotato altrimenti $d_i$.
 \end{itemize}
 Introduce in più rispetto al precedente anche le seguenti variabili binarie:
 \begin{itemize}
 	\item la variabile binaria $l_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato alla sinistra dell'oggetto j, altrimenti è 0;
-	\item la variabile binaria $b_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato al di sotto dell'oggetto j, altrimenti è 0.
+	\item la variabile binaria $b_{ij}$ con $i,j \in I$ assume il valore 1 se l'oggetto i è situato al di sotto dell'oggetto j, altrimenti è 0;
 	\item la variabile binaria $r_{i}$ con $i \in I$ assume il valore 1 se l'oggetto i è ruotato su se stesso di $90^{\circ}$, ne risulta che $w_{i}$ e $d_{i}$ sono invertiti, altrimenti è 0;
 	\item la variabile binaria $t_{ij}$ assume il valore 1 se l'oggetto i ha sopra di sé l'oggetto j, altrimenti è 0;
 	\item la variabile binaria $f_{ij}$ assume il valore 1 se l'oggetto i ha sopra di sé l'oggetto j e la faccia superiore dell'oggetto i è a contatto con la faccia inferiore dell'oggetto j, altrimenti è 0;
@@ -292,6 +295,6 @@ Spieghiamo ora il significato di ciascun vincolo:
 	\item il vincolo~\eqref{equa67} impone che un oggetto i possa essere al di sotto e a contatto con un oggetto j solo se l'oggetto i è al di sotto dell'oggetto j;
 	\item il vincolo~\eqref{equa68} impone che tutti gli oggetti i che non abbiano al di sotto di sé nessun oggetto debbano avere coordinata $z_i=0$
 	\item il vincolo~\eqref{equa69} impone che $\Delta_i$ corrisponda alla profondità corretta considerando la rotazione;
-	\item il vincolo~\eqref{equa70} impone che $\Omega_i$ corrisponda alla larghezza corretta considerando la rotazione;
+	\item il vincolo~\eqref{equa70} impone che $\Omega_i$ corrisponda alla larghezza corretta considerando la rotazione.
 \end{itemize}
 
