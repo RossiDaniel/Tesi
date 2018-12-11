@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.11.16)  11 DEC 2018 00:10
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.10.12)  11 DEC 2018 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1646,12 +1646,10 @@ Chapter 1.
 
 ]
 Chapter 2.
-[5] [6] [7]
-File: figures/stage.png Graphic file (type QTm)
- <use  "figures/stage.png" > [8] [9]
+[5] [6] [7] [8] [9]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 146.
+(caption)                particular \caption on input line 142.
 See the caption package documentation for explanation.
 
 [10] [11] [12]) [13]
@@ -1678,27 +1676,26 @@ File: figures/bin_packing.jpg Graphic file (type QTm)
 
 ]
 Chapter 4.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-[20]
+[19] [20]
 File: figures/cartesian_wd.png Graphic file (type QTm)
- <use  "figures/cartesian_wd.png" > [21] [22]
+ <use  "figures/cartesian_wd.png" > [21]
+Underfull \vbox (badness 2781) has occurred while \output is active []
+
+ [22]
 File: figures/2dr.png Graphic file (type QTm)
- <use  "figures/2dr.png" >
-[23] [24] [25] [26]
+
+<use  "figures/2dr.png" > [23] [24] [25] [26]
 File: figures/abg_2drs.jpg Graphic file (type QTm)
  <use  "figures/abg_2drs.jpg" >
 File: figures/2drs.png Graphic file (type QTm)
- <use  "figures/2drs.png" >
-[27] [28] [29] [30] [31]
+
+<use  "figures/2drs.png" > [27] [28] [29] [30] [31]
 File: figures/3d.png Graphic file (type QTm)
- <use  "figures/3d.png" > [32] [33] [34] [35]) [36]
+ <use  "figures/3d.png" >
+[32] [33] [34] [35]) [36]
 \openout2 = `chapters/chapter5.aux'.
 
-
-(./chapters/chapter5.tex
+ (./chapters/chapter5.tex
 Chapter 5.
 [37
 
@@ -1762,21 +1759,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Chapter 7.
-[49] [50] [51] [52]) [53]
+[49] [50] [51] [52]) [53] [54]
 \openout2 = `chapters/conclusion.aux'.
 
- (./chapters/conclusion.tex [54
-
-
-
-]
+ (./chapters/conclusion.tex
 Chapter 8.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 65.
 See the caption package documentation for explanation.
 
-[55]
+[55
+
+
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56])
@@ -1789,9 +1786,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] [62
 
 ]
-Underfull \hbox (badness 1320) in paragraph at lines 102--104
-[]\EU1/lmr/m/n/12 Cplex. [Online]. Available: [][]$[][][][][] [] [] [] [][][] [
-] [][][] [] [][][] [] [][][][][][][][][] []
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 10.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+[]\EU1/lmr/m/n/12 Multiprocessing.  URL [][]$[][][][][] [] [] [] [][][][] [] []
+[][][][][] [] [][][] [] [] [] [][][][][][][] []
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 77--79
+[]\EU1/lmr/m/n/12 Stageit.  URL [][]$[][][][] [] [] [] [][][][][][][][][][][] [
+] [][][][] [] [][][][][] [] [][] [] [][][][][][] [] [][][][][][][] []
  []
 
 [63]) [64]
@@ -1809,11 +1823,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 48027 strings out of 493638
- 1025119 string characters out of 6146795
- 1214290 words of memory out of 5000000
- 50595 multiletter control sequences out of 15000+600000
- 10477 words of font info for 54 fonts, out of 8000000 for 9000
+ 48102 strings out of 493638
+ 1027234 string characters out of 6146795
+ 1214680 words of memory out of 5000000
+ 50665 multiletter control sequences out of 15000+600000
+ 10485 words of font info for 55 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  66i,14n,96p,10417b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
 

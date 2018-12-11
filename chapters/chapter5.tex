@@ -46,7 +46,7 @@ Nella tabella \ref{tab:istanze} l'indice \#ist è un codice identificativo del g
 \end{itemize}
 
 \section{Numero di oggetti}
-Fin dal modello 2D abbiamo capito che il numero di pacchi per ogni istanza sarebbe dovuto essere limitato in quanto già con 7 pacchi i tempi di esecuzione aumentavano vertiginosamente, abbiamo quindi deciso di scegliere in modo casuale in un intervallo [3,10] il numero di pacchi da assegnare a ciascuna istanza, imponendo un \glo{time limit} di 300 secondi.
+Fin dal modello 2D abbiamo capito che il numero di pacchi per ogni istanza sarebbe dovuto essere limitato in quanto già con sette pacchi i tempi di esecuzione aumentavano vertiginosamente, abbiamo quindi deciso di scegliere in modo casuale in un intervallo [3,10] il numero di pacchi da assegnare a ciascuna istanza, imponendo un \glo{time limit} di 300 secondi.
 Questo portava ad ottenere soluzioni ottime e soluzioni \glo{best bound}, l'analisi dei risultati sarà divisa in queste due categorie.
 
 \begin{figure}[!ht]
@@ -61,13 +61,15 @@ Nel grafico in Figura \ref{fig:times} viene riportato come ascissa il numero di 
 Risultano molto interessanti quelle istanze che nonostante abbiano molti oggetti richiedano meno tempo per essere eseguiti, forse questo dovuto alle particolari dimensioni degli oggetti.
 
 \section{Validazione soluzioni fornite}
-Di fondamentale importanza per il confronto è stato che le soluzioni fornite dal modello fossero corrette, questo ha richiesto lo sviluppo di alcune funzioni che controllassero la validità delle stesse. Per fare ciò sono state realizzate le seguenti funzioni:
+Di fondamentale importanza per il confronto è stato che le soluzioni fornite dal modello fossero corrette, questo ha richiesto lo sviluppo di alcune funzioni che controllassero la validità delle stesse. 
+\newpage
+Per fare ciò sono state realizzate le seguenti funzioni:
 \begin{itemize}
-	\item \textbf{CheckFeasible}: utilizzata per controllare che non vi fossero pacchi che si intersecassero con altri;
+	\item \textbf{CheckFeasible}: utilizzata per controllare che non vi fossero pacchi intersecati tra loro;
 	\item \textbf{CheckSequence}: realizzata in due versioni:
 	      \begin{itemize}
 	      	\item \textbf{2D}: considerando che tutti gli oggetti fossero alla stessa altezza controllava che ciascun pacco avesse almeno una via attraverso cui essere scaricato;
-	      	\item \textbf{3D}: considerava anche la sovrapposizione tra pacchi e oltre a controllare di avere almeno una delle tre direzioni libere rispetto l'altezza a cui si trovava, controllava anche se sopra ciascun pacco al momento dello scarico non vi fossero altri pacchi;
+	      	\item \textbf{3D}: considerava anche la sovrapposizione tra pacchi e oltre a controllare di avere almeno una delle tre direzioni libere rispetto l'altezza a cui si trovava, controllava anche se sopra ciascun pacco al momento dello scarico vi fossero altri pacchi;
 	      \end{itemize}
 	\item \textbf{CheckStable}: utilizzata per controllare la stabilità degli oggetti, verificava che l'area di base inferiore poggiasse completamente sulle basi superiori degli oggetti sottostanti;
 	\item \textbf{ProjectionCommonArea}: utilizzata per verificare se due parallelepipedi avessero intersezioni tra le loro proiezioni rispetto ad una coppia di assi come altezza e profondità.

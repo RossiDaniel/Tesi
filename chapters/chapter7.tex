@@ -2,18 +2,22 @@
 
 \hypertarget{(chap:capitolo7)}{}
 \chapter{Risultati}
-Nel seguente capitolo riporteremo i risultati ottenuti dai confronti tra le soluzioni fornite dai modelli e le corrispondenti fornite dall'euristica.\\
+Nel seguente capitolo riporteremo i risultati ottenuti dai confronti tra le soluzioni fornite dai modelli e le corrispettive fornite dall'euristica.\\
 Per ciascun modello verranno riportate due tabelle con i risultati ottenuti, queste verranno divise nelle due categorie di soluzioni ottenute:
 \begin{itemize}
 	\item ottime;
 	\item best bound.
 \end{itemize} 
-Per best bound viene intesa una soluzione fornita da un modello dopo che si è raggiunto il suo time limit, ossia tempo massimo di esecuzione, questa soluzione non è ottima ma può essere considerata come un buon risultato.
-Le tabelle riporteranno il numero di istanze per gruppo, errore relativo $\epsilon_r$ nel rapporto la tra i metri lineari ottenute, errore assoluto $\epsilon_a$ espresso in metri e il tempo medio di esecuzione di quel gruppo di istanze. Successivamente verranno riportate alcune osservazioni sui risultati di alcuni gruppi di istanze e un rapporto generale sulla bontà delle soluzioni dei modelli aldilà dei gruppi di istanze, ricordiamo che sia il modello che l'euristica venivano eseguite sulla stessa istanze e con le stesse caratteristiche, questo permette un confronto oggettivo.
+Per best bound viene intesa una soluzione fornita da un modello dopo che si è raggiunto il suo time limit, definito come tempo massimo di esecuzione e fissato per convenzione a trecento secondi. 
 
-\newpage
+Queste soluzioni best bound non sono necessariamente ottime ma possono essere considerate come un buon risultato.
+
+Le Tabelle contengono una riga per ogni gruppo d'istanze numerate da 0 a 9, esse riporteranno il numero d'istanze per gruppo, errore relativo $\epsilon_r$ nel rapporto tra i metri lineari ottenuti e errore assoluto $\epsilon_a$ espresso in metri, infine il tempo medio di esecuzione di quel gruppo d'istanze, il tempo non sarà riportato per le soluzioni best bound in quanto le soluzioni stesse sono riferite al time limit di trecento secondi.
+
+Successivamente verranno riportate alcune osservazioni sui risultati di alcuni gruppi d'istanze e un rapporto generale sulla bontà delle soluzioni dei modelli aldilà dei gruppi d'istanze, ricordiamo che sia il modello che l'euristica venivano eseguite sulle stesse istanze e con le stesse caratteristiche, permettendo così un confronto oggettivo.
+
 \section{Errori}
-L'obiettivo sia del modello che dell'euristica è quello di minimizzare i metri lineari occupati dai pacchi, per convenzione vengono così deiniti:
+L'obiettivo sia del modello che dell'euristica è quello di minimizzare i metri lineari occupati dai pacchi, per convenzione vengono così definiti:
 \begin{itemize}
 	\item Metri lineare modello: $Obj_m$
 	\item Metri lineare euristica: $Obj_h$
@@ -72,7 +76,7 @@ Di seguito verranno riportati i risultati ottenuti dal confronto tra soluzioni f
 		\end{minipage}
 	\end{table}
 \end{center}
-Le prime osservazioni che mi sento di condividere sono sul perché gruppi di istanze come il 4,7 e 8 riportino errori $\epsilon_r$ e $\epsilon_a$ uguali a 0, questo perché mediamente i pacchi di tali gruppi di istanze avevano dimensioni che non permettevano di essere affiancati tra loro, quindi per ogni istanza il modello e l'euristica si sono ridotti ad allineare i pacchi uno davanti all'altro, ottenendo sempre lo stesso risultato. Sembra interessante anche il gruppo di istanze 9 che riporta mediamente un tempo di esecuzione minore, questo gruppo di istanze è formata da mix di pacchi stretti e corti e stretti e lunghi, questo porta gli errori $\epsilon_r$ per quanto riguarda le soluzioni ottime ad un valore del 10\%, mentre invece con le soluzioni best bound questo aumenta fino al 20\%.
+Le prime osservazioni che mi sento di condividere sono sul perché gruppi d'istanze come il 4,7 e 8 riportino errori $\epsilon_r$ e $\epsilon_a$ uguali a 0, questo perché mediamente i pacchi di tali gruppi d'istanze avevano dimensioni che non permettevano di essere affiancati tra loro, quindi per ogni istanza il modello e l'euristica si sono ridotti ad allineare i pacchi uno davanti all'altro, ottenendo sempre lo stesso risultato. Sembra interessante anche il gruppo d'istanze 9 che riporta mediamente un tempo di esecuzione minore, questo gruppo d'istanze è formata da mix di pacchi stretti e corti e stretti e lunghi, questo porta gli errori $\epsilon_r$ per quanto riguarda le soluzioni ottime ad un valore del 10\%, mentre con le soluzioni best bound questo aumenta fino al 20\%.
 Considerazione interessante inoltre è come ci si aspetterebbe di veder diminuire gli errori con le soluzioni best bound, questo invece non accade e anzi aumenta il distacco dalle soluzioni fornite dall'euristica, segno che le soluzioni best bound fornite dal modello sono comunque valide per il confronto.
 
 \newpage
@@ -122,9 +126,10 @@ Di seguito verranno riportati i risultati ottenuti dal confronto tra soluzioni f
 		\end{minipage}
 	\end{table}
 \end{center}
-Le prime osservazioni da riportare sono che l'euristica nel disporre i pacchi rispettando la corretta sequenza di scarico, li inserisce ordinando i pacchi in base all'ordine di scarico così da essere sicuro che ciascun pacco non abbia dietro a sé pacchi di ordini successivi, questo però preclude la possibilità di avere quelle soluzioni simili a quella riportata per esempio nella Figura \ref{fig:2drs_abg}, al contrario però porta ad avere anche soluzioni in cui non sia garantita la stabilità generale degli oggetti. Possiamo osservare come un aumento della complessità del problema non abbia portato però ad un aumento degli errori generalizzato ma anzi in alcuni gruppi di istanze sia diminuito, mentre i tempi d'esecuzione siano aumentati generalmente. Le istanze con gli errori maggiori restano sempre le stesse del precedente modello, in particolare salta all'occhio come l'errore $\epsilon_r$ del gruppo di istanze 3 si attesti al 20\%, questo gruppo è formato da pacchi stretti e lunghi, valore importante che porta ad uno scarto tra modello e euristica di quasi 3 metri.
+Le prime osservazioni da riportare riguardano la sequenza di scarico implementata sia dall'euristica che dal modello.
+La correttezza della sequenza è garantita dall'euristica attraverso l'ordinamento dei pacchi in base al loro ordine di scarico, insiemi di pacchi appartenenti ad ordini di scarico successivi verranno inseriti per primi, raggruppando così pacchi di ordini uguali in strati, questa tecnica permette di garantire la stabilità generale delle merci, la quale non è invece garantita dal modello che si limita a controllare solo che ogni pacco abbia almeno una delle tre vie di scarico libere come mostrato nella Figura \ref{fig:2drs_abg} e \ref{fig:abg_2drs}. Dobbiamo però ricordare come i test eseguiti lavorassero su un numero molto limitato di oggetti, ciò ha limitato molto il problema della stabilità generale permettendo così un confronto tra le coppie di soluzioni.
+Possiamo osservare come un aumento della complessità del problema non abbia portato però ad un aumento degli errori generalizzato ma anzi in alcuni gruppi d'istanze sia diminuito, mentre i tempi d'esecuzione siano aumentati generalmente. Le istanze con gli errori maggiori restano sempre le stesse del precedente modello, in particolare salta all'occhio come l'errore $\epsilon_r$ del gruppo d'istanze 3 si attesti al 20\%, questo gruppo è formato da pacchi stretti e lunghi, valore importante che porta ad uno scarto tra modello e euristica di quasi 3 metri.
 
-\newpage
 \section{Risultati modello 3D}
 Di seguito verranno riportati i risultati ottenuti dal confronto tra soluzioni fornite da euristica e modello 3D con rotazione e sovrapposizione:
 \begin{center}
@@ -171,4 +176,8 @@ Di seguito verranno riportati i risultati ottenuti dal confronto tra soluzioni f
 		\end{minipage}
 	\end{table}
 \end{center}
-Le istanze che sono state generate non contenevano solo oggetti \glo{stackable}, ma anche oggetti \textit{fragili} che sopra di sé non potevano averne nessun altro, quindi nell'ordinare gli oggetti l'euristica inseriva nel container prima gli oggetti \textit{fragili} comportando così che sopra di essi non potessero esservi altri oggetti. Il modello in questione risulta essere più vincolato dell'euristica, in quanto non è stato possibile esprimere il concetto di stabilità degli oggetti a pieno. Il concetto è stato semplificato in modo che, se un oggetto si trova al di sopra di un altro, allora la sua base inferiore deve essere completamente poggiata alla faccia superiore di quello sotto. L'euristica aveva invece la possibilità che lo stesso pacco potesse poggiare su più pacchi, nei test abbiamo tenuto conto del problema inserendo solo alcuni pacchi stackable.
+Le istanze che sono state generate non contenevano solo oggetti \glo{stackable}, ma contenevano in numero maggiore anche oggetti \textit{fragili} che sopra di sé non potevano averne nessun altro. 
+
+Nell'ordinare gli oggetti l'euristica inseriva nel container arbitrariamente oggetti \textit{fragili} e non comportando così che al momento dell'inserimento di un oggetto stackable magari non vi fossero più oggetti compatibili da potervi mettere sopra. Il modello in questione risulta essere più vincolato dell'euristica, in quanto non è stato possibile esprimere il concetto di stabilità degli oggetti nella sua totalità.
+
+Il concetto è stato semplificato in modo che, se un oggetto si trova al di sopra di un altro, allora la sua base inferiore deve essere completamente poggiata alla faccia superiore di quello sotto. L'euristica aveva invece la possibilità che lo stesso pacco potesse poggiare su più pacchi, nei test abbiamo tenuto conto del problema inserendo solo alcuni pacchi stackable.

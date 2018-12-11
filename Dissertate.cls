@@ -143,13 +143,13 @@
 
 % References.
 \renewcommand\bibname{Rifermenti bibliografici}
-%\RequirePackage[super,comma,numbers]{natbib}
-\RequirePackage[comma,numbers]{natbib}
+\RequirePackage[super,comma,numbers]{natbib}
+%\RequirePackage[comma,numbers]{natbib}
 \renewcommand{\bibnumfmt}[1]{[#1]}
 \RequirePackage[palatino]{quotchap}
 \renewcommand*{\chapterheadstartvskip}{\vspace*{-0.5\baselineskip}}
 \renewcommand*{\chapterheadendvskip}{\vspace{1.3\baselineskip}}
-\bibliographystyle{IEEEtran}
+\bibliographystyle{plainnat}
 
 % An environment for paragraph-style section.
 \providecommand\newthought[1]{%
@@ -231,7 +231,7 @@
 	\input{frontmatter/personalize}
 	\maketitle
 	\frontispiece
-	\copyrightpage
+	%\copyrightpage
 	\dedicationpage
 	\abstract
 	\tableofcontents

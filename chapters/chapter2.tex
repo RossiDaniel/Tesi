@@ -9,7 +9,7 @@ Il progetto generale nasce dalla visione di Filippo Sottovia, titolare dell'azie
 \begin{itemize}
 	\item agevolazione degli operatori nello svolgimento delle loro mansioni;
 	\item facilitazione del processo decisionale richiedendo così lavoratori meno esperti;
-	\item nascita nuove attività frutto del tempo risparmiato grazie all'aumento della produttività;
+	\item nascita di nuove attività frutto del tempo risparmiato grazie all'aumento della produttività;
 	\item condivisione in tempo reale delle informazioni sullo stato dei trasporti;
 	\item stima di costi e profitti disponibile in ogni momento.
 \end{itemize}
@@ -18,7 +18,7 @@ Il software fornisce un'interfaccia grafica web intuitiva che fa dell'usabilità
 
 \section{Introduzione al progetto}
 L'azienda per permettere di stimare lo spazio occupato dalle merci ha sviluppato un'\glo{euristica}, questa riceve in input le merci da trasportare divise nei diversi ordini di consegna, le approssima a parallelepipedi e le dispone al meglio sul pianale del camion, sovrapponendole dove possibile, con l'obiettivo di ridurre al minimo lo spazio lineare occupato dalle stesse, così facendo si risparmia spazio per eventuali altre merci da caricare qualora arrivassero nuovi ordini.
-A rendere ancora più complicato il lavoro dell'euristica riportiamo tre principali problemi da tenere in considerazione:
+A rendere ancora più complicato il lavoro dell'euristica riportiamo quattro principali problemi da tenere in considerazione:
 \begin{itemize}
 	\item Stabilità degli oggetti: la faccia inferiore di ciascun oggetto deve poggiare per intero sulle facce superiori di altri oggetti sotto di sé o sul pianale del camion;
 	\item Sequenza di scarico: ogni oggetto deve poter essere scaricato lateralmente o frontalmente, questo implica che non può avere intorno a sé merci che ne blocchino lo scarico, in quanto appartenenti ad ordini successivi;
@@ -27,14 +27,14 @@ A rendere ancora più complicato il lavoro dell'euristica riportiamo tre princip
 \end{itemize}
 
 \section{Vincoli temporali, tecnologici e metodologici}
-Nel periodo di stage svolto presso l'azienda mi è stato chiesto di tenere un \textit{diario} condiviso utilizzando \bit{DropBox}{dropbox}, nel suddetto mi si richiedeva di annotare giornalmente l'avanzare del lavoro riportando idee, osservazioni riguardanti criticità rilevate e positività riscontrate negli strumenti utilizzati. Nella cartella condivisa mi è stato chiesto di includere anche gli articoli accademici letti e le presentazioni fatte in azienda man mano che si proseguiva con lo stage.
+Nel periodo di stage svolto presso l'azienda mi è stato chiesto di tenere un \textit{diario} condiviso utilizzando \bit{DropBox}{dropbox}, nel suddetto mi si richiedeva di annotare giornalmente l'avanzare del lavoro riportando idee e osservazioni emerse durante i \glo{brainstorming} quotidiani, criticità rilevate e positività riscontrate negli strumenti utilizzati. Nella cartella condivisa mi è stato chiesto di includere anche gli articoli accademici letti e le presentazioni fatte in azienda man mano che si proseguiva con lo stage.
 
-La presentazione di metà stage è stata un evento importante al quale ha presenziato tutto il team di sviluppo, parte del personale d'amministrazione e il Professor De Giovanni che mi ha fornito preziosi consigli sugli obiettivi su cui orientare gli sforzi per la seconda metà dello stage alla luce di quanto ottenuto nella prima metà.
+La presentazione di metà stage è stata un evento importante al quale ha presenziato tutto il team di sviluppo, parte del personale d'amministrazione e il Professor De Giovanni che mi ha fornito preziosi consigli sugli obiettivi su cui orientare gli sforzi per la seconda metà dello stage, alla luce di quanto ottenuto nella prima metà.
 
 Prima di iniziare lo stage è stato concordato con l'azienda un piano di lavoro su un totale di 320 ore, lavorando 5 giorni a settimana, 8 ore per ciascun giorno. 
 
 \section{Requisiti e obiettivi}
-Nella tabella riportata di seguito vengono elencati gli obiettivi dello stage, a corredo degli stessi vi sarà un codice univoco ed una breve descrizione.
+Nell'elenco di seguito vengono riportati gli obiettivi dello stage, a corredo degli stessi vi sarà un codice univoco ed una breve descrizione.
 
 Ogni obiettivo è provvisto di un codice identificativo formato da una delle seguenti stringhe ob,de,op, che rappresentano il livello di importanza e da un numero incrementale positivo, che rispetta la seguente nomenclatura: 
 \begin{figure}[htp]
@@ -49,6 +49,7 @@ Il livello di importanza di ciascun obiettivo può essere uno tra i seguenti:
 	\item Opzionale: individuato dalla stringa \textit{op}, sono obiettivi di contorno su cui si nutre poco interesse, la loro realizzazione si verificherà nel momento in cui si dovessero soddisfare tutti gli obiettivi obbligatori e desiderabili prima della fine dello stage.
 \end{itemize}
 
+\subsection{Lista obiettivi}
 Si prevede lo svolgimento dei seguenti obiettivi:
 \begin{itemize}
 	\item Obbligatori
@@ -74,12 +75,7 @@ Si prevede lo svolgimento dei seguenti obiettivi:
 	      	\item \underline{\textit{op01}}: evoluzione euristica, fornita dall'azienda, con nuove funzionalità;
 	      \end{itemize} 
 \end{itemize}
-\begin{figure}[H]
-	\begin{center} \includegraphics[scale=0.25]{figures/stage}
-		\caption[Diagramma d Gantt]{Diagramma di Gantt dello stage.}
-		\label{fig:gantt}
-	\end{center}
-\end{figure}
+
 \section{Pianificazione}
 Con le ore a disposizione per questo stage si è proceduto a organizzare come segue le attività:
 \begin{itemize}
@@ -97,8 +93,8 @@ Ogni periodo di sviluppo di un modello sarà poi diviso a sua volta nelle seguen
 	\item test del modello
 	\item confronto con l'euristica.
 \end{itemize}
-
-La pianificazione delle attività è stata distribuita come mostrato nella tabella~\eqref{tableofwork}.
+\newpage
+La pianificazione delle attività è stata distribuita come mostrato nella Tabella \ref{tableofwork}.
 \begin{center}
 	\begin{tabular}{|l|l|c l|}
 		\hline
@@ -146,19 +142,19 @@ La pianificazione delle attività è stata distribuita come mostrato nella tabel
 	\captionof{table}{Pianificazione concordata nel piano di lavoro}
 	\label{tableofwork}  
 \end{center}
-	
+\newpage
 \section{Ambiente di lavoro}
 \subsection{Metodi di sviluppo}
-Il \glo{ciclo di vita} di un prodotto in Trans-Cel segue il \glo{modello incrementale}, formato da un periodo di concezione dell'idea, analisi della stessa, progettazione ed infine partendo dagli obiettivi più importanti si realizza il prodotto rilasciando periodicamente una versione dello stesso, questo dovrà mostrare le nuove funzionalità sviluppate dimostrando così l'incremento fatto. In quest'ottica lo sviluppo di un modello può essere associato ad un incremento, le cui \glo{milestone} è la ricezione dei risultati, a sua volta lo sviluppo di ciascun modello segue il modello incrementale, che può essere visto come l'insieme di tre principali attività:
+Il \glo{ciclo di vita} di un prodotto in Trans-Cel segue il \glo{modello incrementale}, formato da un periodo di concezione dell'idea, analisi della stessa, progettazione ed infine, partendo dagli obiettivi più importanti, si realizza il prodotto rilasciando periodicamente una versione dello stesso, che dovrà mostrare le nuove funzionalità sviluppate dimostrando così l'incremento fatto. In quest'ottica, lo sviluppo di un modello può essere associato ad un incremento, la cui \glo{milestone} è la ricezione dei risultati.
+A sua volta lo sviluppo di ciascun modello segue il modello incrementale, che può essere visto come l'insieme di tre principali attività:
 \begin{itemize}
 	\item Analisi letteratura: lettura articoli accademici riportanti modelli simili o idee per lo sviluppo degli stessi.
 	\item Scrittura: scrittura del modello e integrazione con il sistema grazie al framework Or-Tools.
 	\item Verifica: testing massivo e verifica delle soluzioni fornite.
 \end{itemize}
-Inoltre è possibile cogliere delle analogie con il modello di ciclo di vita \glo{agile} per quanto riguarda i \glo{brainstorming}, momenti di confronto creativo che stimolano il ragionamento in modo critico, utili per fare il punto della situazione oltre che esporre le problematicità che si stanno incontrando.
 
 \subsection{Gestione di progetto}
-Per quanto riguarda la gestione di progetto sono stati utilizzati alcuni strumenti descritti con maggiore dettaglio nel \hyperlink{(chap:capitolo6)}{\textbf{Capitolo 6}}. In generale per la gestione dei task da eseguire si è fatto uso di \bit{Taiga}{taiga}, uno strumento di \glo{project management}, per la gestione della comunicazione e condivisione informazioni si è fatto uso dell'applicazione \bit{Telegram}{telegram}, per la condivisione di documentazione e articoli si è fatto uso del servizio \bit{DropBox}{dropbox}, per il versionamento si è fatto uso del servizio \bit{GitHub}{github} per la familiarità dello strumento, infine per quanto riguarda l'interfaccia con cui versionare ho utilizzato \bit{git}{git} da terminale.
+Per quanto riguarda la gestione di progetto sono stati utilizzati alcuni strumenti descritti con maggiore dettaglio nel \hyperlink{(chap:capitolo6)}{\textbf{Capitolo 6}}. In generale per la gestione dei task da eseguire si è fatto uso di \bit{Taiga}{taiga}, uno strumento di \glo{project management}, per la gestione della comunicazione e condivisione di informazioni si è fatto uso dell'applicazione \bit{Telegram}{telegram}, per la condivisione di documentazione e articoli si è fatto uso del servizio \bit{DropBox}{dropbox}, per il versionamento si è fatto uso del servizio \bit{GitHub}{github} per la familiarità dello strumento, infine per quanto riguarda l'interfaccia con cui versionare ho utilizzato \bit{git}{git} da terminale.
 	
 \subsection{Linguaggio di programmazione e ambiente di sviluppo}
 Per la totalità dello stage si è lavorato utilizzando \bit{Jupyter notebook}{jupyter}. Con questo strumento è stato possibile scrivere programmi in linguaggio \bit{Python}{python} in modo molto agevole. 
@@ -169,7 +165,7 @@ Questo linguaggio di programmazione è orientato agli oggetti ed interpretato di
 In questa sezione vengono riportati i principali rischi che si prefiguravano all'inizio dello stage. Ciascuno di essi oltre ad avere una breve descrizione riporta il livello di rischio, in termini di pericolosità per la riuscita dello stage e come si possa fare per evitarlo:
 \begin{itemize}
 	\item \textbf{Difficoltà nelle tecnologie adottate}\\
-	      Ad inizio stage è stato chiaro che \bit{Python}{python} avrebbe avuto un ruolo dominante nel progetto ma la mole di librerie ed estensioni rendeva il linguaggio troppo vasto da poter approfondire nella sua interezza, ed oltre a questo vi era il modulo Or-Tools e \bit{Pandas}{pandas} da approfondire e utilizzare.
+	      Ad inizio stage è stato chiaro che \bit{Python}{python} avrebbe avuto un ruolo dominante nel progetto ma la mole di librerie ed estensioni rendeva il linguaggio troppo vasto da poter approfondire nella sua interezza, ed oltre a questo vi era il modulo \bit{Or-Tools}{ortools} e \bit{Pandas}{pandas} da approfondire e utilizzare.
 	      \begin{itemize}
 	      	\item \textbf{Livello di rischio}: Basso;
 	      	\item \textbf{Contromisure}: Studiare approfonditamente il linguaggio \bit{Python}{python} e i moduli sopra citati.
